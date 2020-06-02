@@ -6,6 +6,7 @@ import org.openqa.selenium.support.How;
 
 public class Vehicle {
 
+	//This is TEST
     @FindBy(how= How.ID,using="txtVinNo")
     public WebElement txt_VinNo;
 
