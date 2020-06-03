@@ -4,7 +4,7 @@ import ApplicationPages.Login;
 import org.openqa.selenium.support.PageFactory;
 import resources.Testing;
 
-public class STC_Login {
+public class STC_Login {//test
 
     public void login(Testing test){
         test.setPage(Login.class);
