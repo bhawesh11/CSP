@@ -34,7 +34,9 @@ public class DashBoard {
     @FindBy(id="btnAddReplaceVehicle")
     public WebElement btn_AddReplaceVehicle;
 
+    public String maximizeVehicleDetails = "//*[contains(@id,'{0}')]";//{0}->2012-AUDI-A8LQUATTRO
 
-
+    @FindBy(xpath="//span[(text()='Remove')]")
+    public WebElement btn_removeVehicle;
 
 }
