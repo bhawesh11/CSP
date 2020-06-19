@@ -38,5 +38,8 @@ public class DashBoard {
 
     @FindBy(xpath="//span[(text()='Remove')]")
     public WebElement btn_removeVehicle;
+    
+    @FindBy(id="btnReschedule")
+    public WebElement btn_Reschedule;
 
 }

@@ -44,11 +44,17 @@ public class PersonalInfo {
 	@FindBy(id="txtPostalCode")
 	public WebElement textbox_PostalCode;
 	
-	@FindBy(xpath="//*[@id='mailingIsBoth-{0}']/ancestor::div/label")
-	public WebElement btn_ParkVehicleAtAddress;
+	@FindBy(xpath="//*[@id='mailingIsBoth-true']/ancestor::div/label")
+	public WebElement btn_ParkVehicleAtAddressYes;
 	
-	@FindBy(xpath="//*[@id='mailingIsGaragedLocation-{0}']/ancestor::div/label")
-	public WebElement btn_VehicleAtMailAdd;
+	@FindBy(xpath="//*[@id='mailingIsBoth-false']/ancestor::div/label")
+	public WebElement btn_ParkVehicleAtAddressNo;
+	
+	@FindBy(xpath="//*[@id='mailingIsGaragedLocation-true']/ancestor::div/label")
+	public WebElement btn_VehicleAtMailAddYes;
+	
+	@FindBy(xpath="//*[@id='mailingIsGaragedLocation-false']/ancestor::div/label")
+	public WebElement btn_VehicleAtMailAddNo;
 	
 	@FindBy(id="yearSelected")
 	public WebElement dropdown_YearMovedToResidence;
@@ -68,11 +74,17 @@ public class PersonalInfo {
 	@FindBy(xpath="//*[@name='garagingForm']//button")
 	public WebElement btn_GaragingAddress;
 	
-	@FindBy(xpath="//*[@id='garagingIsBoth-{0}']/ancestor::div/label")
-	public WebElement btn_IsThisMailingAddress;
+	@FindBy(xpath="//*[@id='garagingIsBoth-true']/ancestor::div/label")
+	public WebElement btn_IsThisMailingAddressYes;
 	
-	@FindBy(xpath="//*[@id='garagingIsGaragedLocation-{0}']/ancestor::div/label")
-	public WebElement btn_VehicleAtGaragAdd;
+	@FindBy(xpath="//*[@id='garagingIsBoth-false']/ancestor::div/label")
+	public WebElement btn_IsThisMailingAddressNo;
+	
+	@FindBy(xpath="//*[@id='garagingIsGaragedLocation-true']/ancestor::div/label")
+	public WebElement btn_VehicleAtGaragAddYes;
+	
+	@FindBy(xpath="//*[@id='garagingIsGaragedLocation-false']/ancestor::div/label")
+	public WebElement btn_VehicleAtGaragAddNo;
 	
 	@FindBy(id="btnContinueGaragingAddress")
 	public WebElement btn_ContinueGaragAddress;
@@ -119,8 +131,11 @@ public class PersonalInfo {
 	@FindBy(xpath="//*[@name='allowTextMessageForm']//button")
 	public WebElement btn_TextMessageAlerts;
 	
-	@FindBy(xpath="//*[@id='allowTextMessage-{0}']/ancestor::div/label")
-	public WebElement btn_WantTextAlerts;
+	@FindBy(xpath="//*[@id='allowTextMessage-true']/ancestor::div/label")
+	public WebElement btn_WantTextAlertsYes;
+	
+	@FindBy(xpath="//*[@id='allowTextMessage-false']/ancestor::div/label")
+	public WebElement btn_WantTextAlertsNo;
 	
 	@FindBy(name="phoneNumber")
 	public WebElement textbox_TextAlertsMobileNumber;

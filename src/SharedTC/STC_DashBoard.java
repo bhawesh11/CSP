@@ -10,5 +10,7 @@ public class STC_DashBoard {
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, dashBoard.btn_OneTimePayment);
         test.getLogger().info("Selected 'One Time Payment' on Dashboard.");
+    //testing
     }
+    
 }
