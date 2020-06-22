@@ -15,6 +15,18 @@ public class DashBoard {
 
     @FindBy(id="btnFileACliam-Dashboard")
     public WebElement btn_FileACliam;
+    
+    @FindBy(xpath="//a[contains(text(),'Policy')]")
+    public WebElement btn_Policy;
+    
+    @FindBy(xpath="//a[contains(text(),'Documents')]")
+    public WebElement btn_Documents;
+    
+    @FindBy(xpath="//a[contains(text(),'Claims')]")
+    public WebElement btn_Claims;
+    
+    @FindBy(xpath="//a[contains(text(),'Personal Info')]")
+    public WebElement btn_PersonalInfo;
 
     @FindBy(id="btn-One-Time-Payment")
     public WebElement btn_OneTimePayment;
