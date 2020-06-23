@@ -27,7 +27,7 @@ public class DashBoard {
     
     @FindBy(xpath="//a[contains(text(),'Personal Info')]")
     public WebElement btn_PersonalInfo;
-
+    
     @FindBy(id="btn-One-Time-Payment")
     public WebElement btn_OneTimePayment;
 

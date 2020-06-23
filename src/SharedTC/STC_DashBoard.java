@@ -12,7 +12,7 @@ public class STC_DashBoard {
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, dashBoard.btn_GetIdCards);
      }
-	
+		
 	public void clickManagePayments(Testing test){
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
