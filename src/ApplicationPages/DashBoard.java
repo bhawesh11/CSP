@@ -7,7 +7,9 @@ public class DashBoard {
 
     //	LET THE SEQUENCE ALWAYS REMAIN THE SAME AS THEY APPEAR ON THE WEBPAGE.
 
-    @FindBy(id="btnGetIdCards-Dashboard")
+	public String maximizeVehicleDetails = "//*[contains(@id,'{0}')]";//{0}->2012-AUDI-A8LQUATTRO
+	
+	@FindBy(id="btnGetIdCards-Dashboard")
     public WebElement btn_GetIdCards;
 
     @FindBy(id="btnMakeAPayment-Dashboard")
@@ -46,12 +48,16 @@ public class DashBoard {
     @FindBy(id="btnAddReplaceVehicle")
     public WebElement btn_AddReplaceVehicle;
 
-    public String maximizeVehicleDetails = "//*[contains(@id,'{0}')]";//{0}->2012-AUDI-A8LQUATTRO
-
     @FindBy(xpath="//span[(text()='Remove')]")
-    public WebElement btn_removeVehicle;
+    public WebElement btn_RemoveVehicle;
     
     @FindBy(id="btnReschedule")
     public WebElement btn_Reschedule;
-
+    
+    @FindBy(xpath="//span[text()='Edit']")
+	public WebElement btn_EditVehicle;
+	 
+	@FindBy(xpath="//span[text()='Get ID Card']")
+	public WebElement btn_IDCardForVehicle;
+	
 }
