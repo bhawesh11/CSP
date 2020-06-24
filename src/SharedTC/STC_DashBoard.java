@@ -88,6 +88,26 @@ public class STC_DashBoard {
     public void clickExpandPolicyVehicle(Testing test){
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, dashBoard.maximizeVehicleDetails, "2012-AUDI-A8LQUATTRO");
-      }   
+        test.webFunctions().click(test, dashBoard.maximizeVehicleDetail, "2012-AUDI-A8LQUATTRO");
+      } 
+    
+    public void clickRemoveVehicle(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_RemoveVehicle);
+      } 
+    
+    public void clickEditVehicle(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_EditVehicle);
+      } 
+    
+    public void clickGetIDCardForVehicle(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_IDCardForVehicle);
+      }
+	
+
  }

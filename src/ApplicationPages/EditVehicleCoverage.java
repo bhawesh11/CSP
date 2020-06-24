@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 public class EditVehicleCoverage {
 
  
-	 public String link_SelectVehicle="//strong[text()='{0}']";
+	 
 	 public String btn_SliderComprehensive = "//*[contains(@id, 'PAComprehensive')]//span[{0}]//button";
 	 public String btn_SliderCollision = "//*[contains(@id, 'PACollision')]//span[{0}]//button";
 	 public String btn_SliderRental = "//*[contains(@id, 'PARental')]//span[{0}]//button";
@@ -30,20 +30,11 @@ public class EditVehicleCoverage {
 	 @FindBy(xpath="//input[contains(@id, 'isVehicleLeased')]/ancestor::div/label[text()='No']")
 	  public WebElement btn_IsLeasedVehicleNo;
 	 
-	 	 @FindBy(xpath="//*[contains(@id, 'btnRemove')]/span")
-	  public WebElement btn_RemoveVehicle;
-	 
 	  @FindBy(id="btnEditLeaseHolder")
 	  public WebElement btn_EditLienholder;
 	 
-	  @FindBy(xpath="//span[text()='Edit']")
-	  public WebElement btn_EditVehicle;
-	 
-	   @FindBy(xpath="//span[text()='Get ID Card']")
-	   public WebElement btn_IDCardForVehicle;
-	 	 
-	   @FindBy(xpath="//div[text()='Smart Roadside Assistance']")
-	   public WebElement chkbox_RoadsideAssist;
+	  @FindBy(xpath="//div[text()='Smart Roadside Assistance']")
+	  public WebElement chkbox_RoadsideAssistance;
 	 
 	   @FindBy(xpath="//div[text()='Loan Lease Payoff']")
 	   public WebElement chkbox_LoanLeasePayoff;
