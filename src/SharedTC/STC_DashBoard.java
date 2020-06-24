@@ -17,5 +17,5 @@ public class STC_DashBoard {
         test.webFunctions().click(test, dashBoard.btn_PaymentMethods);
         test.getLogger().info("Selected 'Payment Method' on Dashboard.");
     }
-    
+   
 }

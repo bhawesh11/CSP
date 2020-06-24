@@ -28,10 +28,10 @@ public class STC_MakePayment {
         test.webFunctions().type(test, makePayment.textBox_NewCC_LastName,test.getTestData("CardDetails.LastName"));
         test.webFunctions().type(test, makePayment.textBox_NewCC_CardNumber,test.getTestData("CardDetails.Mastercard"));
         test.webFunctions().click(test, makePayment.dropdown_NewCC_ExpirationMonth);
-        //test.webFunctions().click(test, makePayment.dropdown_NewCC_ExpirationMonth_01);
+        
         test.webFunctions().click(test, makePayment.select_NewCC_ExpirationMonth,test.getTestData("CardDetails.ExpiryMonth"));
         test.webFunctions().click(test, makePayment.dropdown_NewCC_ExpirationYear);
-        //test.webFunctions().click(test, makePayment.dropdown_NewCC_ExpirationYear_2024);
+        
         test.webFunctions().click(test, makePayment.select_NewCC_ExpirationYear,test.getTestData("CardDetails.ExpiryYear"));
         test.webFunctions().click(test, makePayment.btn_NewCC_SaveCard_Yes);
         test.webFunctions().type(test, makePayment.textbox_NewCC_Nickname,test.getTestData("CardDetails.Nickname"));

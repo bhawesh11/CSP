@@ -127,7 +127,7 @@ public class TC_Elephant {
             test.tearDown();
         }
 		
-	}//closing TC004 method
+	} //closing TC004 method
 
 //---------------------------------------------------------------------------------------
 //	TC005

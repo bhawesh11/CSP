@@ -45,14 +45,12 @@ public class MakePayment {
     
     @FindBy(xpath="//*[@name='expiryMonth']/div[1]/div[1]/span[1]")
     public WebElement dropdown_NewCC_ExpirationMonth;
-    //@FindBy(xpath="//span[text()=' 01 ']")
-    //public WebElement dropdown_NewCC_ExpirationMonth_01;
+    
     public String select_NewCC_ExpirationMonth= "//span[text()=' {0} ']";
     
     @FindBy(xpath="//*[@name='expiryYear']/div[1]/div[1]/span[1]")
     public WebElement dropdown_NewCC_ExpirationYear;
-    //@FindBy(xpath="//span[text()='2024']")
-    //public WebElement dropdown_NewCC_ExpirationYear_2024;
+   
     public String select_NewCC_ExpirationYear = "//span[text()='{0}']" ;
     
     @FindBy(xpath="//label[@for='save-true']")

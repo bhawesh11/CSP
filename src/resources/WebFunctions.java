@@ -106,7 +106,7 @@ public class WebFunctions {
 			catch(StaleElementReferenceException e){
 				reInitPageElements(test);
 				if(attempt==3) {Assert.fail(" Test Case Failed : " + e);}
-			}//Closing CATCH-1
+			} //Closing CATCH-1
 
 			catch(WebDriverException e){
 				System.out.println("WebDriver Exception");

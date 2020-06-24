@@ -34,14 +34,11 @@ public class STC_NewPaymentMethod {
         test.webFunctions().type(test, paymentmethods.textBox_CardFirstName, test.getTestData("CardDetails.FirstName"));
         test.webFunctions().type(test, paymentmethods.textBox_CardLastName, test.getTestData("CardDetails.LastName"));
         test.webFunctions().type(test, paymentmethods.textBox_CardNumber, test.getTestData("CardDetails.Amex"));
-        test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationMonth);
-        //test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationMonth_01);
         
+        test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationMonth);
         test.webFunctions().click(test, paymentmethods.select_NewCC_ExpirationMonth,test.getTestData("CardDetails.ExpiryMonth"));
         
-        test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationYear);
-        //test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationYear_2024);
-        
+        test.webFunctions().click(test, paymentmethods.dropdown_NewCC_ExpirationYear);       
         test.webFunctions().click(test, paymentmethods.select_NewCC_ExpirationYear,test.getTestData("CardDetails.ExpiryYear"));
         
         test.webFunctions().type(test, paymentmethods.textBox_txtCardNickName, test.getTestData("CardDetails.Nickname"));
