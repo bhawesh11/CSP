@@ -34,7 +34,7 @@ public class EditVehicleCoverage {
 	  public WebElement btn_EditLienholder;
 	 
 	  @FindBy(xpath="//div[text()='Smart Roadside Assistance']")
-	  public WebElement chkbox_RoadsideAssist;
+	  public WebElement chkbox_RoadsideAssistance;
 	 
 	   @FindBy(xpath="//div[text()='Loan Lease Payoff']")
 	   public WebElement chkbox_LoanLeasePayoff;
