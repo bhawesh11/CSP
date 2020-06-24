@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.Date;
@@ -42,11 +43,14 @@ public class WebFunctions {
 
 			catch(StaleElementReferenceException e){
 				reInitPageElements(test);
+				if(attempt==3) {Assert.fail(" Test Case Failed : " + e);}
 			}//Closing CATCH-1
 
 			catch(WebDriverException e){
-				System.out.println("WebDriver Exception");
-				try{Thread.sleep(2000);}catch(Exception e2){};
+				System.out.println("WebDriver Exception ");
+				if(attempt==3) {Assert.fail(" Test Case Failed : " + e);}
+				
+				try{Thread.sleep(1000);}catch(Exception e2){};
 			}//Closing CATCH-2
 		}//Closing WHILE
 	}//Closing METHOD
@@ -94,19 +98,21 @@ public class WebFunctions {
 				attempt++;
 				wait.until(ExpectedConditions.visibilityOf(element));
 				element.click();
-				try{Thread.sleep(4000);}catch(Exception e){}; //D previous 2000
+				try{Thread.sleep(2000);}catch(Exception e){}; //D previous 2000
 				Utility.stop(test);
 				done=true;
 			}// Closing TRY
 
 			catch(StaleElementReferenceException e){
 				reInitPageElements(test);
+				if(attempt==3) {Assert.fail(" Test Case Failed : " + e);}
 			}//Closing CATCH-1
 
 			catch(WebDriverException e){
 				System.out.println("WebDriver Exception");
+				if(attempt==3) {Assert.fail(" Test Case Failed : " + e);}
 				//Screenshot(test);
-				try{Thread.sleep(3000);}catch(Exception e2){};
+				try{Thread.sleep(1000);}catch(Exception e2){};
 			}//Closing CATCH-2
 		}//Closing WHILE
 	}//Closing METHOD
