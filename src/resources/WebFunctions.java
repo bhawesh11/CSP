@@ -11,6 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.Date;
@@ -110,7 +111,7 @@ public class WebFunctions {
 				attempt++;
 				wait.until(ExpectedConditions.visibilityOf(element));
 				element.click();
-				try{Thread.sleep(4000);}catch(Exception e){}; //D previous 2000
+				try{Thread.sleep(2000);}catch(Exception e){}; //D previous 2000
 				Utility.stop(test);
 				done=true;
 			}// Closing TRY
