@@ -14,7 +14,7 @@ public class URL {
 	URL(String brandName) {
 		try {
 			prop = new Properties();
-			path = "Info//"+brandName+"//url.properties";
+			path = System.getProperty("user.dir")+"//Info//"+brandName+"//url.properties";
 			fis = new FileInputStream(path);
 			prop.load(fis);
 		} catch (IOException e) {

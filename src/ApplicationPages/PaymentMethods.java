@@ -7,7 +7,7 @@ public class PaymentMethods {
 
     //-----------------------------NEW BANK ACCOUNT-----------------------------
 
-    @FindBy(xpath="//span[text()='New Bank Account']/../../input")
+    @FindBy(xpath="//span[text()='New Bank Account']")
     public WebElement btn_NewBankAccount;
 
     @FindBy(id="txtBankFirstName")
@@ -16,11 +16,10 @@ public class PaymentMethods {
     @FindBy(id="txtBankLastName")
     public WebElement textBox_AccountHolderLastName;
 
-//    @FindBy(xpath="//*[@for='existing-billing-address']/../input")
     @FindBy(css="address")
     public WebElement btn_AccountExistingAddress;
 
-    @FindBy(xpath="//*[@for='new-billing-address']/../input")
+    @FindBy(xpath="//label[@for='new-billing-address']/span")
     public WebElement btn_ADifferentBillingAddress;
 
     @FindBy(id="txtStreet")
@@ -61,14 +60,13 @@ public class PaymentMethods {
 
     //-----------------------------NEW CREDIT CARD-----------------------------
 
-    @FindBy(xpath = "//span[contains(.,'New Credit Card')])")
-    //@FindBy(xpath="//span[text()='New Credit Card']/../../input")
+    @FindBy(xpath = "//span[contains(.,'New Credit Card')]")
     public WebElement btn_NewCreditCard;
 
-    @FindBy(id="id=txtCardFirstName")
+    @FindBy(id="txtCardFirstName")
     public WebElement textBox_CardFirstName;
 
-    @FindBy(id="id=txtCardLastName")
+    @FindBy(id="txtCardLastName")
     public WebElement textBox_CardLastName;
 
     @FindBy(css="address")
@@ -95,11 +93,15 @@ public class PaymentMethods {
     @FindBy(id="txtCardNumber")
     public WebElement textBox_CardNumber;
 
-    @FindBy(css=".mat-select-value > .ng-tns-c13-4")
-    public WebElement dropDown_ExpiryMonth;
-
-    @FindBy(css=".mat-select-value > .ng-tns-c13-6")
-    public WebElement dropDown_ExpiryYear;
+    @FindBy(xpath="//*[@name='expiryMonth']/div[1]/div[1]/span[1]")
+    public WebElement dropdown_NewCC_ExpirationMonth;
+    
+    public String select_NewCC_ExpirationMonth= "//span[text()=' {0} ']";
+    
+    @FindBy(xpath="//*[@name='expiryYear']/div[1]/div[1]/span[1]")
+    public WebElement dropdown_NewCC_ExpirationYear;
+    
+    public String select_NewCC_ExpirationYear = "//span[text()='{0}']" ;
 
     @FindBy(id="txtCardNickName")
     public WebElement textBox_txtCardNickName;
