@@ -7,12 +7,10 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import resources.Testing;
-
 import java.io.IOException;
 
 //import SharedTC.QuoteAndBind;
 public class TC_Elephant {
-
 
     Logger log = Logger.getLogger("Test Suite");
     private final String brandName = "Elephant";

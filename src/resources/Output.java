@@ -8,13 +8,12 @@ public class Output {
 	private JSONObject output;
 
 	// CONSTRUCTOR:
-	Output(Database db, String brandName) {
+	Output(Database db, String brandName, String environment) {
 		try {
-			String json = db.getPolicyDetails(brandName);
+			String json = db.getPolicyDetails(brandName,environment);
 			output = new JSONObject(json);
 			output.put("Password", "Passw0rd");
-			output.put("Email", "jstar@elephant.kom");
-			System.out.println("Output.17: JSON:\n"+output);
+			output.put("ZIP", "75001");
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -40,7 +39,11 @@ public class Output {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 		return value;
 	}
+	
+	// ----------------------------------------------------------
+		String getOutputs() {
+			return output.toString();
+		}
 }// close Class
