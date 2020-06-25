@@ -6,14 +6,17 @@ import org.openqa.selenium.support.FindBy;
 public class DashBoard {
 
     //	LET THE SEQUENCE ALWAYS REMAIN THE SAME AS THEY APPEAR ON THE WEBPAGE.
-
-	public String maximizeVehicleDetail = "//*[contains(@id,'{0}')]";//{0}->2012-AUDI-A8LQUATTRO
+	
+public String maximizeVehicleDetail = "//*[contains(@id,'{0}')]";//{0}->2012-AUDI-A8LQUATTRO
 	
 	@FindBy(id="btnGetIdCards-Dashboard")
     public WebElement btn_GetIdCards;
 
     @FindBy(id="btnMakeAPayment-Dashboard")
     public WebElement btn_MaanagePayment;
+    
+    @FindBy(id="btnMakeAPayment-Dashboard")
+    public WebElement btn_ManagePayment;
 
     @FindBy(id="btnFileACliam-Dashboard")
     public WebElement btn_FileACliam;
