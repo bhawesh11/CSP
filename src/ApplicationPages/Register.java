@@ -27,4 +27,7 @@ public class Register {
 
     @FindBy(xpath="//*[@type='submit']")
     public WebElement btn_Register;
+    
+    @FindBy(xpath="//span[contains(text(),'Log In')]/..")
+    public WebElement btn_Login;
 }
