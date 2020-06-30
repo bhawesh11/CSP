@@ -8,7 +8,7 @@ public class Database {
 		if (con == null) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "P@ssw0rd");
+				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "Passw0rd");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -64,7 +64,7 @@ public class Database {
 				"AND b.BrandName = ?\n" +
 				"AND (a.AppName = 'Policy Center' OR a.appName = 'Quotes')\n" +
 				"AND e.EnvName = ?\n" +
-				"AND NOT t.UseStatus = 'Expired');";
+				"AND NOT t.UseStatus = 'Used');";
 		try {
 			java.sql.PreparedStatement stmt = getConnection().prepareStatement(sql);
 			stmt.setString(1, brandName);

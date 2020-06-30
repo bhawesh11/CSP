@@ -152,8 +152,8 @@ public class STC_Vehicle {
 	{
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, dashBoard.maximizeVehicleDetails,test.getTestData(""));
-        test.webFunctions().click(test, dashBoard.btn_removeVehicle);        
+        test.webFunctions().click(test, dashBoard.maximizeVehicleDetail,test.getTestData(""));
+        test.webFunctions().click(test, dashBoard.btn_RemoveVehicle);        
         test.setPage(Vehicle.class);
         Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, vehicle.btn_DeActivatedtheTags,test.getTestData(""));
