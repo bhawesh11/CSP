@@ -37,6 +37,7 @@ public class TC_Elephant {
     STC_NewPaymentMethod stc_newpaymentmethod= new STC_NewPaymentMethod();
     STC_ReviewPayment stc_ReviewPayment = new STC_ReviewPayment();
     STC_PaymentConfirmation stc_PaymentConfirmation = new STC_PaymentConfirmation();
+    STC_Vehicle stc_Vehicle = new STC_Vehicle();
 
 
 
@@ -68,7 +69,7 @@ public class TC_Elephant {
 
 
 //	TC002
-	@Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+	@Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
 	@Parameters("ENV")
 	public void TC002(String ENV) {
 	
@@ -147,4 +148,22 @@ public class TC_Elephant {
         }
 		
 	}//closing TC005 method
+	
+	//---------------------------------------------------------------------------------------
+//	TC006
+	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+	@Parameters("ENV")
+	public void TC006(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
+		try {
+            stc_Login.login(test);
+            stc_Vehicle.editVehicleCoverages(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC006 method
 }
