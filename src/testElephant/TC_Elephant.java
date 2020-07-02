@@ -36,10 +36,13 @@ public class TC_Elephant {
     STC_MakePayment stc_MakePayment = new STC_MakePayment();
     STC_ReviewPayment stc_ReviewPayment = new STC_ReviewPayment();
     STC_PaymentConfirmation stc_PaymentConfirmation = new STC_PaymentConfirmation();
+
     STC_AddDriver stc_addDriver =  new STC_AddDriver();
     STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
+
+    STC_Vehicle stc_Vehicle = new STC_Vehicle();
 
 
     //	==============================================================================================
@@ -70,13 +73,14 @@ public class TC_Elephant {
 //	==============================================================================================
 
 
-    //	TC002
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
-    @Parameters("ENV")
-    public void TC002(String ENV) {
+//	TC002
+	@Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+	@Parameters("ENV")
+	public void TC002(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "OneTimePayment_NewCreditCard");
+		try {
 
-        Testing test = new Testing(ENV, brandName, "OneTimePayment_NewCreditCard");
-        try {
             stc_Login.login(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.payFromNewCard(test);
@@ -164,12 +168,27 @@ public class TC_Elephant {
             stc_addDriver.addVehicleNo(test);
             stc_addDriver.whoOperatesVehicle(test);
             stc_addDriver.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
+            stc_DashBoard.backToDashboard(test)
+		
+	}//closing TC006 method6
+	
+	//---------------------------------------------------------------------------------------
+//	TC006
+	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+	@Parameters("ENV")
+	public void TC006(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
+		try {
+            stc_Login.login(test);
+            stc_Vehicle.editVehicleCoverages(test);
+
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
+
     }//closing TC006 method
     //	---------------------------------------------------------------------------------------
 
@@ -194,7 +213,7 @@ public class TC_Elephant {
     }//closing TC007 method
     // 	---------------------------------------------------------------------------------------
 
-    //TC004
+    //TC008
     @Test(enabled = false, priority = 5, description = "Edit Coverage")
     @Parameters("ENV")
     public void TC008(String ENV) {
@@ -308,4 +327,7 @@ public class TC_Elephant {
     }//closing TC0012 method
     //	---------------------------------------------------------------------------------------
 }
+		
+	}//closing TC006 method
+
 }
