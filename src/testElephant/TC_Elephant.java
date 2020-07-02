@@ -147,6 +147,7 @@ public class TC_Elephant {
 		
 	}//closing TC005 method
 	
+
 	//---------------------------------------------------------------------------------------
 //	TC006
 	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
@@ -157,6 +158,7 @@ public class TC_Elephant {
 		try {
             stc_Login.login(test);
             stc_Vehicle.editVehicleCoverages(test);
+
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -164,4 +166,6 @@ public class TC_Elephant {
         }
 		
 	}//closing TC006 method
+
+
 }

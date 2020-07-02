@@ -10,15 +10,15 @@ public class Claims {
     @FindBy(xpath="//span[text()='File a Claim']")
     public WebElement btn_FileClaim;
 
-    @FindBy(xpath="(//dt[text()='Claim Number:']/ancestor::div[1]/dd)[1]")
+    @FindBy(xpath="//dt[text()='Claim Number:']/../dd")
     public WebElement text_ClaimNumber;
 
-    @FindBy(xpath="(//dt[text()='Loss Date:']/ancestor::div[1]/dd)[1]")
+    @FindBy(xpath="//dt[text()='Loss Date:']/../dd")
     public WebElement text_LossDate;
 
-    @FindBy(xpath="(//dt[text()='Status:']/ancestor::div[1]/dd)[1]")
+    @FindBy(xpath="//dt[text()='Status:']/../dd")
     public WebElement text_ClaimStatus;
 
-    @FindBy(xpath="(//span[text()=' View Claim Details '])[1]")
+    @FindBy(xpath="//span[text()=' View Claim Details ']")
     public WebElement btn_ViewClaimDetails;
 }
