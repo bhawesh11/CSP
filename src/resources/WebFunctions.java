@@ -155,6 +155,7 @@ public class WebFunctions {
 
         click(test,element);
 
+
     }//Closing METHOD
 
 //	-------------------------------------------------------------------------------
