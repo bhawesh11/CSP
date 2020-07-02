@@ -5,6 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class BindConfirmation {
 	
+	//Test
     @FindBy(id="h1YourPolicybeenUpdated")
     public WebElement text_ConfirmationText;
 
