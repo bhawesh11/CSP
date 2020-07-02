@@ -22,7 +22,10 @@ public class Testing {
 //		1. INITIALIZING ATTRIBUTES:
         db = new Database();
         td = new TestData(db, brandName, scriptName);
+
         output = new Output(db, brandName, environment);
+
+       // output = new Output(db, brandName);
         webFunctions = new WebFunctions();
         address = new URL(brandName);
         this.brandName = brandName;

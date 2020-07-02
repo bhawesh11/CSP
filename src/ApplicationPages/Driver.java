@@ -7,10 +7,9 @@ import org.openqa.selenium.support.How;
 
 public class Driver {
 
-    @FindBy(how= How.ID,using="btnAddDrivers")
-    public WebElement btn_AddDriver;
+    //NEXT PAGE : Tell us about the driver
 
-    //NEXT PAGE2 : Tell us about the driver
+    public String btn_LikeToAddNewDriver="//label[contains(@for,'isAddDriver-{0}')]";
 
     @FindBy(how= How.ID,using="firstName")
     public WebElement textbox_FirstName;
@@ -21,14 +20,22 @@ public class Driver {
     @FindBy(how= How.XPATH,using="//input[contains(@id,'dob')]")
     public WebElement textbox_DOB;
 
-    @FindBy(how= How.ID,using="//span[contains(text(),'Male')]")
+    @FindBy(how= How.XPATH,using="//label[contains(@for,'gender-M')]")
     public WebElement btn_SelectMale;
 
-    @FindBy(how= How.ID,using="//span[contains(text(),'Female')]")
+    @FindBy(how= How.XPATH,using="//label[contains(@for,'gender-F')]")
     public WebElement btn_SelectFemale;
 
-    @FindBy(how= How.XPATH,using="//div")
-    public WebElement btn_relationship;
+    public String btn_relationship="//div[contains(@class,'form-row')]/child::div/label/span[contains(text(),'{0}')]";
+
+    @FindBy(how= How.XPATH,using="//span[text()='Primary vehicle']")
+    public WebElement dropdown_PrimaryVehicle;
+
+    @FindBy(how= How.XPATH,using="(//mat-option[@tabindex='0'])[1]")
+    public WebElement dropdown_FirstVehicle;
+
+    @FindBy(how= How.XPATH,using="(//mat-option[@tabindex='0'])[2]")
+    public WebElement dropdown_SecondVehicle;
 
     @FindBy(how= How.ID,using="driverLicenseNumber")
     public WebElement textbox_DriverLicenseNumber;
@@ -36,24 +43,33 @@ public class Driver {
     @FindBy(how= How.ID,using="lbl-driverLicenseState")
     public WebElement dropdown_DriverLicenseState;
 
-    @FindBy(how= How.ID,using="btn-Continue")
+    @FindBy(how= How.XPATH,using="//label[@for='inSchool-true']")
+    public WebElement btn_CurentlyStudentYes;
+
+    @FindBy(how= How.XPATH,using="//label[@for='inSchool-false']")
+    public WebElement btn_CurentlyStudentNo;
+
+    @FindBy(how= How.XPATH,using="//button//span[contains(text(),'Continue')]")
     public WebElement btn_Continue;
 
     @FindBy(how= How.ID,using="btn-cancel")
     public WebElement btn_Cancel;
 
-    //NEXT PAGE3 : Do you want to add Vehicle?
+    //NEXT PAGE : Do you want to add Vehicle?
 
     @FindBy(how= How.XPATH,using="//label[contains(@for,'isAddVehicle-true')]")
-    public WebElement btn_YesAddVehicle;
+    public WebElement btn_AddVehicleYes;
 
     @FindBy(how= How.XPATH,using="//label[contains(@for,'isAddVehicle-false')]")
-    public WebElement btn_NoAddVehicle;
+    public WebElement btn_AddVehicleNo;
 
-    //NEXT PAGE4 : Who operates the vehicle most?
+    //NEXT PAGE : Who operates the vehicle most?
 
     @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[1]")
     public WebElement btn_VehicleOperatorNewDriver;
+
+    @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[4]")
+    public WebElement btn_VehicleOperatorOldDriver;
 
     @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[2]")
     public WebElement btn_VehicleOperatorPolicyHolder;
@@ -61,12 +77,12 @@ public class Driver {
     @FindBy(how= How.ID,using="btnUpdateQuote")
     public WebElement btn_UpdateQuote;
 
-    //NEXT PAGE5 : Policy Review
+    //NEXT PAGE : Policy Review
 
     @FindBy(how= How.ID,using="btnReviewCoverage")
     public WebElement btn_ReviewCoverage;
 
-    //NEXT PAGE6 : Almost Done
+    //NEXT PAGE : Almost Done
 
     @FindBy(how= How.ID,using="btnChangePolicy")
     public WebElement btn_ChangePolicy;
@@ -78,8 +94,5 @@ public class Driver {
     public WebElement btn_CancelAmendment;
 
 
-    public void relationshipToInsured(String str)
-    {
-        btn_relationship.findElement(By.xpath("[contains(@class,'form-row')]/child::div/label/span[contains(text(),'"+str+"')]")).click();
-    }
+
 }
