@@ -151,7 +151,8 @@ public class WebFunctions {
 		int attempt = 0;
 
 		webElement=webElement.replace("{0}", value);
-		WebElement element=test.driver.findElement(By.xpath(webElement));
+		//WebElement element=test.driver.findElement(By.xpath(webElement));
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(webElement)));
 
 		click(test,element);
 
