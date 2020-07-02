@@ -52,6 +52,8 @@
       <root url="jar://$PROJECT_DIR$/lib/jna-3.4.0.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.ideaLibSources/selenium-java-2.38.0-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

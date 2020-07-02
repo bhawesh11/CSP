@@ -33,7 +33,7 @@ public class Database {
 				"AND d.ScriptId = s.ScriptId\n" +
 				"AND d.BrandId = b.BrandId\n" +
 				"AND b.BrandName = ?\n" +
-				"AND a.AppName='CSP'\n" +
+				"AND a.AppName='my Policy'\n" +
 				"AND s.ScriptName= ?";
 		try {
 
