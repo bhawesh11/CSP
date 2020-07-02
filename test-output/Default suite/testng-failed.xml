@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]">
-  <test name="Default testApparent(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="testApparent.TC">
+      <class name="testElephant.TC_Elephant">
         <methods>
-          <include name="TC001"/>
           <include name="openBrowser"/>
-          <include name="goToHomePage"/>
-          <include name="closeBrowser"/>
+          <include name="TC006"/>
         </methods>
-      </class> <!-- testApparent.TC -->
+      </class> <!-- testElephant.TC_Elephant -->
     </classes>
-  </test> <!-- Default testApparent(failed) -->
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

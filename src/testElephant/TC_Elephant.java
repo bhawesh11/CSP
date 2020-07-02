@@ -174,6 +174,7 @@ public class TC_Elephant {
 		
 	}//closing TC006 method6
 	
+
 	//---------------------------------------------------------------------------------------
 //	TC007
 	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
@@ -190,7 +191,6 @@ public class TC_Elephant {
         } finally {
             test.tearDown();
         }
-
 
     }//closing TC007 method
 
@@ -352,6 +352,7 @@ public class TC_Elephant {
     }//closing TC014 method
     //	---------------------------------------------------------------------------------------
 }
+
 
 
 

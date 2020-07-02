@@ -64,7 +64,7 @@ public class Database {
 				"AND b.BrandName = ?\n" +
 				"AND (a.AppName = 'Policy Center' OR a.appName = 'Quotes')\n" +
 				"AND e.EnvName = ?\n" +
-				"AND NOT t.UseStatus = 'Expired');";
+				"AND NOT t.UseStatus = 'Used');";
 		try {
 			java.sql.PreparedStatement stmt = getConnection().prepareStatement(sql);
 			stmt.setString(1, brandName);
