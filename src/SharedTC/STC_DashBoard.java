@@ -4,7 +4,6 @@ import ApplicationPages.DashBoard;
 import org.openqa.selenium.support.PageFactory;
 import resources.Testing;
 
-
 public class STC_DashBoard {
 	
 	public void clickGetIDCards(Testing test){
@@ -55,6 +54,14 @@ public class STC_DashBoard {
         test.webFunctions().click(test, dashBoard.btn_OneTimePayment);
      }
     
+    public void clickNewPaymentMethod(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_PaymentMethods);
+        test.getLogger().info("Selected 'Payment Method' on Dashboard.");
+    }
+    
+    // This method is duplicate so need to be deleted
     public void clickPaymentMethods(Testing test){
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
@@ -108,6 +115,29 @@ public class STC_DashBoard {
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, dashBoard.btn_IDCardForVehicle);
       }
-	
 
- }
+
+    public void addDriverBtn(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,dashBoard.btn_AddDrivers);
+    }
+    public void editCoverage(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,dashBoard.btn_EditCoverage);
+    }
+    public void addReplaceVehicle(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test,dashBoard.btn_AddReplaceVehicle);
+    }
+    public void backToDashboard(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().staticWait(20);
+        test.webFunctions().click(test,dashBoard.btn_BackToDashboard);
+        test.webFunctions().staticWait(20);
+    }
+}
+

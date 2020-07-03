@@ -8,7 +8,7 @@ public class Database {
 		if (con == null) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "P@ssw0rd");
+				con = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/qat", "root", "Passw0rd");
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
@@ -33,7 +33,7 @@ public class Database {
 				"AND d.ScriptId = s.ScriptId\n" +
 				"AND d.BrandId = b.BrandId\n" +
 				"AND b.BrandName = ?\n" +
-				"AND a.AppName='CSP'\n" +
+				"AND a.AppName='my Policy'\n" +
 				"AND s.ScriptName= ?";
 		try {
 
@@ -51,26 +51,29 @@ public class Database {
 
 	// -----------------------------------------------------------------------------------------------
 	//GETS JSON FOR TEST DATA:
-	public String getPolicyDetails(String brandName) {
+	public String getPolicyDetails(String brandName,String environment) {
 
 		String policyDetails = null;
 		String sql = "SELECT Output FROM test\n" +
 				"WHERE TestId = (\n" +
-				"SELECT MAX(TestId) FROM application a, test t, brand b, data d\n" +
+				"SELECT MAX(TestId) FROM application a, test t, brand b, data d, environment e\n" +
 				"WHERE t.BrandId = b.BrandId\n" +
 				"AND a.AppId =d.AppId\n" +
+				"AND e.EnvId = t.EnvId\n" +
 				"AND t.dataId = d.dataId\n" +
 				"AND b.BrandName = ?\n" +
 				"AND (a.AppName = 'Policy Center' OR a.appName = 'Quotes')\n" +
-				"AND NOT t.UseStatus = 'Expired');";
+				"AND e.EnvName = ?\n" +
+				"AND NOT t.UseStatus = 'Used');";
 		try {
 			java.sql.PreparedStatement stmt = getConnection().prepareStatement(sql);
 			stmt.setString(1, brandName);
+			stmt.setString(2, environment);
 			ResultSet rs = stmt.executeQuery();
 			if(rs.next())
 				policyDetails = rs.getString(1);
 		} catch (Exception e) {
-			System.out.println(e);
+			e.printStackTrace();
 		}
 		return policyDetails;
 	}

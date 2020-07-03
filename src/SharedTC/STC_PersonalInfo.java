@@ -19,16 +19,22 @@ public class STC_PersonalInfo {
         PersonalInfo editMailing = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editMailing.btn_MailingAddress);
         test.webFunctions().type(test, editMailing.textbox_Apt, "121 Lane");
-        test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");
-        test.webFunctions().dropdown(test, editMailing.textbox_State, "VA");
-        test.webFunctions().type(test, editMailing.textbox_PostalCode, "20130");
-        test.webFunctions().click(test, "editMailing.btn_ParkVehicleAtAddress", "Yes");
-        test.webFunctions().click(test, "editMailing.btn_VehicleAtMailAdd", "Yes");
-        test.webFunctions().dropdown(test, editMailing.dropdown_YearMovedToResidence, "2015");
-        test.webFunctions().dropdown(test, editMailing.dropdown_MonthMovedToResidence, "January");
-        test.webFunctions().dropdown(test, editMailing.dropdown_ResidencyStatus, "Own Home");
+        test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");        
+        test.webFunctions().type(test, editMailing.textbox_PostalCode, "75001");
+        //test.webFunctions().dropdown(test, editMailing.dropdown__State, "VA");
+        test.webFunctions().click(test,editMailing.dropdown__State);
+        test.webFunctions().click(test,editMailing.stateselect,"TX");
+        test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "true");
+        test.webFunctions().click(test, editMailing.btn_VehicleAtMailAdd, "true");
+        test.webFunctions().click(test,editMailing.dropdown_YearMovedToResidence);
+        test.webFunctions().click(test,editMailing.yearselect,"2019");
+        test.webFunctions().click(test,editMailing.dropdown_MonthMovedToResidence);
+        test.webFunctions().click(test,editMailing.monthselect,"April");
+        test.webFunctions().click(test, editMailing.dropdown_ResidencyStatus);
+        test.webFunctions().click(test, editMailing.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editMailing.btn_ContinueMailAdd);
     }
+
 
     public void editGaragingAddress(Testing test){
         test.setPage(PersonalInfo.class);
@@ -36,13 +42,17 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.btn_GaragingAddress);
         test.webFunctions().type(test, editGaraging.textbox_Apt, "121 Lane");
         test.webFunctions().type(test, editGaraging.textbox_City, "Faridabad");
-        test.webFunctions().dropdown(test, editGaraging.textbox_State, "VA");
-        test.webFunctions().type(test, editGaraging.textbox_PostalCode, "20130");
-        test.webFunctions().click(test, "editGaraging.btn_IsThisMailingAddress", "Yes");
-        test.webFunctions().click(test, "editGaraging.btn_VehicleAtGaragAdd", "Yes");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_YearMovedToResidence, "2015");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_MonthMovedToResidence, "January");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_ResidencyStatus, "Own Home");
+        test.webFunctions().click(test,editGaraging.dropdown__State);
+        test.webFunctions().click(test,editGaraging.stateselect,"TX");
+        test.webFunctions().type(test, editGaraging.textbox_PostalCode, "75001");
+        test.webFunctions().click(test, editGaraging.btn_IsThisMailingAddress, "true");
+        test.webFunctions().click(test, editGaraging.btn_VehicleAtGaragAdd, "true");        
+        test.webFunctions().click(test,editGaraging.dropdown_YearMovedToResidence);
+        test.webFunctions().click(test,editGaraging.yearselect,"2019");
+        test.webFunctions().click(test,editGaraging.dropdown_MonthMovedToResidence);
+        test.webFunctions().click(test,editGaraging.monthselect,"April");
+        test.webFunctions().click(test, editGaraging.dropdown_ResidencyStatus);
+        test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
     }
     

@@ -13,7 +13,9 @@ public class BrowserFactory {
 	// CONSTRUCTOR
 	BrowserFactory(String browser, String url) {
 
-		Path chromeDriverPath = Paths.get("E:\\ADMIRAL\\Automation\\BrowserDrivers\\chromedriver.exe");
+
+		Path chromeDriverPath = Paths.get("C:\\WorkSpace\\Drivers\\Browser\\chromedriver_win32\\chromedriver.exe");
+
 
 
 		System.setProperty("webdriver.chrome.driver",chromeDriverPath.toString());
