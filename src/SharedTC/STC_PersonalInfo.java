@@ -62,6 +62,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editHomePhone.btn_HomePhone);
         test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, "8145682575");
         test.webFunctions().click(test, editHomePhone.btn_SaveHomePhone);
+        test.webFunctions().staticWait(30000);
     }
     
     public void editWorkPhoneNumber(Testing test){
