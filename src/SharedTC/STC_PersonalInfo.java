@@ -60,25 +60,27 @@ public class STC_PersonalInfo {
         test.setPage(PersonalInfo.class);
         PersonalInfo editHomePhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editHomePhone.btn_HomePhone);
-        test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, "8145682575");
+        test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, test.getTestData("Personal.HomePhone"));
         test.webFunctions().click(test, editHomePhone.btn_SaveHomePhone);
-        test.webFunctions().staticWait(30000);
+        test.webFunctions().staticWait(15000);
     }
     
     public void editWorkPhoneNumber(Testing test){
         test.setPage(PersonalInfo.class);
         PersonalInfo editWorkPhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editWorkPhone.btn_WorkPhone);
-        test.webFunctions().type(test, editWorkPhone.textbox_NewWorkPhone, "8001001254");
+        test.webFunctions().type(test, editWorkPhone.textbox_NewWorkPhone, test.getTestData("Personal.WorkPhone"));
         test.webFunctions().click(test, editWorkPhone.btn_SaveWorkPhone);
+        test.webFunctions().staticWait(15000);
     }
     
     public void editCellPhoneNumber(Testing test){
         test.setPage(PersonalInfo.class);
         PersonalInfo editCellPhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editCellPhone.btn_CellPhone);
-        test.webFunctions().type(test, editCellPhone.textbox_NewCellPhone, "8101458545");
+        test.webFunctions().type(test, editCellPhone.textbox_NewCellPhone, test.getTestData("Personal.CellPhone"));
         test.webFunctions().click(test, editCellPhone.btn_SaveCellPhone);
+        test.webFunctions().staticWait(15000);
     }
     
     public void textMessageAlert(Testing test){
