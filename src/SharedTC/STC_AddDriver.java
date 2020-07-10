@@ -44,6 +44,40 @@ public class STC_AddDriver {
 
     }
 
+    public void aboutDriverwithvehicle(Testing test)
+    {
+        test.setPage(Driver.class);
+        Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
+
+        //NEXT PAGE : Tell us about the driver
+
+        test.webFunctions().type(test, addingdriver.textbox_FirstName, test.getTestData("AnotherNames.FirstName"));
+        test.webFunctions().type(test, addingdriver.textbox_LastName, test.getTestData("AnotherNames.LastName"));
+        test.webFunctions().type(test, addingdriver.textbox_DOB, test.getTestData("AboutDriver.DOB"));
+        test.webFunctions().click(test, addingdriver.btn_SelectMale);
+        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.Relationship"));
+        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.MaritalStatus"));
+        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.ValidLicense"));
+        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.AgeFirstLicensed"));
+        try
+        {
+            if(addingdriver.dropdown_PrimaryVehicle.isDisplayed()== true)
+            {
+
+                test.webFunctions().click(test, addingdriver.dropdown_PrimaryVehicle);
+                test.webFunctions().click(test, addingdriver.dropdown_FirstVehicle);
+            }
+        }
+        catch(Exception e)
+        {
+
+        }
+        test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AboutDriver.LicenseNumber"));
+        //test.webFunctions().dropdown(test, addingdriver.dropdown_DriverLicenseState, test.getTestData("AboutDriver.LicenseState"));
+        test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
+        test.webFunctions().click(test, addingdriver.btn_Continue);
+    }
+
     public void addVehicleNo(Testing test) {
         test.setPage(Driver.class);
         Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
@@ -104,8 +138,8 @@ public class STC_AddDriver {
         //NEXT PAGE5 : Policy Coverage
         test.setPage(CoverageSelections.class);
         CoverageSelections editcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("EditCoverage.BodilyInjury"));
-        test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("EditCoverage.PropertyDamage") );
+        //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("EditCoverage.BodilyInjury"));
+        //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
 
 

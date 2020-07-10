@@ -53,6 +53,7 @@ public class STC_Vehicle {
         catch(Exception e) {
         }
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
+        test.webFunctions().staticWait(40);
     }
 
     public void addDriverToVehicle(Testing test)
@@ -63,6 +64,7 @@ public class STC_Vehicle {
         //NEXT PAGE : Tell us about the driver
 
         System.out.println(test.getTestData("AddVehicle.AddDriverToVehicle.AddDriverButton"));
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.AddDriverToVehicle.AddDriverButton"));
 
         test.webFunctions().click(test,addingdriver.btn_Continue);
@@ -223,7 +225,7 @@ public class STC_Vehicle {
         //NEXT PAGE5 : Policy Coverage
         test.setPage(CoverageSelections.class);
         CoverageSelections editcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("AddVehicle.EditCoverage.BodilyInjury"));
+        //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("AddVehicle.EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("AddVehicle.EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
 

@@ -40,6 +40,7 @@ public class TC_Elephant {
     STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
+    STC_NewPaymentMethod stc_newpaymentmethod=new STC_NewPaymentMethod();
 
     STC_Vehicle stc_Vehicle = new STC_Vehicle();
 
@@ -75,7 +76,7 @@ public class TC_Elephant {
 
 
     //	TC002
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -145,7 +146,7 @@ public class TC_Elephant {
 
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_CreditCard");
         try {
-			
+
             stc_Login.login(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddCreditCard(test);
@@ -170,190 +171,173 @@ public class TC_Elephant {
             stc_addDriver.addVehicleNo(test);
             stc_addDriver.whoOperatesVehicle(test);
             stc_addDriver.editCoverage(test);
-            stc_DashBoard.backToDashboard(test)
+            stc_DashBoard.backToDashboard(test);
+
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
 		
 	}//closing TC006 method6
-	
 
 	//---------------------------------------------------------------------------------------
-//	TC007
-	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
-	@Parameters("ENV")
-	public void TC007(String ENV) {
-	
-		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
-		try {
-            stc_Login.login(test);
-            stc_Vehicle.editVehicleCoverages(test);
 
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
+        //TC007
+        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
+        @Parameters("ENV")
+        public void TC007(String ENV) {
 
-    }//closing TC007 method
+            Testing test = new Testing(ENV, brandName, "AddDriver");
+            try {
+                stc_Login.login(test);
+                stc_DashBoard.addDriverBtn(test);
+                stc_addDriver.aboutDriverwithvehicle(test);
+                stc_addDriver.addVehicleYes(test);
+                stc_addDriver.editCoverage(test);
+                stc_DashBoard.backToDashboard(test);
+            } catch (Throwable e) {
+                throw (e);
+            } finally {
+                test.tearDown();
+            }
+        }//closing TC007 method
+        // 	---------------------------------------------------------------------------------------
 
-    //TC008
-    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
-    @Parameters("ENV")
-    public void TC006(String ENV) {
+        //TC008
+        @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
+        @Parameters("ENV")
+        public void TC008(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "AddDriver");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.addDriverBtn(test);
-            stc_addDriver.aboutDriver(test);
-            stc_addDriver.addVehicleNo(test);
-            stc_addDriver.whoOperatesVehicle(test);
-            stc_addDriver.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
+            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            try {
+                stc_Login.login(test);
+                stc_DashBoard.addReplaceVehicle(test);
+                stc_vehicle.aboutVehicle(test);
+                stc_vehicle.moreAboutVehicle(test);
+                stc_vehicle.addDriverToVehicle(test);
+                stc_vehicle.whoOperatesVehicle(test);
+                stc_vehicle.editCoverage(test);
+                stc_DashBoard.backToDashboard(test);
+            } catch (Throwable e) {
+                throw (e);
+            } finally {
+                test.tearDown();
+            }
+        }//closing TC008 method
+        //	---------------------------------------------------------------------------------------
 
-    }//closing TC008 method
-    //	---------------------------------------------------------------------------------------
+        //TC009
+        @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
+        @Parameters("ENV")
+        public void TC009(String ENV) {
 
-    //TC009
-    @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
-    @Parameters("ENV")
-    public void TC009(String ENV) {
+            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            try {
+                stc_DashBoard.addReplaceVehicle(test);
+                stc_vehicle.addVehicle_Vin(test);
+                stc_vehicle.editCoverage(test);
+                stc_DashBoard.backToDashboard(test);
+            } catch (Throwable e) {
+                throw (e);
+            } finally {
+                test.tearDown();
+            }
+        }//closing TC009 method
+        //	---------------------------------------------------------------------------------------
 
-        Testing test = new Testing(ENV, brandName, "AddDriver");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.addDriverBtn(test);
-            stc_addDriver.aboutDriver(test);
-            stc_addDriver.addVehicleYes(test);
-            stc_addDriver.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-    }//closing TC009 method
-    // 	---------------------------------------------------------------------------------------
+        //TC010
+        @Test(enabled = true, priority = 5, description = "Replace Vehicle")
+        @Parameters("ENV")
+        public void TC010(String ENV) {
 
-    //TC010
-    @Test(enabled = false, priority = 5, description = "Edit Coverage")
-    @Parameters("ENV")
-    public void TC010(String ENV) {
+            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            try {
+                stc_DashBoard.addReplaceVehicle(test);
+                stc_vehicle.replaceVehicle(test);
+                stc_vehicle.moreAboutVehicle(test);
+                stc_vehicle.addDriverToVehicleNo(test);
+                stc_vehicle.whoOperatesVehicle(test);
+                stc_vehicle.editCoverage(test);
+                stc_DashBoard.backToDashboard(test);
+            } catch (Throwable e) {
+                throw (e);
+            } finally {
+                test.tearDown();
+            }
+        }//closing TC010 method
+        //	---------------------------------------------------------------------------------------
 
-        Testing test = new Testing(ENV, brandName, "EditCoverage");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.editCoverage(test);
-            stc_editCoverage.selectBICoverage(test);
-            stc_editCoverage.selectPDCoverage(test);
-            stc_editCoverage.selectUMBICoverage(test);
-            stc_editCoverage.selectUMPDCoverage(test);
-            stc_editCoverage.selectPIPCoverage(test);
-            stc_editCoverage.selectCollisionCoverage(test);
-            stc_editCoverage.selectComprehensiveCoverage(test);
-            stc_editCoverage.selectRentalCoverage(test);
-            stc_editCoverage.selectNoDamage(test);
-            stc_editCoverage.selectCollisionCoverage2(test);
-            stc_editCoverage.selectComprehensiveCoverage2(test);
-            stc_editCoverage.selectRentalCoverage2(test);
-            stc_editCoverage.selectNoDamage2(test);
-            stc_editCoverage.updatequote(test);
-            stc_DashBoard.backToDashboard(test);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-    }//closing TC010 method
-    //	---------------------------------------------------------------------------------------
+        //TC011
+        @Test(enabled = true, priority = 5, description = "Remove Vehicle")
+        @Parameters("ENV")
+        public void TC011(String ENV) {
 
-    //TC011
-    @Test(enabled = false, priority = 5, description = "AddVehicle without VIN")
-    @Parameters("ENV")
-    public void TC011(String ENV) {
+            Testing test = new Testing(ENV, brandName, "RemoveVehicle");
+            try{
+                stc_removeVehicle.removevehicle(test);
+                stc_DashBoard.backToDashboard(test);
+            } catch (Throwable e) {
+                throw (e);
+            } finally {
+                test.tearDown();
+            }
+        }//closing TC011 method
+        //	---------------------------------------------------------------------------------------
 
-        Testing test = new Testing(ENV, brandName, "AddVehicle");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.addReplaceVehicle(test);
-            stc_vehicle.aboutVehicle(test);
-            stc_vehicle.moreAboutVehicle(test);
-            stc_vehicle.addDriverToVehicle(test);
-            stc_vehicle.whoOperatesVehicle(test);
-            stc_vehicle.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-    }//closing TC011 method
-    //	---------------------------------------------------------------------------------------
-
-    //TC012
-    @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
+    //	TC012
+    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "AddVehicle");
+        Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
         try {
             stc_Login.login(test);
-            stc_DashBoard.addReplaceVehicle(test);
-            stc_vehicle.addVehicle_Vin(test);
-            stc_vehicle.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonlInfo.editHomePhoneNumber(test);
+
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
     }//closing TC012 method
-    //	---------------------------------------------------------------------------------------
-    //TC013
-    @Test(enabled = false, priority = 5, description = "Replace Vehicle")
+
+    //	TC013
+    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "AddVehicle");
+        Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
         try {
             stc_Login.login(test);
-            stc_DashBoard.addReplaceVehicle(test);
-            stc_vehicle.replaceVehicle(test);
-            stc_vehicle.moreAboutVehicle(test);
-            stc_vehicle.addDriverToVehicleNo(test);
-            stc_vehicle.whoOperatesVehicle(test);
-            stc_vehicle.editCoverage(test);
-            stc_DashBoard.backToDashboard(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonlInfo.editWorkPhoneNumber(test);
+
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
     }//closing TC013 method
-    //	---------------------------------------------------------------------------------------
-    //TC014
-    @Test(enabled = false, priority = 5, description = "Remove Vehicle")
+
+    //	TC014
+    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "RemoveVehicle");
+        Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
         try {
             stc_Login.login(test);
-            stc_removeVehicle.removevehicle(test);
-            stc_DashBoard.backToDashboard(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonlInfo.editCellPhoneNumber(test);
+
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
     }//closing TC014 method
-    //	---------------------------------------------------------------------------------------
-}
+    }
 
 
-
-
-}
