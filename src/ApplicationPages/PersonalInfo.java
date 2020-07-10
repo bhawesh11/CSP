@@ -38,33 +38,36 @@ public class PersonalInfo {
 	@FindBy(id="txtCity")
 	public WebElement textbox_City;
 	
-	@FindBy(id="state")
-	public WebElement textbox_State;
+	@FindBy(xpath ="//mat-select[contains(@id,'state')]")
+	public WebElement dropdown__State;
+	
+	public String stateselect = "//mat-option//span[contains(text(),'{0}')]";
 	
 	@FindBy(id="txtPostalCode")
 	public WebElement textbox_PostalCode;
 	
-	@FindBy(xpath="//*[@id='mailingIsBoth-true']/ancestor::div/label")
-	public WebElement btn_ParkVehicleAtAddressYes;
+	public String btn_ParkVehicleAtAddress = "//*[@id='mailingIsBoth-{0}']/ancestor::div/label";
+	//{0} -> true or false
 	
-	@FindBy(xpath="//*[@id='mailingIsBoth-false']/ancestor::div/label")
-	public WebElement btn_ParkVehicleAtAddressNo;
+	public String btn_VehicleAtMailAdd = "//*[@id='mailingIsGaragedLocation-{0}']/ancestor::div/label";
+	//{0} -> true or false	
+		
 	
-	@FindBy(xpath="//*[@id='mailingIsGaragedLocation-true']/ancestor::div/label")
-	public WebElement btn_VehicleAtMailAddYes;
-	
-	@FindBy(xpath="//*[@id='mailingIsGaragedLocation-false']/ancestor::div/label")
-	public WebElement btn_VehicleAtMailAddNo;
-	
-	@FindBy(id="yearSelected")
+	@FindBy(xpath = "//mat-select[contains(@id,'yearSelected')]")
 	public WebElement dropdown_YearMovedToResidence;
 	
-	@FindBy(id="monthSelected")
+	public String yearselect = "//mat-option//span[contains(text(),'{0}')]";
+	
+	@FindBy(xpath="//mat-select[contains(@id,'monthSelected')]")
 	public WebElement dropdown_MonthMovedToResidence;
 	
-	@FindBy(id="dropdownResidencyStatus")
+	public String monthselect = "//mat-option//span[contains(text(),'{0}')]";
+	
+	@FindBy(xpath="//mat-select[contains(@id,'dropdownResidencyStatus')]")
 	public WebElement dropdown_ResidencyStatus;
 	
+	public String ResidencyStatusSelect = "//mat-option//span[contains(text(),'{0}')]"
+;	
 	@FindBy(id="btnContinueMailAddress")
 	public WebElement btn_ContinueMailAdd;
 	
@@ -74,18 +77,10 @@ public class PersonalInfo {
 	@FindBy(xpath="//*[@name='garagingForm']//button")
 	public WebElement btn_GaragingAddress;
 	
-	@FindBy(xpath="//*[@id='garagingIsBoth-true']/ancestor::div/label")
-	public WebElement btn_IsThisMailingAddressYes;
-	
-	@FindBy(xpath="//*[@id='garagingIsBoth-false']/ancestor::div/label")
-	public WebElement btn_IsThisMailingAddressNo;
-	
-	@FindBy(xpath="//*[@id='garagingIsGaragedLocation-true']/ancestor::div/label")
-	public WebElement btn_VehicleAtGaragAddYes;
-	
-	@FindBy(xpath="//*[@id='garagingIsGaragedLocation-false']/ancestor::div/label")
-	public WebElement btn_VehicleAtGaragAddNo;
-	
+	public String btn_IsThisMailingAddress = "//input[@id='garagingIsBoth-true']/../label";
+		
+	public String btn_VehicleAtGaragAdd = "//input[@id='garagingIsGaragedLocation-{0}']/../label";
+		
 	@FindBy(id="btnContinueGaragingAddress")
 	public WebElement btn_ContinueGaragAddress;
 	

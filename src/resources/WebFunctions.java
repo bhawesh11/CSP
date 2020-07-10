@@ -111,7 +111,7 @@ public class WebFunctions {
 				attempt++;
 				wait.until(ExpectedConditions.visibilityOf(element));
 				element.click();
-				try{Thread.sleep(2000);}catch(Exception e){}; //D previous 2000
+				try{Thread.sleep(5000);}catch(Exception e){}; //D previous 2000
 				Utility.stop(test);
 				done=true;
 			}// Closing TRY
@@ -283,7 +283,7 @@ public class WebFunctions {
 				wait.until(ExpectedConditions.elementToBeClickable(element));
 				Select dropdown= new Select(element);
 				dropdown.selectByVisibleText(value);
-				try{Thread.sleep(3000);}catch(Exception e){};
+				try{Thread.sleep(5000);}catch(Exception e){};
 				Utility.stop(test);
 				done=true;
 			}// Closing TRY
