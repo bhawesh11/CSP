@@ -52,7 +52,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -77,7 +77,7 @@ public class TC_Elephant {
 
 
     //	TC002
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -100,7 +100,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC003
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
+    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
     @Parameters("ENV")
     public void TC003(String ENV) {
 
@@ -122,7 +122,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC004
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - ACH")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - ACH")
     @Parameters("ENV")
     public void TC004(String ENV) {
 
@@ -141,7 +141,7 @@ public class TC_Elephant {
 
     //---------------------------------------------------------------------------------------
 //	TC005
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - Credit Card")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - Credit Card")
     @Parameters("ENV")
     public void TC005(String ENV) {
 
@@ -160,11 +160,11 @@ public class TC_Elephant {
     }//closing TC005 method
 
     //TC006
-    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
+    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
     public void TC006(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "AddDriver");
+        Testing test = new Testing(ENV, brandName, "AddDriver_NoVehicle");
         try {
             stc_Login.login(test);
             stc_DashBoard.addDriverBtn(test);
@@ -183,11 +183,11 @@ public class TC_Elephant {
 	//---------------------------------------------------------------------------------------
 
         //TC007
-        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
+        @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
         @Parameters("ENV")
         public void TC007(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddDriver");
+            Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
                 stc_Login.login(test);
                 stc_DashBoard.addDriverBtn(test);
@@ -208,7 +208,7 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC008(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
                 stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
@@ -231,7 +231,7 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC009(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
@@ -250,7 +250,7 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC010(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
@@ -293,7 +293,7 @@ public class TC_Elephant {
         try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonlInfo.editHomePhoneNumber(test);
+            stc_PersonalInfo.editHomePhoneNumber(test);
 
         } catch (Throwable e) {
             throw (e);
@@ -405,7 +405,7 @@ public class TC_Elephant {
 	
 	
 	//TC018
-	@Test(enabled = false, priority = 5, description = "Verify Claims")
+	@Test(enabled = true, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {
@@ -424,6 +424,23 @@ public class TC_Elephant {
         }
 		
 	}//closing TC0018 method   
+	
+	//	TC019
+	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+	@Parameters("ENV")
+	public void TC019(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
+		try {
+            stc_Login.login(test);
+            stc_Vehicle.editVehicleCoverages(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC019 method
     
     
     
