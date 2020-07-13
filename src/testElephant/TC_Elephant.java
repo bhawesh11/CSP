@@ -40,9 +40,10 @@ public class TC_Elephant {
     STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
-    STC_PersonalInfo stc_PersonlInfo = new STC_PersonalInfo();
+    STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
     STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
+    STC_Claims stc_Claims = new STC_Claims();
 
 
     //	==============================================================================================
@@ -310,7 +311,7 @@ public class TC_Elephant {
         try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);;
-            stc_PersonlInfo.editWorkPhoneNumber(test);
+            stc_PersonalInfo.editWorkPhoneNumber(test);
 
         } catch (Throwable e) {
             throw (e);
@@ -328,7 +329,7 @@ public class TC_Elephant {
         try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);;
-            stc_PersonlInfo.editCellPhoneNumber(test);
+            stc_PersonalInfo.editCellPhoneNumber(test);
 
         } catch (Throwable e) {
             throw (e);
@@ -339,59 +340,93 @@ public class TC_Elephant {
   
 //	---------------------------------------------------------------------------------------
 
-//	TC015
-    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
-    @Parameters("ENV")
-    public void TC015(String ENV) {
-        
-    	Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
-        try {
+//	TC0015
+	@Test(enabled = false, priority = 5, description = "Edit Email Address")
+	@Parameters("ENV")
+	
+	public void TC015(String ENV) {
+		
+		Testing test = new Testing(ENV, brandName, "EditEmail");
+		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonlInfo.editHomePhoneNumber(test);
-            
+            stc_PersonalInfo.editEmail(test);            
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-    }//closing TC015 method
-
+		
+	}//closing TC015 method
+    //	---------------------------------------------------------------------------------------
+	
+	
 //	TC016
-    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
-    @Parameters("ENV")
-    public void TC016(String ENV) {        
-    	 	
-        Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
-        try {
+	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+	@Parameters("ENV")
+	
+	public void TC016(String ENV) {
+		
+		Testing test = new Testing(ENV, brandName, "EditMailingAddress");
+		try {
             stc_Login.login(test);
-            stc_DashBoard.clickPersonalInfo(test);;
-            stc_PersonlInfo.editWorkPhoneNumber(test);
-            
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonalInfo.editMailingAddress(test);;            
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-    }//closing TC016 method
-
+		
+	}//closing TC016 method
+    //	---------------------------------------------------------------------------------------
+	
+	
 //	TC017
-    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
-    @Parameters("ENV")
-    public void TC017(String ENV) {       
-    	    	
-        Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
-        try {
+	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
+	@Parameters("ENV")
+	
+	public void TC017(String ENV) {
+		
+		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
+		try {
             stc_Login.login(test);
-            stc_DashBoard.clickPersonalInfo(test);;
-            stc_PersonlInfo.editCellPhoneNumber(test);
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonalInfo.editGaragingAddress(test);            
             
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-    }//closing TC017 method
+		
+	}//closing TC017 method
+    //	---------------------------------------------------------------------------------------
+	
+	
+	//TC018
+	@Test(enabled = false, priority = 5, description = "Verify Claims")
+	@Parameters("ENV")
+	
+	public void TC018(String ENV) {
+		
+		Testing test = new Testing(ENV, brandName, "VerifyClaims");
+		try {
+            stc_Login.claimAccountLogin(test);
+            stc_DashBoard.clickClaims(test);
+            stc_Claims.verifyClaims(test);;
+                        
+            
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC0018 method   
+    
+    
+    
 }
 
 
