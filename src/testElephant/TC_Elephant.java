@@ -40,9 +40,9 @@ public class TC_Elephant {
     STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
-    STC_NewPaymentMethod stc_newpaymentmethod=new STC_NewPaymentMethod();
-
+    STC_PersonalInfo stc_PersonlInfo = new STC_PersonalInfo();
     STC_Vehicle stc_Vehicle = new STC_Vehicle();
+    STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
 
 
     //	==============================================================================================
@@ -172,15 +172,13 @@ public class TC_Elephant {
             stc_addDriver.whoOperatesVehicle(test);
             stc_addDriver.editCoverage(test);
             stc_DashBoard.backToDashboard(test);
-
-        } catch (Throwable e) {
+        }catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-		
 	}//closing TC006 method6
-
+	
 	//---------------------------------------------------------------------------------------
 
         //TC007
@@ -338,6 +336,66 @@ public class TC_Elephant {
             test.tearDown();
         }
     }//closing TC014 method
-    }
+  
+//	---------------------------------------------------------------------------------------
+
+//	TC015
+    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Parameters("ENV")
+    public void TC015(String ENV) {
+        
+    	Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonlInfo.editHomePhoneNumber(test);
+            
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC015 method
+
+//	TC016
+    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Parameters("ENV")
+    public void TC016(String ENV) {        
+    	 	
+        Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonlInfo.editWorkPhoneNumber(test);
+            
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC016 method
+
+//	TC017
+    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Parameters("ENV")
+    public void TC017(String ENV) {       
+    	    	
+        Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonlInfo.editCellPhoneNumber(test);
+            
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC017 method
+}
+
+
+
+
 
 
