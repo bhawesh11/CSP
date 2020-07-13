@@ -19,16 +19,22 @@ public class STC_PersonalInfo {
         PersonalInfo editMailing = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editMailing.btn_MailingAddress);
         test.webFunctions().type(test, editMailing.textbox_Apt, "121 Lane");
-        test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");
-        test.webFunctions().dropdown(test, editMailing.textbox_State, "VA");
-        test.webFunctions().type(test, editMailing.textbox_PostalCode, "20130");
-        test.webFunctions().click(test, "editMailing.btn_ParkVehicleAtAddress", "Yes");
-        test.webFunctions().click(test, "editMailing.btn_VehicleAtMailAdd", "Yes");
-        test.webFunctions().dropdown(test, editMailing.dropdown_YearMovedToResidence, "2015");
-        test.webFunctions().dropdown(test, editMailing.dropdown_MonthMovedToResidence, "January");
-        test.webFunctions().dropdown(test, editMailing.dropdown_ResidencyStatus, "Own Home");
+        test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");        
+        test.webFunctions().type(test, editMailing.textbox_PostalCode, "75001");
+        //test.webFunctions().dropdown(test, editMailing.dropdown__State, "VA");
+        test.webFunctions().click(test,editMailing.dropdown__State);
+        test.webFunctions().click(test,editMailing.stateselect,"TX");
+        test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "true");
+        test.webFunctions().click(test, editMailing.btn_VehicleAtMailAdd, "true");
+        test.webFunctions().click(test,editMailing.dropdown_YearMovedToResidence);
+        test.webFunctions().click(test,editMailing.yearselect,"2019");
+        test.webFunctions().click(test,editMailing.dropdown_MonthMovedToResidence);
+        test.webFunctions().click(test,editMailing.monthselect,"April");
+        test.webFunctions().click(test, editMailing.dropdown_ResidencyStatus);
+        test.webFunctions().click(test, editMailing.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editMailing.btn_ContinueMailAdd);
     }
+
 
     public void editGaragingAddress(Testing test){
         test.setPage(PersonalInfo.class);
@@ -36,13 +42,17 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.btn_GaragingAddress);
         test.webFunctions().type(test, editGaraging.textbox_Apt, "121 Lane");
         test.webFunctions().type(test, editGaraging.textbox_City, "Faridabad");
-        test.webFunctions().dropdown(test, editGaraging.textbox_State, "VA");
-        test.webFunctions().type(test, editGaraging.textbox_PostalCode, "20130");
-        test.webFunctions().click(test, "editGaraging.btn_IsThisMailingAddress", "Yes");
-        test.webFunctions().click(test, "editGaraging.btn_VehicleAtGaragAdd", "Yes");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_YearMovedToResidence, "2015");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_MonthMovedToResidence, "January");
-        test.webFunctions().dropdown(test, editGaraging.dropdown_ResidencyStatus, "Own Home");
+        test.webFunctions().click(test,editGaraging.dropdown__State);
+        test.webFunctions().click(test,editGaraging.stateselect,"TX");
+        test.webFunctions().type(test, editGaraging.textbox_PostalCode, "75001");
+        test.webFunctions().click(test, editGaraging.btn_IsThisMailingAddress, "true");
+        test.webFunctions().click(test, editGaraging.btn_VehicleAtGaragAdd, "true");        
+        test.webFunctions().click(test,editGaraging.dropdown_YearMovedToResidence);
+        test.webFunctions().click(test,editGaraging.yearselect,"2019");
+        test.webFunctions().click(test,editGaraging.dropdown_MonthMovedToResidence);
+        test.webFunctions().click(test,editGaraging.monthselect,"April");
+        test.webFunctions().click(test, editGaraging.dropdown_ResidencyStatus);
+        test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
     }
     
@@ -50,24 +60,27 @@ public class STC_PersonalInfo {
         test.setPage(PersonalInfo.class);
         PersonalInfo editHomePhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editHomePhone.btn_HomePhone);
-        test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, "8145682575");
+        test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, test.getTestData("Personal.HomePhone"));
         test.webFunctions().click(test, editHomePhone.btn_SaveHomePhone);
+        test.webFunctions().staticWait(15000);
     }
     
     public void editWorkPhoneNumber(Testing test){
         test.setPage(PersonalInfo.class);
         PersonalInfo editWorkPhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editWorkPhone.btn_WorkPhone);
-        test.webFunctions().type(test, editWorkPhone.textbox_NewWorkPhone, "8001001254");
+        test.webFunctions().type(test, editWorkPhone.textbox_NewWorkPhone, test.getTestData("Personal.WorkPhone"));
         test.webFunctions().click(test, editWorkPhone.btn_SaveWorkPhone);
+        test.webFunctions().staticWait(15000);
     }
     
     public void editCellPhoneNumber(Testing test){
         test.setPage(PersonalInfo.class);
         PersonalInfo editCellPhone = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editCellPhone.btn_CellPhone);
-        test.webFunctions().type(test, editCellPhone.textbox_NewCellPhone, "8101458545");
+        test.webFunctions().type(test, editCellPhone.textbox_NewCellPhone, test.getTestData("Personal.CellPhone"));
         test.webFunctions().click(test, editCellPhone.btn_SaveCellPhone);
+        test.webFunctions().staticWait(15000);
     }
     
     public void textMessageAlert(Testing test){
