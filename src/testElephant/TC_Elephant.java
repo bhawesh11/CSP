@@ -13,7 +13,7 @@ import java.io.IOException;
 //import SharedTC.QuoteAndBind;
 public class TC_Elephant {
 
-
+// Test changes
     Logger log = Logger.getLogger("Test Suite");
     private final String brandName = "Elephant";
 //    SoftAssert softAssert = new SoftAssert();
