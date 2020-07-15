@@ -40,7 +40,7 @@ public class TC_Elephant {
     STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
-    STC_PersonalInfo stc_PersonlInfo = new STC_PersonalInfo();
+    STC_PersonalInfo stc_PersonlInfo=new STC_PersonalInfo();
     STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
 
@@ -163,7 +163,7 @@ public class TC_Elephant {
     @Parameters("ENV")
     public void TC006(String ENV) {
 
-        Testing test = new Testing(ENV, brandName, "AddDriver");
+        Testing test = new Testing(ENV, brandName, "AddDriver_NoVehicle");
         try {
             stc_Login.login(test);
             stc_DashBoard.addDriverBtn(test);
@@ -182,11 +182,11 @@ public class TC_Elephant {
 	//---------------------------------------------------------------------------------------
 
         //TC007
-        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
+        @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
         @Parameters("ENV")
         public void TC007(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddDriver");
+            Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
                 stc_Login.login(test);
                 stc_DashBoard.addDriverBtn(test);
@@ -207,7 +207,7 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC008(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
                 stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
@@ -216,6 +216,7 @@ public class TC_Elephant {
                 stc_vehicle.addDriverToVehicle(test);
                 stc_vehicle.whoOperatesVehicle(test);
                 stc_vehicle.editCoverage(test);
+                stc_vehicle.VinforVehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -230,11 +231,13 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC009(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
+                stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
-                stc_vehicle.editCoverage(test);
+                stc_vehicle.whoOperatesVehiclewithVin(test);
+                stc_addDriver.editCoverage(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -249,14 +252,15 @@ public class TC_Elephant {
         @Parameters("ENV")
         public void TC010(String ENV) {
 
-            Testing test = new Testing(ENV, brandName, "AddVehicle");
+            Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
+                stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicleNo(test);
-                stc_vehicle.whoOperatesVehicle(test);
-                stc_vehicle.editCoverage(test);
+                stc_vehicle.whoOperatesVehicleForRemoveVehicle(test);
+                stc_addDriver.editCoverage(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -273,6 +277,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
+                stc_Login.login(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
@@ -284,7 +289,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
     //	TC012
-    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
@@ -302,7 +307,7 @@ public class TC_Elephant {
     }//closing TC012 method
 
     //	TC013
-    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
@@ -320,7 +325,7 @@ public class TC_Elephant {
     }//closing TC013 method
 
     //	TC014
-    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
@@ -340,7 +345,7 @@ public class TC_Elephant {
 //	---------------------------------------------------------------------------------------
 
 //	TC015
-    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC015(String ENV) {
         
@@ -358,7 +363,7 @@ public class TC_Elephant {
     }//closing TC015 method
 
 //	TC016
-    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC016(String ENV) {        
     	 	
@@ -376,7 +381,7 @@ public class TC_Elephant {
     }//closing TC016 method
 
 //	TC017
-    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC017(String ENV) {       
     	    	

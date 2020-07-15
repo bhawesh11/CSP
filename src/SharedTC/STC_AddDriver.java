@@ -20,10 +20,10 @@ public class STC_AddDriver {
         test.webFunctions().type(test, addingdriver.textbox_LastName, test.getTestData("AboutDriver.LastName"));
         test.webFunctions().type(test, addingdriver.textbox_DOB, test.getTestData("AboutDriver.DOB"));
         test.webFunctions().click(test, addingdriver.btn_SelectMale);
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.Relationship"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.MaritalStatus"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.ValidLicense"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.AgeFirstLicensed"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.Relationship"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.MaritalStatus"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.ValidLicense"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.AgeFirstLicensed"));
         try
         {
             if(addingdriver.dropdown_PrimaryVehicle.isDisplayed()== true)
@@ -38,9 +38,11 @@ public class STC_AddDriver {
 
         }
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AboutDriver.LicenseNumber"));
-        //test.webFunctions().dropdown(test, addingdriver.dropdown_DriverLicenseState, test.getTestData("AboutDriver.LicenseState"));
+        test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
+        test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AboutDriver.LicenseState"));
         test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
         test.webFunctions().click(test, addingdriver.btn_Continue);
+        test.getLogger().info("Driver details have been submitted");
 
     }
 
@@ -54,11 +56,12 @@ public class STC_AddDriver {
         test.webFunctions().type(test, addingdriver.textbox_FirstName, test.getTestData("AnotherNames.FirstName"));
         test.webFunctions().type(test, addingdriver.textbox_LastName, test.getTestData("AnotherNames.LastName"));
         test.webFunctions().type(test, addingdriver.textbox_DOB, test.getTestData("AboutDriver.DOB"));
+        test.webFunctions().staticWait(20);
         test.webFunctions().click(test, addingdriver.btn_SelectMale);
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.Relationship"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.MaritalStatus"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.ValidLicense"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AboutDriver.AgeFirstLicensed"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.Relationship"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.MaritalStatus"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.ValidLicense"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AboutDriver.AgeFirstLicensed"));
         try
         {
             if(addingdriver.dropdown_PrimaryVehicle.isDisplayed()== true)
@@ -72,10 +75,12 @@ public class STC_AddDriver {
         {
 
         }
-        test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AboutDriver.LicenseNumber"));
-        //test.webFunctions().dropdown(test, addingdriver.dropdown_DriverLicenseState, test.getTestData("AboutDriver.LicenseState"));
+        test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AnotherNames.LicenseNo"));
+        test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
+        test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AboutDriver.LicenseState"));
         test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
         test.webFunctions().click(test, addingdriver.btn_Continue);
+        test.getLogger().info("Driver details have been submitted");
     }
 
     public void addVehicleNo(Testing test) {
@@ -85,6 +90,7 @@ public class STC_AddDriver {
         //NEXT PAGE : Do you want to add Vehicle?- NO
 
         test.webFunctions().click(test, addingdriver.btn_AddVehicleNo);
+        test.getLogger().info("Don't want to add Vehicle with this Driver");
         test.webFunctions().click(test, addingdriver.btn_Continue);
     }
     public void addVehicleYes(Testing test){
@@ -99,6 +105,11 @@ public class STC_AddDriver {
         test.webFunctions().type(test, vehicle.txt_VinNo,test.getTestData("WannaAddVehicle.VinNo"));
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle,test.getTestData("WannaAddVehicle.ReplacingYourVehicle"),test.getTestData("WannaAddVehicle.ReplacingYourVehicle2"));
         test.webFunctions().click(test, vehicle.btn_Next);
+        try{
+            if(vehicle.btn_RidesharingNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_RidesharingNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData("WannaAddVehicle.PrimarlyUse"));
         test.webFunctions().click(test, vehicle.dropdown_AnnualMileage);
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("WannaAddVehicle.AnnualMileage"));
@@ -109,6 +120,12 @@ public class STC_AddDriver {
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("WannaAddVehicle.Month"));
         test.webFunctions().click(test, vehicle.btn_ExistingDamage,test.getTestData("WannaAddVehicle.ExistingDamage"));
         test.webFunctions().click(test, vehicle.btn_MakePaymentsonThisVehilce,test.getTestData("WannaAddVehicle.MakePayment"));
+        try{
+            if(vehicle.btn_CustomEquipmentNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_CustomEquipmentNo);
+            }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);
@@ -116,7 +133,7 @@ public class STC_AddDriver {
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
-
+        test.getLogger().info("Vehicle has been added with the driver");
     }
 
     public void whoOperatesVehicle(Testing test) {
@@ -128,7 +145,17 @@ public class STC_AddDriver {
         test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test,addingdriver.btn_Continue);
+        try
+        {
+            if(addingdriver.btn_Continue.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,addingdriver.btn_Continue);
+            }
+        }
+        catch(Exception e) {
+        }
+        test.getLogger().info("Vehicle has been assigned to the driver");
+
     }
 
     public void editCoverage(Testing test) {
@@ -141,6 +168,7 @@ public class STC_AddDriver {
         //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
 
 
         //NEXT PAGE6 : Policy Review
@@ -148,6 +176,7 @@ public class STC_AddDriver {
 
         //NEXT PAGE7 : Almost Done
         test.webFunctions().click(test, addingdriver.btn_ChangePolicy);
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.getLogger().info("Driver has been Added Successfully");
 
     }
