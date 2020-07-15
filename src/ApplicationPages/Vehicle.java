@@ -45,12 +45,11 @@ public class Vehicle {
     @FindBy(how= How.ID,using="btnNext")
     public WebElement btn_Next;
 
-//NEXT PAGE2 : Tell us more about your
-    
-    public String btn_Ridesharing = "//*[@id='isRideSharing-{0}']/../label/span[(text()='{1}')]"; //{0}-true/false ,{1}->Yes/No
+    //NEXT PAGE : Tell us more about your Vehicle
 
-    @FindBy(how= How.XPATH,using="//*[@id=\"lbl-rideSharingHours\"]/div/div/span")
-    public WebElement dropdown_HowManyHoursperWeek_Ridesharing;
+
+    @FindBy(how= How.XPATH,using="//label[contains(@for,'isRideSharing-false')]")
+    public WebElement btn_RidesharingNo;
 
     public String btn_PrimarilyUseAndYear = "//label//span[contains(text(),'{0}')]"; //{0}->business/pleasure/commuting   or //{0}-> 2020/2019/2018/Prior to 2018
 
@@ -82,7 +81,8 @@ public String btn_PickupOrDeliveryService = "//*[@id='providePickupOrDelivery-{0
 
     public String btn_CrashAvoidance= "//*[@id='crashAvoidance-{0}']/../label";
 
-    public String btn_CustomEquipments = "//*[@id='isCustomEquipment-{0}']/../label";
+    @FindBy(how= How.XPATH,using="//label[contains(@for,'isCustomEquipment-false')]")
+    public WebElement btn_CustomEquipmentNo;
 
     public String btn_ExistingDamage="//*[@id='isExistingDamage-{0}']/../label";
 
@@ -116,12 +116,17 @@ public String btn_PickupOrDeliveryService = "//*[@id='providePickupOrDelivery-{0
     @FindBy(how= How.XPATH,using="//span[text()='Continue']")
     public WebElement btn_Continue_WhenRemovingVehicle;
   
-    //Page3 : Would you like to add a new driver?
+    //Page : Would you like to add a new driver?
 
     public String btn_LikeToAddNewDriver="//label[contains(@for,'isAddDriver-{0}')]";
 
     @FindBy(how= How.XPATH,using="//*[@id=\"btn-Continue\"]/span")
     public WebElement btn_Continue;
+
+    //Page: Who Operates the Vehicle?
+
+    public String btn_selectdriver="//div[contains(text(),'{0}')]/following-sibling::div//label/span[contains(text(),'{1}')]";
+
 
     @FindBy(how= How.ID,using="btnUpdateQuote")
     public WebElement btn_UpdateQuote;
@@ -141,6 +146,14 @@ public String btn_PickupOrDeliveryService = "//*[@id='providePickupOrDelivery-{0
 
     @FindBy(how= How.ID,using="btnCancelAmendment")
     public WebElement btn_CancelAmendment;
+
+    //NEXT PAGE : Enter VIN For Vehicle
+
+    @FindBy(how= How.XPATH,using="//input[contains(@placeholder,'VIN')]")
+    public WebElement textbox_VIN;
+
+    @FindBy(how= How.XPATH,using="//button[contains(@type,'submit')]")
+    public WebElement btn_saveVIN;
 
 
 
