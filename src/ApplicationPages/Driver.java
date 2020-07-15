@@ -26,7 +26,7 @@ public class Driver {
     @FindBy(how= How.XPATH,using="//label[contains(@for,'gender-F')]")
     public WebElement btn_SelectFemale;
 
-    public String btn_relationship="//div[contains(@class,'form-row')]/child::div/label/span[contains(text(),'{0}')]";
+    public String btn_selectvalues="//div[contains(@class,'form-row')]/child::div/label/span[contains(text(),'{0}')]";
 
     @FindBy(how= How.XPATH,using="//span[text()='Primary vehicle']")
     public WebElement dropdown_PrimaryVehicle;
@@ -42,6 +42,9 @@ public class Driver {
 
     @FindBy(how= How.ID,using="lbl-driverLicenseState")
     public WebElement dropdown_DriverLicenseState;
+
+    public String dropdown_SelectState="//mat-option//span[contains(text(),'{0}')]";
+
 
     @FindBy(how= How.XPATH,using="//label[@for='inSchool-true']")
     public WebElement btn_CurentlyStudentYes;
@@ -68,8 +71,9 @@ public class Driver {
     @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[1]")
     public WebElement btn_VehicleOperatorNewDriver;
 
-    @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[4]")
+    @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[1]")
     public WebElement btn_VehicleOperatorOldDriver;
+
 
     @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[2]")
     public WebElement btn_VehicleOperatorPolicyHolder;
@@ -92,6 +96,11 @@ public class Driver {
 
     @FindBy(how= How.ID,using="btnCancelAmendment")
     public WebElement btn_CancelAmendment;
+
+    @FindBy(how= How.XPATH,using="//button//span[contains(text(),'Ok')]")
+    public WebElement btn_ok;
+
+
 
 
 

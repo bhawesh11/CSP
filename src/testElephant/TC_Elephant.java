@@ -217,6 +217,7 @@ public class TC_Elephant {
                 stc_vehicle.addDriverToVehicle(test);
                 stc_vehicle.whoOperatesVehicle(test);
                 stc_vehicle.editCoverage(test);
+                stc_vehicle.VinforVehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -233,9 +234,11 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
+                stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
-                stc_vehicle.editCoverage(test);
+                stc_vehicle.whoOperatesVehiclewithVin(test);
+                stc_addDriver.editCoverage(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -252,12 +255,13 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
+                stc_Login.login(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicleNo(test);
-                stc_vehicle.whoOperatesVehicle(test);
-                stc_vehicle.editCoverage(test);
+                stc_vehicle.whoOperatesVehicleForRemoveVehicle(test);
+                stc_addDriver.editCoverage(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
                 throw (e);
@@ -274,6 +278,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
+                stc_Login.login(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
@@ -285,7 +290,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
     //	TC012
-    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
@@ -303,7 +308,7 @@ public class TC_Elephant {
     }//closing TC012 method
 
     //	TC013
-    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
@@ -321,7 +326,7 @@ public class TC_Elephant {
     }//closing TC013 method
 
     //	TC014
-    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
@@ -339,7 +344,6 @@ public class TC_Elephant {
     }//closing TC014 method
   
 //	---------------------------------------------------------------------------------------
-
 //	TC0015
 	@Test(enabled = false, priority = 5, description = "Edit Email Address")
 	@Parameters("ENV")
@@ -347,7 +351,7 @@ public class TC_Elephant {
 	public void TC015(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditEmail");
-		try {
+
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editEmail(test);            
@@ -359,9 +363,7 @@ public class TC_Elephant {
 		
 	}//closing TC015 method
     //	---------------------------------------------------------------------------------------
-	
-	
-//	TC016
+// TC016
 	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
@@ -381,8 +383,6 @@ public class TC_Elephant {
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	
-//	TC017
 	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
 	@Parameters("ENV")
 	
@@ -390,6 +390,7 @@ public class TC_Elephant {
 		
 		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
 		try {
+
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editGaragingAddress(test);            
