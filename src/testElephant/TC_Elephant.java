@@ -52,7 +52,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -77,7 +77,7 @@ public class TC_Elephant {
 
 
     //	TC002
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -100,7 +100,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC003
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
+    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
     @Parameters("ENV")
     public void TC003(String ENV) {
 
@@ -122,7 +122,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC004
-    @Test(enabled = true, priority = 5, description = "Add new payment Method - ACH")
+    @Test(enabled = false, priority = 5, description = "Add new payment Method - ACH")
     @Parameters("ENV")
     public void TC004(String ENV) {
 
@@ -141,7 +141,7 @@ public class TC_Elephant {
 
     //---------------------------------------------------------------------------------------
 //	TC005
-    @Test(enabled = true, priority = 5, description = "Add new payment Method - Credit Card")
+    @Test(enabled = false, priority = 5, description = "Add new payment Method - Credit Card")
     @Parameters("ENV")
     public void TC005(String ENV) {
 
@@ -160,7 +160,7 @@ public class TC_Elephant {
     }//closing TC005 method
 
     //TC006
-    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
+    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
     public void TC006(String ENV) {
 
@@ -183,7 +183,7 @@ public class TC_Elephant {
 	//---------------------------------------------------------------------------------------
 
         //TC007
-        @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
+        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
         @Parameters("ENV")
         public void TC007(String ENV) {
 
@@ -204,7 +204,7 @@ public class TC_Elephant {
         // 	---------------------------------------------------------------------------------------
 
         //TC008
-        @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
+        @Test(enabled = false, priority = 5, description = "AddVehicle without VIN")
         @Parameters("ENV")
         public void TC008(String ENV) {
 
@@ -228,7 +228,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
         //TC009
-        @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
+        @Test(enabled = false, priority = 5, description = "AddVehicle with VIN")
         @Parameters("ENV")
         public void TC009(String ENV) {
 
@@ -249,7 +249,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
         //TC010
-        @Test(enabled = true, priority = 5, description = "Replace Vehicle")
+        @Test(enabled = false, priority = 5, description = "Replace Vehicle")
         @Parameters("ENV")
         public void TC010(String ENV) {
 
@@ -272,7 +272,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
         //TC011
-        @Test(enabled = true, priority = 5, description = "Remove Vehicle")
+        @Test(enabled = false, priority = 5, description = "Remove Vehicle")
         @Parameters("ENV")
         public void TC011(String ENV) {
 
@@ -290,7 +290,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
     //	TC012
-    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
@@ -308,7 +308,7 @@ public class TC_Elephant {
     }//closing TC012 method
 
     //	TC013
-    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
@@ -326,7 +326,7 @@ public class TC_Elephant {
     }//closing TC013 method
 
     //	TC014
-    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
@@ -345,7 +345,7 @@ public class TC_Elephant {
   
 //	---------------------------------------------------------------------------------------
 //	TC0015
-	@Test(enabled = true, priority = 6, description = "Edit Email Address")
+	@Test(enabled = false, priority = 6, description = "Edit Email Address")
 	@Parameters("ENV")
 	
 	public void TC015(String ENV) {
@@ -364,7 +364,7 @@ public class TC_Elephant {
 	}//closing TC015 method
     //	---------------------------------------------------------------------------------------
 // TC016
-	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -383,7 +383,7 @@ public class TC_Elephant {
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	@Test(enabled = true, priority = 5, description = "Edit Garaging Address")
+	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
 	@Parameters("ENV")
 	
 	public void TC017(String ENV) {
@@ -406,7 +406,7 @@ public class TC_Elephant {
 	
 	
 	//TC018
-	@Test(enabled = true, priority = 5, description = "Verify Claims")
+	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {
@@ -427,7 +427,7 @@ public class TC_Elephant {
 	}//closing TC0018 method   
 	
 	//	TC019
-	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+	@Test(enabled = false, priority = 5, description = "Edit Vehicle Coverages")
 	@Parameters("ENV")
 	public void TC019(String ENV) {
 	
