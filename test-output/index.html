@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\WorkSpace\CSP\Smoke.xml</span>
+                    <span>D:\Automation proj\CSP\Smoke.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,36 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC008(QA6)">TC008(QA6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC009(QA6)">TC009(QA6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC010(QA6)">TC010(QA6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC011(QA6)">TC011(QA6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,7 +130,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC009(QA6)">TC009(QA6)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC006(QA6)">TC006(QA6)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="testElephant.TC_Elephant" hash-for-method="TC007(QA6)">TC007(QA6)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -116,6 +150,161 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testElephant.TC_Elephant</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC008(QA6)">
+                  </a> <!-- TC008(QA6) -->
+                  <span class="method-name">TC008</span>
+                  <span class="parameters">(QA6)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;2014 HONDA CR-V LX&apos;)]/following-sibling::div//label/span[contains(text(),&apos;Additional Driver&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;YogeshTayal&apos;, ip: &apos;10.140.10.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63272}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir32348_24268003}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 43f58cb7156dff1893257a4f36b9e821
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.click(WebFunctions.java:171)
+	at SharedTC.STC_Vehicle.whoOperatesVehicle(STC_Vehicle.java:121)
+	at testElephant.TC_Elephant.TC008(TC_Elephant.java:218)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(AddVehicle without VIN)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC009(QA6)">
+                  </a> <!-- TC009(QA6) -->
+                  <span class="method-name">TC009</span>
+                  <span class="parameters">(QA6)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;2004 GMC YUKON XL DENALI&apos;)]/following-sibling::div//label/span[contains(text(),&apos;Additional Driver&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;YogeshTayal&apos;, ip: &apos;10.140.10.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63480}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir16780_402026}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c26f36c664fa67a15ef8325d3e826049
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.click(WebFunctions.java:171)
+	at SharedTC.STC_Vehicle.whoOperatesVehiclewithVin(STC_Vehicle.java:136)
+	at testElephant.TC_Elephant.TC009(TC_Elephant.java:240)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(AddVehicle with VIN)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC010(QA6)">
+                  </a> <!-- TC010(QA6) -->
+                  <span class="method-name">TC010</span>
+                  <span class="parameters">(QA6)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;btnReviewCoverage&quot;}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;YogeshTayal&apos;, ip: &apos;10.140.10.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63621}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir35084_1042351292}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ba780b294351aad4e17fbd3ac5ef6cf8
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.toString(ExpectedConditions.java:218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.click(WebFunctions.java:112)
+	at SharedTC.STC_AddDriver.editCoverage(STC_AddDriver.java:218)
+	at testElephant.TC_Elephant.TC010(TC_Elephant.java:264)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Replace Vehicle)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC011(QA6)">
+                  </a> <!-- TC011(QA6) -->
+                  <span class="method-name">TC011</span>
+                  <span class="parameters">(QA6)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div[contains(@id,&apos;2012-VOLKSWAGEN-PASSATSEL&apos;)]
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;YogeshTayal&apos;, ip: &apos;10.140.10.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at resources.WebFunctions.click(WebFunctions.java:155)
+	at SharedTC.STC_RemoveVehicle.removevehicle(STC_RemoveVehicle.java:15)
+	at testElephant.TC_Elephant.TC011(TC_Elephant.java:282)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@id,&apos;2012-VOLKSWAGEN-PASSATSEL&apos;)]&quot;}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.38.0&apos;, revision: &apos;bd32d4e&apos;, time: &apos;2013-12-05 16:16:40&apos;
+System info: host: &apos;YogeshTayal&apos;, ip: &apos;10.140.10.65&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63916}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir19540_1300426544}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 86b9534208711d53788c3b3eb77805fc
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Remove Vehicle)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -124,12 +313,22 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC009(QA6)">
-                  </a> <!-- TC009(QA6) -->
-                  <span class="method-name">TC009</span>
+                  <a name="TC006(QA6)">
+                  </a> <!-- TC006(QA6) -->
+                  <span class="method-name">TC006</span>
                   <span class="parameters">(QA6)</span>
                   <em>
-(Verify Claims)                  </em>
+(Add Driver without vehicle)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC007(QA6)">
+                  </a> <!-- TC007(QA6) -->
+                  <span class="method-name">TC007</span>
+                  <span class="parameters">(QA6)</span>
+                  <em>
+(Add Driver with New Vehicle)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -137,7 +336,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\WorkSpace\CSP\Smoke.xml</span>
+            <span class="header-content">D:\Automation proj\CSP\Smoke.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -150,7 +349,16 @@
   &lt;test name=&quot;testElephant&quot;&gt;
     &lt;parameter name=&quot;ENV&quot; value=&quot;QA6&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testElephant.TC_Elephant&quot;/&gt;
+      &lt;class name=&quot;testElephant.TC_Elephant&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;TC006&quot;/&gt;
+          &lt;include name=&quot;TC007&quot;/&gt;
+          &lt;include name=&quot;TC008&quot;/&gt;
+          &lt;include name=&quot;TC009&quot;/&gt;
+          &lt;include name=&quot;TC010&quot;/&gt;
+          &lt;include name=&quot;TC011&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- testElephant.TC_Elephant --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- testElephant --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -190,16 +398,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC009')
+data.setCell(0, 1, 'TC010')
 data.setCell(0, 2, 'testElephant.TC_Elephant')
-data.setCell(0, 3, 60385);
+data.setCell(0, 3, 363351);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC007')
+data.setCell(1, 2, 'testElephant.TC_Elephant')
+data.setCell(1, 3, 286494);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TC008')
+data.setCell(2, 2, 'testElephant.TC_Elephant')
+data.setCell(2, 3, 250547);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'TC006')
+data.setCell(3, 2, 'testElephant.TC_Elephant')
+data.setCell(3, 3, 225984);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'TC009')
+data.setCell(4, 2, 'testElephant.TC_Elephant')
+data.setCell(4, 3, 148010);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TC011')
+data.setCell(5, 2, 'testElephant.TC_Elephant')
+data.setCell(5, 3, 80858);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 22 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -214,27 +442,37 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">13 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testElephant.TC_Elephant</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC007</span>
+                <span class="ignored-method-name">TC019</span>
+                <br/>
+                <span class="ignored-method-name">TC018</span>
+                <br/>
+                <span class="ignored-method-name">TC012</span>
                 <br/>
                 <span class="ignored-method-name">TC001</span>
                 <br/>
+                <span class="ignored-method-name">TC015</span>
+                <br/>
                 <span class="ignored-method-name">TC004</span>
+                <br/>
+                <span class="ignored-method-name">TC013</span>
                 <br/>
                 <span class="ignored-method-name">TC002</span>
                 <br/>
+                <span class="ignored-method-name">TC016</span>
+                <br/>
                 <span class="ignored-method-name">TC005</span>
                 <br/>
-                <span class="ignored-method-name">TC008</span>
+                <span class="ignored-method-name">TC014</span>
                 <br/>
                 <span class="ignored-method-name">TC003</span>
                 <br/>
-                <span class="ignored-method-name">TC006</span>
+                <span class="ignored-method-name">TC017</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -252,8 +490,36 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="test-method">
+                <span class="method-name">TC006(QA6)</span>
+                <span class="method-start">46 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC007(QA6)</span>
+                <span class="method-start">226035 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC008(QA6)</span>
+                <span class="method-start">512533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC009(QA6)</span>
-                <span class="method-start">107 ms</span>
+                <span class="method-start">763103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC010(QA6)</span>
+                <span class="method-start">911123 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC011(QA6)</span>
+                <span class="method-start">1274478 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

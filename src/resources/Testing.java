@@ -23,7 +23,7 @@ public class Testing {
         db = new Database();
         td = new TestData(db, brandName, scriptName);
 
-        output = new Output(db, brandName, environment);
+        //output = new Output(db, brandName, environment);
 
        // output = new Output(db, brandName);
         webFunctions = new WebFunctions();
@@ -59,7 +59,7 @@ public class Testing {
     public void tearDown() {
         bf.closeBrowser();
 //        db.insertRecordInDatabase(scriptName, "Elephant");
-        logger.info(output.getOutputs());
+//       logger.info(output.getOutputs());
         
     }
 
