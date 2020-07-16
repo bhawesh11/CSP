@@ -290,7 +290,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
     //	TC012
-    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
@@ -308,7 +308,7 @@ public class TC_Elephant {
     }//closing TC012 method
 
     //	TC013
-    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
@@ -326,7 +326,7 @@ public class TC_Elephant {
     }//closing TC013 method
 
     //	TC014
-    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
@@ -345,13 +345,13 @@ public class TC_Elephant {
   
 //	---------------------------------------------------------------------------------------
 //	TC0015
-	@Test(enabled = false, priority = 5, description = "Edit Email Address")
+	@Test(enabled = true, priority = 6, description = "Edit Email Address")
 	@Parameters("ENV")
 	
 	public void TC015(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditEmail");
-
+		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editEmail(test);            
@@ -364,7 +364,7 @@ public class TC_Elephant {
 	}//closing TC015 method
     //	---------------------------------------------------------------------------------------
 // TC016
-	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -383,7 +383,7 @@ public class TC_Elephant {
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
+	@Test(enabled = true, priority = 5, description = "Edit Garaging Address")
 	@Parameters("ENV")
 	
 	public void TC017(String ENV) {
