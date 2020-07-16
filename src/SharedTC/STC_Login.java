@@ -14,11 +14,12 @@ public class STC_Login {
 
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
-        test.webFunctions().type(test, login.textBox_Email, "TestX7DM9UrGAh@elephant.com");
+
+        test.webFunctions().type(test, login.textBox_Email, "Test2fD5HeKMym@elephant.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.getLogger().info("Logged in successfully.");
-      test.webFunctions().staticWait(8000);
+      test.webFunctions().staticWait(10000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
 		else {
@@ -26,20 +27,106 @@ public class STC_Login {
 			 stc_Register.register(test);
 		}
     }
+    public void login1(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+
+        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
+        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+        test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+        test.webFunctions().staticWait(10000);
+        if (test.driver.getTitle().equals("Policy"))
+            test.getLogger().info("Logged in successfully.");
+        else {
+            STC_Register stc_Register = new STC_Register();
+            stc_Register.register(test);
+        }
+    }
+    public void login2(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+
+        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
+        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+        test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+        test.webFunctions().staticWait(10000);
+        if (test.driver.getTitle().equals("Policy"))
+            test.getLogger().info("Logged in successfully.");
+        else {
+            STC_Register stc_Register = new STC_Register();
+            stc_Register.register(test);
+        }
+    }
+    public void login3(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+
+        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
+        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+        test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+        test.webFunctions().staticWait(10000);
+        if (test.driver.getTitle().equals("Policy"))
+            test.getLogger().info("Logged in successfully.");
+        else {
+            STC_Register stc_Register = new STC_Register();
+            stc_Register.register(test);
+        }
+    }
+    public void login4(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+
+        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
+        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+        test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+        test.webFunctions().staticWait(10000);
+        if (test.driver.getTitle().equals("Policy"))
+            test.getLogger().info("Logged in successfully.");
+        else {
+            STC_Register stc_Register = new STC_Register();
+            stc_Register.register(test);
+        }
+    }
+    public void login5(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+
+        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
+        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+        test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+        test.webFunctions().staticWait(10000);
+        if (test.driver.getTitle().equals("Policy"))
+            test.getLogger().info("Logged in successfully.");
+        else {
+            STC_Register stc_Register = new STC_Register();
+            stc_Register.register(test);
+        }
+    }
 
     public void claimAccountLogin(Testing test){
         test.setPage(Login.class);
         Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
-        test.webFunctions().type(test, login.textBox_Email, "ersd@ele.com");
+        test.webFunctions().type(test, login.textBox_Email, "test.auto@elephant.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
-
-        test.webFunctions().type(test, login.textBox_Email,"dryrun31@ele.com");
-        test.webFunctions().type(test, login.textBox_Password,"Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
-        test.getLogger().info("Logged in successfully.");
-      test.webFunctions().staticWait(8000);
+        test.webFunctions().staticWait(8000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
 		else {

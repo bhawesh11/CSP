@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="19" passed="18">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="60431" started-at="2020-06-30T10:38:29Z" finished-at="2020-06-30T10:39:29Z">
+  <suite name="Suite" duration-ms="2260445" started-at="2020-07-16T14:36:46Z" finished-at="2020-07-16T15:14:26Z">
     <groups>
     </groups>
-    <test name="testElephant" duration-ms="60431" started-at="2020-06-30T10:38:29Z" finished-at="2020-06-30T10:39:29Z">
+    <test name="testElephant" duration-ms="2260445" started-at="2020-07-16T14:36:46Z" finished-at="2020-07-16T15:14:26Z">
       <class name="testElephant.TC_Elephant">
-        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testElephant.TC_Elephant@5f341870]" name="openBrowser" is-config="true" duration-ms="89" started-at="2020-06-30T16:08:29Z" finished-at="2020-06-30T16:08:29Z">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:testElephant.TC_Elephant@31ef45e3]" name="openBrowser" is-config="true" duration-ms="41" started-at="2020-07-16T20:06:46Z" finished-at="2020-07-16T20:06:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method status="PASS" signature="TC009(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@5f341870]" name="TC009" duration-ms="60385" started-at="2020-06-30T16:08:29Z" description="Verify Claims" finished-at="2020-06-30T16:09:29Z">
+        <test-method status="PASS" signature="TC001(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC001" duration-ms="68939" started-at="2020-07-16T20:06:46Z" description="$10 Payment - Saved Card" finished-at="2020-07-16T20:07:55Z">
           <params>
             <param index="0">
               <value>
@@ -21,7 +21,239 @@
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- TC001 -->
+        <test-method status="PASS" signature="TC002(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC002" duration-ms="112453" started-at="2020-07-16T20:07:55Z" description="Validate OneTimePayment_New Credit Card" finished-at="2020-07-16T20:09:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC002 -->
+        <test-method status="PASS" signature="TC003(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC003" duration-ms="99038" started-at="2020-07-16T20:09:47Z" description="Validate OneTimePayment_New ACH/Bank Account" finished-at="2020-07-16T20:11:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC003 -->
+        <test-method status="PASS" signature="TC004(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC004" duration-ms="65050" started-at="2020-07-16T20:11:26Z" description="Add new payment Method - ACH" finished-at="2020-07-16T20:12:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC004 -->
+        <test-method status="PASS" signature="TC005(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC005" duration-ms="82893" started-at="2020-07-16T20:12:31Z" description="Add new payment Method - Credit Card" finished-at="2020-07-16T20:13:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC005 -->
+        <test-method status="PASS" signature="TC006(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC006" duration-ms="159660" started-at="2020-07-16T20:13:54Z" description="Add Driver without vehicle" finished-at="2020-07-16T20:16:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC006 -->
+        <test-method status="PASS" signature="TC007(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC007" duration-ms="235675" started-at="2020-07-16T20:16:34Z" description="Add Driver with New Vehicle" finished-at="2020-07-16T20:20:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC007 -->
+        <test-method status="PASS" signature="TC008(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC008" duration-ms="365767" started-at="2020-07-16T20:20:30Z" description="AddVehicle without VIN" finished-at="2020-07-16T20:26:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC008 -->
+        <test-method status="FAIL" signature="TC009(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC009" duration-ms="137719" started-at="2020-07-16T20:26:35Z" description="AddVehicle with VIN" finished-at="2020-07-16T20:28:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at java.lang.String.replace(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:169)
+	at SharedTC.STC_Vehicle.whoOperatesVehiclewithVin(STC_Vehicle.java:136)
+	at testElephant.TC_Elephant.TC009(TC_Elephant.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- TC009 -->
+        <test-method status="PASS" signature="TC010(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC010" duration-ms="209130" started-at="2020-07-16T20:28:53Z" description="Replace Vehicle" finished-at="2020-07-16T20:32:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC010 -->
+        <test-method status="PASS" signature="TC011(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC011" duration-ms="105668" started-at="2020-07-16T20:32:22Z" description="Remove Vehicle" finished-at="2020-07-16T20:34:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC011 -->
+        <test-method status="PASS" signature="TC012(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC012" duration-ms="66917" started-at="2020-07-16T20:34:08Z" description="Edit Home Phone Number" finished-at="2020-07-16T20:35:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC012 -->
+        <test-method status="PASS" signature="TC013(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC013" duration-ms="66983" started-at="2020-07-16T20:35:15Z" description="Edit Work Phone Number" finished-at="2020-07-16T20:36:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC013 -->
+        <test-method status="PASS" signature="TC014(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC014" duration-ms="68907" started-at="2020-07-16T20:36:22Z" description="Edit Cell Phone Number" finished-at="2020-07-16T20:37:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC014 -->
+        <test-method status="PASS" signature="TC016(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC016" duration-ms="109119" started-at="2020-07-16T20:37:31Z" description="Edit Mailing Address" finished-at="2020-07-16T20:39:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC016 -->
+        <test-method status="PASS" signature="TC017(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC017" duration-ms="111901" started-at="2020-07-16T20:39:20Z" description="Edit Garaging Address" finished-at="2020-07-16T20:41:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC017 -->
+        <test-method status="PASS" signature="TC018(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC018" duration-ms="46601" started-at="2020-07-16T20:41:12Z" description="Verify Claims" finished-at="2020-07-16T20:41:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC018 -->
+        <test-method status="PASS" signature="TC019(java.lang.String)[pri:5, instance:testElephant.TC_Elephant@31ef45e3]" name="TC019" duration-ms="92937" started-at="2020-07-16T20:41:58Z" description="Edit Vehicle Coverages" finished-at="2020-07-16T20:43:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC019 -->
+        <test-method status="PASS" signature="TC015(java.lang.String)[pri:6, instance:testElephant.TC_Elephant@31ef45e3]" name="TC015" duration-ms="55020" started-at="2020-07-16T20:43:31Z" description="Edit Email Address" finished-at="2020-07-16T20:44:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[QA6]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC015 -->
       </class> <!-- testElephant.TC_Elephant -->
     </test> <!-- testElephant -->
   </suite> <!-- Suite -->
