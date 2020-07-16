@@ -8988,3 +8988,684 @@ Session ID: a19c1fd31b5eba7276537f43702f4153
 2020-06-30 16:09:13,758 [main] INFO Elephant-VerifyClaims - Logged in successfully.
 2020-06-30 16:09:29,627 [main] INFO Elephant-VerifyClaims - {"ZIP":"75001","Password":"Passw0rd"}
 2020-06-30 16:09:29,643 [main] INFO Test Suite - TC009 is Passed !
+2020-07-15 20:28:48,270 [main] INFO Test Suite - TEST CASE: TC001 | Priority: 5
+2020-07-15 20:29:13,408 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Logged in successfully.
+2020-07-15 20:29:21,440 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Logged in successfully.
+2020-07-15 20:29:40,099 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Clicked Saved Payment Instrument to initiate Payment
+2020-07-15 20:29:45,275 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Clicked to Review Payment.
+2020-07-15 20:29:50,434 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Attempted Payment.
+2020-07-15 20:29:55,603 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Payment Successful.
+2020-07-15 20:29:56,818 [main] INFO Test Suite - TC001 is Passed !
+2020-07-15 20:29:56,820 [main] INFO Test Suite - TEST CASE: TC002 | Priority: 5
+2020-07-15 20:30:21,224 [main] INFO Elephant-OneTimePayment_NewCreditCard - Logged in successfully.
+2020-07-15 20:30:29,250 [main] INFO Elephant-OneTimePayment_NewCreditCard - Logged in successfully.
+2020-07-15 20:30:47,994 [main] INFO Elephant-OneTimePayment_NewCreditCard - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-07-15 20:31:32,179 [main] INFO Elephant-OneTimePayment_NewCreditCard - Made Payment instrument as default .
+2020-07-15 20:31:37,367 [main] INFO Elephant-OneTimePayment_NewCreditCard - Clicked to Review Payment.
+2020-07-15 20:31:42,513 [main] INFO Elephant-OneTimePayment_NewCreditCard - Attempted Payment.
+2020-07-15 20:31:47,677 [main] INFO Elephant-OneTimePayment_NewCreditCard - Payment Successful.
+2020-07-15 20:31:48,856 [main] INFO Test Suite - TC002 is Passed !
+2020-07-15 20:31:48,859 [main] INFO Test Suite - TEST CASE: TC003 | Priority: 5
+2020-07-15 20:32:17,221 [main] INFO Elephant-OneTimePayment_NewACH - Logged in successfully.
+2020-07-15 20:32:25,243 [main] INFO Elephant-OneTimePayment_NewACH - Logged in successfully.
+2020-07-15 20:32:44,028 [main] INFO Elephant-OneTimePayment_NewACH - Clicked New BANK ACCOUNT Payment Instrument to initiate Payment
+2020-07-15 20:33:15,929 [main] INFO Elephant-OneTimePayment_NewACH - Made Payment instrument as default .
+2020-07-15 20:33:21,093 [main] INFO Elephant-OneTimePayment_NewACH - Clicked to Review Payment.
+2020-07-15 20:33:26,240 [main] INFO Elephant-OneTimePayment_NewACH - Attempted Payment.
+2020-07-15 20:33:31,421 [main] INFO Elephant-OneTimePayment_NewACH - Payment Successful.
+2020-07-15 20:33:32,597 [main] INFO Test Suite - TC003 is Passed !
+2020-07-15 20:33:32,600 [main] INFO Test Suite - TEST CASE: TC004 | Priority: 5
+2020-07-15 20:34:01,489 [main] INFO Elephant-AddNewPaymentMethod_ACH - Logged in successfully.
+2020-07-15 20:34:09,522 [main] INFO Elephant-AddNewPaymentMethod_ACH - Logged in successfully.
+2020-07-15 20:34:14,687 [main] INFO Elephant-AddNewPaymentMethod_ACH - Selected 'Payment Method' on Dashboard.
+2020-07-15 20:34:19,880 [main] INFO Elephant-AddNewPaymentMethod_ACH - Selected ACH Account option.....
+2020-07-15 20:34:41,474 [main] INFO Elephant-AddNewPaymentMethod_ACH - ACH Account Added.....
+2020-07-15 20:34:42,682 [main] INFO Test Suite - TC004 is Passed !
+2020-07-15 20:34:42,684 [main] INFO Test Suite - TEST CASE: TC005 | Priority: 5
+2020-07-15 20:35:10,058 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Logged in successfully.
+2020-07-15 20:35:18,092 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Logged in successfully.
+2020-07-15 20:35:23,287 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Selected 'Payment Method' on Dashboard.
+2020-07-15 20:35:28,507 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Selected Credit Card option.....
+2020-07-15 20:36:07,496 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Credit Card Added.....
+2020-07-15 20:36:08,689 [main] INFO Test Suite - TC005 is Passed !
+2020-07-15 20:36:08,692 [main] INFO Test Suite - TEST CASE: TC006 | Priority: 5
+2020-07-15 20:36:36,486 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 20:36:44,515 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 20:37:59,488 [main] INFO Elephant-AddDriver_NoVehicle - Driver details have been submitted
+2020-07-15 20:38:08,991 [main] INFO Elephant-AddDriver_NoVehicle - Don't want to add Vehicle with this Driver
+2020-07-15 20:38:37,685 [main] INFO Elephant-AddDriver_NoVehicle - Vehicle has been assigned to the driver
+2020-07-15 20:38:51,938 [main] ERROR Elephant-AddDriver_NoVehicle - WebDriver Exception
+2020-07-15 20:39:07,287 [main] INFO Elephant-AddDriver_NoVehicle - Driver has been Added Successfully
+2020-07-15 20:39:13,741 [main] INFO Test Suite - TC006 is Passed !
+2020-07-15 20:39:13,744 [main] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2020-07-15 20:39:42,172 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-15 20:39:50,197 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-15 20:41:05,174 [main] INFO Elephant-AddDriver_WithVehicle - Driver details have been submitted
+2020-07-15 20:43:10,136 [main] ERROR Elephant-AddDriver_WithVehicle - NoSuchElement Exception
+2020-07-15 20:43:53,454 [main] ERROR Elephant-AddDriver_WithVehicle - NoSuchElement Exception
+2020-07-15 20:44:36,849 [main] ERROR Elephant-AddDriver_WithVehicle - NoSuchElement Exception
+2020-07-15 20:45:21,674 [main] ERROR Test Suite - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//span[contains(@class,'desc')])[1]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56207}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir19044_1229592118}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: b812b2b40312e354b704d66028f67327
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.toString(ExpectedConditions.java:218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.click(WebFunctions.java:112)
+	at SharedTC.STC_AddDriver.addVehicleYes(STC_AddDriver.java:131)
+	at testElephant.TC_Elephant.TC007(TC_Elephant.java:195)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 20:45:21,676 [main] INFO Test Suite - TEST CASE: TC008 | Priority: 5
+2020-07-15 20:45:45,734 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-15 20:45:53,769 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-15 20:49:21,884 [main] ERROR Test Suite - TC008 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'2014 HONDA CR-V LX')]/following-sibling::div//label/span[contains(text(),'Additional Driver')]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 50 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56484}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir25020_997958556}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 390b76fc470aed24bd8f0a0a3e4ea957
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.click(WebFunctions.java:171)
+	at SharedTC.STC_Vehicle.whoOperatesVehicle(STC_Vehicle.java:121)
+	at testElephant.TC_Elephant.TC008(TC_Elephant.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 20:49:21,886 [main] INFO Test Suite - TEST CASE: TC009 | Priority: 5
+2020-07-15 20:49:45,808 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-15 20:49:53,835 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-15 20:51:39,819 [main] ERROR Elephant-AddVehicle_WithVIN - WebDriver Exception
+2020-07-15 20:51:42,935 [main] ERROR Elephant-AddVehicle_WithVIN - WebDriver Exception
+2020-07-15 20:51:44,985 [main] ERROR Elephant-AddVehicle_WithVIN - Stale Element Exception
+2020-07-15 20:51:47,211 [main] ERROR Test Suite - TC009 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"ext-element-1"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56672}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir28700_551537204}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 873eeec043b213b4f5faec1dd6f89387
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.reInitPageElements(WebFunctions.java:363)
+	at resources.WebFunctions.click(WebFunctions.java:121)
+	at resources.WebFunctions.click(WebFunctions.java:173)
+	at SharedTC.STC_Vehicle.whoOperatesVehiclewithVin(STC_Vehicle.java:136)
+	at testElephant.TC_Elephant.TC009(TC_Elephant.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 20:51:47,212 [main] INFO Test Suite - TEST CASE: TC010 | Priority: 5
+2020-07-15 20:52:10,991 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-15 20:52:19,025 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-15 20:54:54,187 [main] ERROR Elephant-ReplaceVehicle - WebDriver Exception
+2020-07-15 20:55:09,543 [main] INFO Elephant-ReplaceVehicle - Driver has been Added Successfully
+2020-07-15 20:55:15,989 [main] INFO Test Suite - TC010 is Passed !
+2020-07-15 20:55:15,992 [main] INFO Test Suite - TEST CASE: TC011 | Priority: 5
+2020-07-15 20:55:39,765 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-15 20:55:47,796 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-15 20:56:25,814 [main] ERROR Elephant-RemoveVehicle - Stale Element Exception
+2020-07-15 20:56:28,056 [main] ERROR Test Suite - TC011 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"ext-element-1"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57014}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir32732_1554291869}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 79e668d9c692a3314a8babf6516a8512
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.reInitPageElements(WebFunctions.java:363)
+	at resources.WebFunctions.click(WebFunctions.java:121)
+	at SharedTC.STC_RemoveVehicle.removevehicle(STC_RemoveVehicle.java:29)
+	at testElephant.TC_Elephant.TC011(TC_Elephant.java:282)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 20:56:28,057 [main] INFO Test Suite - TEST CASE: TC012 | Priority: 5
+2020-07-15 20:56:52,191 [main] INFO Elephant-EditHomePhoneNumber - Logged in successfully.
+2020-07-15 20:57:00,235 [main] INFO Elephant-EditHomePhoneNumber - Logged in successfully.
+2020-07-15 20:57:35,261 [main] INFO Test Suite - TC012 is Passed !
+2020-07-15 20:57:35,262 [main] INFO Test Suite - TEST CASE: TC013 | Priority: 5
+2020-07-15 20:57:58,739 [main] INFO Elephant-EditWorkPhoneNumber - Logged in successfully.
+2020-07-15 20:58:06,772 [main] INFO Elephant-EditWorkPhoneNumber - Logged in successfully.
+2020-07-15 20:58:41,796 [main] INFO Test Suite - TC013 is Passed !
+2020-07-15 20:58:41,797 [main] INFO Test Suite - TEST CASE: TC014 | Priority: 5
+2020-07-15 20:59:05,549 [main] INFO Elephant-EditCellPhoneNumber - Logged in successfully.
+2020-07-15 20:59:13,593 [main] INFO Elephant-EditCellPhoneNumber - Logged in successfully.
+2020-07-15 20:59:48,601 [main] INFO Test Suite - TC014 is Passed !
+2020-07-15 20:59:48,603 [main] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2020-07-15 21:00:15,616 [main] INFO Elephant-EditMailingAddress - Logged in successfully.
+2020-07-15 21:00:23,657 [main] INFO Elephant-EditMailingAddress - Logged in successfully.
+2020-07-15 21:01:41,800 [main] INFO Test Suite - TC016 is Passed !
+2020-07-15 21:01:41,802 [main] INFO Test Suite - TEST CASE: TC017 | Priority: 5
+2020-07-15 21:02:06,367 [main] INFO Elephant-EditGaragingAddress - Logged in successfully.
+2020-07-15 21:02:14,400 [main] INFO Elephant-EditGaragingAddress - Logged in successfully.
+2020-07-15 21:03:32,336 [main] INFO Test Suite - TC017 is Passed !
+2020-07-15 21:03:32,338 [main] INFO Test Suite - TEST CASE: TC018 | Priority: 5
+2020-07-15 21:03:57,880 [main] ERROR Test Suite - TC018 is Failed ! 
+ EXCEPTION:  --->  java.lang.NullPointerException
+	at resources.Testing.getOutput(Testing.java:69)
+	at SharedTC.STC_Register.register(STC_Register.java:11)
+	at SharedTC.STC_Login.claimAccountLogin(STC_Login.java:45)
+	at testElephant.TC_Elephant.TC018(TC_Elephant.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 21:03:57,882 [main] INFO Test Suite - TEST CASE: TC019 | Priority: 5
+2020-07-15 21:04:22,127 [main] INFO Elephant-EditVehicleCoverages - Logged in successfully.
+2020-07-15 21:04:30,169 [main] INFO Elephant-EditVehicleCoverages - Logged in successfully.
+2020-07-15 21:04:35,367 [main] INFO Elephant-EditVehicleCoverages - Maximized Vehicle View
+2020-07-15 21:04:40,711 [main] INFO Elephant-EditVehicleCoverages - Clicked Edit Vehicle.
+2020-07-15 21:04:41,900 [main] ERROR Elephant-EditVehicleCoverages - WebDriver Exception
+2020-07-15 21:04:45,068 [main] ERROR Elephant-EditVehicleCoverages - WebDriver Exception
+2020-07-15 21:04:48,140 [main] ERROR Elephant-EditVehicleCoverages - WebDriver Exception
+2020-07-15 21:04:52,527 [main] ERROR Test Suite - TC019 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <button mat-icon-button="" tabindex="-1" class="mat-icon-button mat-button-base ng-star-inserted" aria-describedby="cdk-describedby-message-5" cdk-describedby-host="">...</button> is not clickable at point (1116, 310). Other element would receive the click: <span _ngcontent-rjl-c12="" class="ng5-slider-span ng5-slider-pointer ng5-slider-pointer-min" ng5sliderhandle="" role="slider" tabindex="0" aria-orientation="" aria-label="" aria-labelledby="legend-PAComprehensiveCov" aria-valuenow="5" aria-valuetext="$50 Deductible" aria-valuemin="0" aria-valuemax="6" style="opacity: 1; visibility: visible; left: 351px;"></span>
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:57722}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir36184_1884512725}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 8070a4955f22e3f81c4d02e4c08e35fb
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at resources.WebFunctions.click(WebFunctions.java:113)
+	at resources.WebFunctions.click(WebFunctions.java:157)
+	at SharedTC.STC_Vehicle.editVehicleCoverages(STC_Vehicle.java:317)
+	at testElephant.TC_Elephant.TC019(TC_Elephant.java:437)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 21:04:52,529 [main] INFO Test Suite - TEST CASE: TC015 | Priority: 6
+2020-07-15 21:05:17,835 [main] INFO Elephant-EditEmail - Logged in successfully.
+2020-07-15 21:05:25,871 [main] INFO Elephant-EditEmail - Logged in successfully.
+2020-07-15 21:05:49,135 [main] INFO Test Suite - TC015 is Passed !
+2020-07-15 22:21:46,536 [main] INFO Test Suite - TEST CASE: TC018 | Priority: 5
+2020-07-15 22:22:12,495 [main] ERROR Test Suite - TC018 is Failed ! 
+ EXCEPTION:  --->  java.lang.NullPointerException
+	at resources.Testing.getOutput(Testing.java:69)
+	at SharedTC.STC_Register.register(STC_Register.java:11)
+	at SharedTC.STC_Login.claimAccountLogin(STC_Login.java:45)
+	at testElephant.TC_Elephant.TC018(TC_Elephant.java:416)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 22:36:55,638 [main] INFO Test Suite - TEST CASE: TC018 | Priority: 5
+2020-07-15 22:37:28,484 [main] INFO Elephant-VerifyClaims - Logged in successfully.
+2020-07-15 22:37:43,395 [main] INFO Elephant-VerifyClaims - Claims verified successfully.
+2020-07-15 22:37:44,655 [main] INFO Test Suite - TC018 is Passed !
+2020-07-15 22:41:07,816 [main] INFO Test Suite - TEST CASE: TC006 | Priority: 5
+2020-07-15 22:41:34,160 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 22:41:42,196 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 22:42:57,150 [main] INFO Elephant-AddDriver_NoVehicle - Driver details have been submitted
+2020-07-15 22:47:00,463 [main] INFO Test Suite - TEST CASE: TC006 | Priority: 5
+2020-07-15 22:47:24,772 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 22:47:32,813 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-15 22:48:37,436 [main] INFO Elephant-AddDriver_NoVehicle - Driver details have been submitted
+2020-07-15 22:48:44,179 [main] INFO Elephant-AddDriver_NoVehicle - Don't want to add Vehicle with this Driver
+2020-07-15 22:49:07,660 [main] INFO Elephant-AddDriver_NoVehicle - Vehicle has been assigned to the driver
+2020-07-15 22:49:56,167 [main] ERROR Elephant-AddDriver_NoVehicle - NoSuchElement Exception
+2020-07-15 22:50:24,546 [main] ERROR Elephant-AddDriver_NoVehicle - WebDriver Exception
+2020-07-15 22:50:39,916 [main] INFO Elephant-AddDriver_NoVehicle - Driver has been Added Successfully
+2020-07-15 22:50:46,448 [main] INFO Test Suite - TC006 is Passed !
+2020-07-15 22:50:46,449 [main] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2020-07-15 22:51:10,396 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-15 22:51:18,434 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-15 22:52:27,679 [main] INFO Elephant-AddDriver_WithVehicle - Driver details have been submitted
+2020-07-15 22:54:50,883 [main] INFO Elephant-AddDriver_WithVehicle - Vehicle has been added with the driver
+2020-07-15 22:55:11,011 [main] ERROR Elephant-AddDriver_WithVehicle - WebDriver Exception
+2020-07-15 22:55:26,395 [main] INFO Elephant-AddDriver_WithVehicle - Driver has been Added Successfully
+2020-07-15 22:55:32,946 [main] INFO Test Suite - TC007 is Passed !
+2020-07-15 22:55:32,948 [main] INFO Test Suite - TEST CASE: TC008 | Priority: 5
+2020-07-15 22:55:57,289 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-15 22:56:05,326 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-15 22:59:43,515 [main] ERROR Test Suite - TC008 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'2014 HONDA CR-V LX')]/following-sibling::div//label/span[contains(text(),'Additional Driver')]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63272}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir32348_24268003}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 43f58cb7156dff1893257a4f36b9e821
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.click(WebFunctions.java:171)
+	at SharedTC.STC_Vehicle.whoOperatesVehicle(STC_Vehicle.java:121)
+	at testElephant.TC_Elephant.TC008(TC_Elephant.java:218)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 22:59:43,518 [main] INFO Test Suite - TEST CASE: TC009 | Priority: 5
+2020-07-15 23:00:07,552 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-15 23:00:15,590 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-15 23:02:11,534 [main] ERROR Test Suite - TC009 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'2004 GMC YUKON XL DENALI')]/following-sibling::div//label/span[contains(text(),'Additional Driver')]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63480}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir16780_402026}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: c26f36c664fa67a15ef8325d3e826049
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at resources.WebFunctions.click(WebFunctions.java:171)
+	at SharedTC.STC_Vehicle.whoOperatesVehiclewithVin(STC_Vehicle.java:136)
+	at testElephant.TC_Elephant.TC009(TC_Elephant.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 23:02:11,540 [main] INFO Test Suite - TEST CASE: TC010 | Priority: 5
+2020-07-15 23:02:36,309 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-15 23:02:44,340 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-15 23:06:03,767 [main] ERROR Elephant-ReplaceVehicle - NoSuchElement Exception
+2020-07-15 23:06:47,043 [main] ERROR Elephant-ReplaceVehicle - NoSuchElement Exception
+2020-07-15 23:07:30,182 [main] ERROR Elephant-ReplaceVehicle - NoSuchElement Exception
+2020-07-15 23:08:14,890 [main] ERROR Test Suite - TC010 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"btnReviewCoverage"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63621}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir35084_1042351292}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ba780b294351aad4e17fbd3ac5ef6cf8
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.toString(ExpectedConditions.java:218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.click(WebFunctions.java:112)
+	at SharedTC.STC_AddDriver.editCoverage(STC_AddDriver.java:218)
+	at testElephant.TC_Elephant.TC010(TC_Elephant.java:264)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-15 23:08:14,893 [main] INFO Test Suite - TEST CASE: TC011 | Priority: 5
+2020-07-15 23:08:38,923 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-15 23:08:46,962 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-15 23:09:35,756 [main] ERROR Test Suite - TC011 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of element located by By.xpath: //div[contains(@id,'2012-VOLKSWAGEN-PASSATSEL')]
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at resources.WebFunctions.click(WebFunctions.java:155)
+	at SharedTC.STC_RemoveVehicle.removevehicle(STC_RemoveVehicle.java:15)
+	at testElephant.TC_Elephant.TC011(TC_Elephant.java:282)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@id,'2012-VOLKSWAGEN-PASSATSEL')]"}
+  (Session info: chrome=83.0.4103.116)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 38 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:63916}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir19540_1300426544}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=83.0.4103.116, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 86b9534208711d53788c3b3eb77805fc
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+
