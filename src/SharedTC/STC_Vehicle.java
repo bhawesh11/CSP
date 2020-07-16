@@ -38,6 +38,11 @@ public class STC_Vehicle {
         Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
 
         test.webFunctions().staticWait(40);
+        try{
+            if(vehicle.btn_RidesharingNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_RidesharingNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData("AddVehicle.AboutVehicle.PrimarlyUse"));
         test.webFunctions().click(test, vehicle.dropdown_AnnualMileage);
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("AddVehicle.AboutVehicle.AnnualMileage"));
@@ -47,6 +52,12 @@ public class STC_Vehicle {
         test.webFunctions().click(test, vehicle.dropdown_WhatMonth);
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("AddVehicle.AboutVehicle.Month"));
         test.webFunctions().click(test, vehicle.btn_ExistingDamage,test.getTestData("AddVehicle.AboutVehicle.ExistingDamage"));
+        try{
+            if(vehicle.btn_CustomEquipmentNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_CustomEquipmentNo);
+            }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_MakePaymentsonThisVehilce,test.getTestData("AddVehicle.AboutVehicle.MakePayment"));
         test.webFunctions().staticWait(40);
         try
@@ -59,6 +70,7 @@ public class STC_Vehicle {
         catch(Exception e) {
         }
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
+        test.webFunctions().staticWait(80);
     }
 
     public void addDriverToVehicle(Testing test)
@@ -68,22 +80,23 @@ public class STC_Vehicle {
 
         //NEXT PAGE : Tell us about the driver
 
-        System.out.println(test.getTestData("AddVehicle.AddDriverToVehicle.AddDriverButton"));
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.AddDriverToVehicle.AddDriverButton"));
-
         test.webFunctions().click(test,addingdriver.btn_Continue);
+
         test.webFunctions().type(test, addingdriver.textbox_FirstName, test.getTestData("AddVehicle.AddDriverToVehicle.FirstName"));
         test.webFunctions().type(test, addingdriver.textbox_LastName, test.getTestData("AddVehicle.AddDriverToVehicle.LastName"));
         test.webFunctions().type(test, addingdriver.textbox_DOB, test.getTestData("AddVehicle.AddDriverToVehicle.DOB"));
         test.webFunctions().click(test, addingdriver.btn_SelectMale);
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AddVehicle.AddDriverToVehicle.Relationship"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AddVehicle.AddDriverToVehicle.MaritalStatus"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AddVehicle.AddDriverToVehicle.ValidLicense"));
-        test.webFunctions().click(test,addingdriver.btn_relationship,test.getTestData("AddVehicle.AddDriverToVehicle.AgeFirstLicensed"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AddVehicle.AddDriverToVehicle.Relationship"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AddVehicle.AddDriverToVehicle.MaritalStatus"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AddVehicle.AddDriverToVehicle.ValidLicense"));
+        test.webFunctions().click(test,addingdriver.btn_selectvalues,test.getTestData("AddVehicle.AddDriverToVehicle.AgeFirstLicensed"));
         test.webFunctions().click(test, addingdriver.dropdown_PrimaryVehicle);
         test.webFunctions().click(test, addingdriver.dropdown_FirstVehicle);
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AddVehicle.AddDriverToVehicle.LicenseNumber"));
-        //test.webFunctions().dropdown(test, addingdriver.dropdown_DriverLicenseState, test.getTestData("AboutDriver.LicenseState"));
+        test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
+        test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AddVehicle.AddDriverToVehicle.LicenseState"));
         test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
         test.webFunctions().click(test, addingdriver.btn_Continue);
     }
@@ -100,13 +113,43 @@ public class STC_Vehicle {
         test.setPage(Driver.class);
         Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
 
+        test.setPage(Vehicle.class);
+        Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
+
         //NEXT PAGE : Who operates the vehicle most?
-        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);
+        try { Thread.sleep(8000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.webFunctions().click(test,vehicle.btn_selectdriver,test.getTestData("AddVehicle.AboutVehicle.Vehicle"),test.getTestData("AddVehicle.AboutVehicle.DriverName"));
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
     }
+
+    // It will pass only if there is one driver and one vehicle already in the policy
+    public void whoOperatesVehiclewithVin(Testing test){
+        test.setPage(Driver.class);
+        Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
+
+        test.setPage(Vehicle.class);
+        Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
+        try{
+            if(addingdriver.btn_VehicleOperatorNewDriver.isDisplayed()==true){
+                test.webFunctions().click(test,addingdriver.btn_VehicleOperatorNewDriver); }
+        }catch(Exception e) {
+        }
+        try{
+            if(addingdriver.btn_VehicleOperatorOldDriver.isDisplayed()==true){
+                test.webFunctions().click(test,addingdriver.btn_VehicleOperatorOldDriver); }
+        }catch(Exception e) {
+        }
+        try{
+            if(addingdriver.btn_Continue.isDisplayed()==true){
+                test.webFunctions().click(test, addingdriver.btn_Continue);
+                test.webFunctions().click(test, addingdriver.btn_Continue);
+            }
+        }catch(Exception e) {
+        }
+    }
+
     public void addVehicle_Vin(Testing test)
     {
 
@@ -116,7 +159,11 @@ public class STC_Vehicle {
 
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle, test.getTestData("AddVehicle.AboutVehicle.ReplacingYourVehicle1"), test.getTestData("AddVehicle.AboutVehicle.ReplacingYourVehicle2"));
         test.webFunctions().click(test, vehicle.btn_Next);
-        //test.webFunctions().click(test, vehicle.btn_Ridesharing,test.getTestData("Ridesharing"));
+        try{
+            if(vehicle.btn_RidesharingNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_RidesharingNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData("AddVehicle.AboutVehicle.PrimarlyUse"));
         test.webFunctions().click(test, vehicle.dropdown_AnnualMileage);
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("AddVehicle.AboutVehicle.AnnualMileage"));
@@ -126,6 +173,12 @@ public class STC_Vehicle {
         test.webFunctions().click(test, vehicle.dropdown_WhatMonth);
         test.webFunctions().click(test,vehicle.dropdown_MultiselectDropdown,test.getTestData("AddVehicle.AboutVehicle.Month"));
         test.webFunctions().click(test, vehicle.btn_ExistingDamage,test.getTestData("AddVehicle.AboutVehicle.ExistingDamage"));
+        try{
+            if(vehicle.btn_CustomEquipmentNo.isDisplayed()==true){
+                test.webFunctions().click(test,vehicle.btn_CustomEquipmentNo);
+            }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, vehicle.btn_MakePaymentsonThisVehilce,test.getTestData("AddVehicle.AboutVehicle.MakePayment"));
         test.webFunctions().staticWait(40);
         try
@@ -138,7 +191,7 @@ public class STC_Vehicle {
         catch(Exception e){
         }
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
-        test.webFunctions().click(test,vehicle.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.ReplaceVehicle.AddDriverButton"));
+        test.webFunctions().click(test,vehicle.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.ReplaceVehicle.AddDriverNo"));
         test.webFunctions().click(test,vehicle.btn_Continue);
     }
 
@@ -149,7 +202,6 @@ public class STC_Vehicle {
         Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().type(test, vehicle.txt_VinNo,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle,test.getTestData(""));
-        test.webFunctions().click(test, vehicle.btn_Ridesharing,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData(""));
         test.webFunctions().dropdown(test, vehicle.dropdown_AnnualMileage,test.getTestData(""));
         test.webFunctions().dropdown(test, vehicle.dropdown_WhereDoYouPark,test.getTestData(""));
@@ -157,7 +209,6 @@ public class STC_Vehicle {
         test.webFunctions().dropdown(test, vehicle.dropdown_WhatMonth,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_HandsFree,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_CrashAvoidance,test.getTestData(""));
-        test.webFunctions().click(test, vehicle.btn_CustomEquipments,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_ExistingDamage,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_MakePaymentsonThisVehilce,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_IsthisaLeasedVehicle,test.getTestData(""));
@@ -180,15 +231,12 @@ public class STC_Vehicle {
         test.webFunctions().type(test, vehicle.txt_VinNo,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_Next);
-        test.webFunctions().click(test, vehicle.btn_Ridesharing,test.getTestData(""));
-        test.webFunctions().dropdown(test, vehicle.dropdown_HowManyHoursperWeek_Ridesharing,test.getTestData(""));
         test.webFunctions().dropdown(test, vehicle.dropdown_AnnualMileage,test.getTestData(""));
         test.webFunctions().dropdown(test, vehicle.dropdown_WhereDoYouPark,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData(""));
         test.webFunctions().dropdown(test, vehicle.dropdown_WhatMonth,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_HandsFree,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_CrashAvoidance,test.getTestData(""));
-        test.webFunctions().click(test, vehicle.btn_CustomEquipments,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_ExistingDamage,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_MakePaymentsonThisVehilce,test.getTestData(""));
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
@@ -202,8 +250,14 @@ public class STC_Vehicle {
         test.webFunctions().type(test, vehicle.txt_VinNo,test.getTestData("AddVehicle.ReplaceVehicle.VinNo"));
         test.webFunctions().staticWait(30);
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle,test.getTestData("AddVehicle.ReplaceVehicle.ReplacingYourVehicle1"),test.getTestData("AddVehicle.ReplaceVehicle.ReplacingYourVehicle2"));
-        if(vehicle.btn_YourPrimaryVehicle.isDisplayed()){
-            test.webFunctions().click(test,vehicle.btn_YourPrimaryVehicle);}
+        try {
+            if(vehicle.btn_YourPrimaryVehicle.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,vehicle.btn_YourPrimaryVehicle);
+            }
+        }
+        catch(Exception e){
+        }
         test.webFunctions().click(test, vehicle.btn_KeepSameCoverage,test.getTestData("AddVehicle.ReplaceVehicle.KeepCoverage1"),test.getTestData("AddVehicle.ReplaceVehicle.KeepCoverage2"));
         test.webFunctions().click(test, vehicle.btn_DeActivatedtheTags,test.getTestData("AddVehicle.ReplaceVehicle.DeactivateTags1"),test.getTestData("AddVehicle.ReplaceVehicle.DeactivateTags2"));
         test.webFunctions().click(test, vehicle.btn_Next);
@@ -229,16 +283,23 @@ public class STC_Vehicle {
         //NEXT PAGE5 : Policy Coverage
         test.setPage(CoverageSelections.class);
         CoverageSelections editcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("AddVehicle.EditCoverage.BodilyInjury"));
+        //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("AddVehicle.EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("AddVehicle.EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
-
 
         //NEXT PAGE6 : Policy Review
         test.webFunctions().click(test, addingdriver.btn_ReviewCoverage);
 
         //NEXT PAGE7 : Almost Done
         test.webFunctions().click(test, addingdriver.btn_ChangePolicy);
+        try {
+            if(addingdriver.btn_ok.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,addingdriver.btn_ok);
+            }
+        }
+        catch(Exception e){
+        }
         test.getLogger().info("Driver has been Added");
 
     }
@@ -271,6 +332,42 @@ public class STC_Vehicle {
         assertTrue(test.webFunctions().readInfo(test, bindConfirm.text_ConfirmationText).contains("Your policy has been updated."));
         test.getLogger().info("Vehicle coverages changed successfully..");
                
+    }
+
+    public void VinforVehicle(Testing test)
+    {
+        test.setPage(Vehicle.class);
+        Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
+
+        test.setPage(Driver.class);
+        Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
+
+        test.webFunctions().type(test,vehicle.textbox_VIN,test.getTestData("AddVehicle.AboutVehicle.FinalVinNo"));
+        test.webFunctions().click(test,vehicle.btn_saveVIN);
+        try {
+            if(vehicle.btn_Continue.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,vehicle.btn_Continue);
+            }
+        }catch(Exception e){
+        }
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.webFunctions().click(test, vehicle.btn_Next);
+        test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData("AddVehicle.AboutVehicle.Year"));
+        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.webFunctions().click(test, addingdriver.btn_Continue);
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.webFunctions().click(test,addingdriver.btn_Continue);
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.webFunctions().click(test,addingdriver.btn_Continue);
+        test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
+
+        //NEXT PAGE6 : Policy Review
+        test.webFunctions().click(test, addingdriver.btn_ReviewCoverage);
+
+        //NEXT PAGE7 : Almost Done
+        test.webFunctions().click(test, addingdriver.btn_ChangePolicy);
+
     }
 
 

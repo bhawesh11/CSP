@@ -20,7 +20,7 @@ public class TestData {
                 e.printStackTrace();
             }
             if (testData != null) {
-                System.out.println("Fetched test data for script: " + scriptName);
+                System.out.println("Fetched TEST DATA for Script: " + scriptName);
             }
         } else {
             System.out.println("No JSON found.");
