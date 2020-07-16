@@ -71,9 +71,7 @@ public class STC_AddDriver {
                 test.webFunctions().click(test, addingdriver.dropdown_FirstVehicle);
             }
         }
-        catch(Exception e)
-        {
-
+        catch(Exception e) {
         }
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AnotherNames.LicenseNo"));
         test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
@@ -129,7 +127,7 @@ public class STC_AddDriver {
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);
-        test.webFunctions().click(test,addingdriver.btn_VehicleOperatorOldDriver);
+        test.webFunctions().click(test,vehicle.btn_selectdriver,test.getTestData("WannaAddVehicle.Vehicle"),test.getTestData("WannaAddVehicle.DriverName"));
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
@@ -143,6 +141,14 @@ public class STC_AddDriver {
         //NEXT PAGE : Who operates the vehicle most?
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);
+        try {
+            if(addingdriver.btn_VehicleOperatorOldDriver.isDisplayed()== true)
+            {
+                test.webFunctions().click(test, addingdriver.btn_VehicleOperatorOldDriver);
+            }
+        }
+        catch(Exception e) {
+        }
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         try
@@ -165,6 +171,7 @@ public class STC_AddDriver {
         //NEXT PAGE5 : Policy Coverage
         test.setPage(CoverageSelections.class);
         CoverageSelections editcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage());
+        try { Thread.sleep(2000); } catch (InterruptedException e) { e.printStackTrace(); }
         //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
