@@ -89,6 +89,7 @@ public class STC_Login {
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
         test.webFunctions().type(test, login.textBox_Email, "try4@ele.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+
         test.webFunctions().click(test, login.btn_SignIn);
         test.getLogger().info("Logged in successfully.");
         test.webFunctions().staticWait(10000);
@@ -127,6 +128,10 @@ public class STC_Login {
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.webFunctions().staticWait(8000);
+
+        test.webFunctions().click(test, login.btn_SignIn);
+      test.webFunctions().staticWait(8000);
+
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
 		else {
@@ -134,4 +139,23 @@ public class STC_Login {
 			 stc_Register.register(test);
 		}
     }
+    
+    
+    public void login_Apparent(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().type(test, login.textBox_Email, "TestzIQPywHsva@apparentinsurance.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Logged in successfully.");
+      test.webFunctions().staticWait(8000);
+		if (test.driver.getTitle().equals("Policy"))
+			test.getLogger().info("Logged in successfully.");
+		else {
+			 STC_Register stc_Register = new STC_Register();
+			 stc_Register.register(test);
+		}
+    }  
+    
+    
 }
