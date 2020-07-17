@@ -9669,3 +9669,150 @@ Session ID: 86b9534208711d53788c3b3eb77805fc
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 27 more
 
+2020-07-16 20:06:46,485 [main] INFO Test Suite - TEST CASE: TC001 | Priority: 5
+2020-07-16 20:07:11,930 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Logged in successfully.
+2020-07-16 20:07:19,953 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Logged in successfully.
+2020-07-16 20:07:38,683 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Clicked Saved Payment Instrument to initiate Payment
+2020-07-16 20:07:43,876 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Clicked to Review Payment.
+2020-07-16 20:07:49,017 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Attempted Payment.
+2020-07-16 20:07:54,233 [main] INFO Elephant-OneTimePayment_ExistingCreditCard - Payment Successful.
+2020-07-16 20:07:55,421 [main] INFO Test Suite - TC001 is Passed !
+2020-07-16 20:07:55,423 [main] INFO Test Suite - TEST CASE: TC002 | Priority: 5
+2020-07-16 20:08:19,952 [main] INFO Elephant-OneTimePayment_NewCreditCard - Logged in successfully.
+2020-07-16 20:08:27,985 [main] INFO Elephant-OneTimePayment_NewCreditCard - Logged in successfully.
+2020-07-16 20:08:46,685 [main] INFO Elephant-OneTimePayment_NewCreditCard - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-07-16 20:09:30,651 [main] INFO Elephant-OneTimePayment_NewCreditCard - Made Payment instrument as default .
+2020-07-16 20:09:35,799 [main] INFO Elephant-OneTimePayment_NewCreditCard - Clicked to Review Payment.
+2020-07-16 20:09:41,477 [main] INFO Elephant-OneTimePayment_NewCreditCard - Attempted Payment.
+2020-07-16 20:09:46,691 [main] INFO Elephant-OneTimePayment_NewCreditCard - Payment Successful.
+2020-07-16 20:09:47,875 [main] INFO Test Suite - TC002 is Passed !
+2020-07-16 20:09:47,877 [main] INFO Test Suite - TEST CASE: TC003 | Priority: 5
+2020-07-16 20:10:11,805 [main] INFO Elephant-OneTimePayment_NewACH - Logged in successfully.
+2020-07-16 20:10:19,837 [main] INFO Elephant-OneTimePayment_NewACH - Logged in successfully.
+2020-07-16 20:10:38,527 [main] INFO Elephant-OneTimePayment_NewACH - Clicked New BANK ACCOUNT Payment Instrument to initiate Payment
+2020-07-16 20:11:10,262 [main] INFO Elephant-OneTimePayment_NewACH - Made Payment instrument as default .
+2020-07-16 20:11:15,396 [main] INFO Elephant-OneTimePayment_NewACH - Clicked to Review Payment.
+2020-07-16 20:11:20,570 [main] INFO Elephant-OneTimePayment_NewACH - Attempted Payment.
+2020-07-16 20:11:25,748 [main] INFO Elephant-OneTimePayment_NewACH - Payment Successful.
+2020-07-16 20:11:26,916 [main] INFO Test Suite - TC003 is Passed !
+2020-07-16 20:11:26,919 [main] INFO Test Suite - TEST CASE: TC004 | Priority: 5
+2020-07-16 20:11:50,882 [main] INFO Elephant-AddNewPaymentMethod_ACH - Logged in successfully.
+2020-07-16 20:11:58,923 [main] INFO Elephant-AddNewPaymentMethod_ACH - Logged in successfully.
+2020-07-16 20:12:04,096 [main] INFO Elephant-AddNewPaymentMethod_ACH - Selected 'Payment Method' on Dashboard.
+2020-07-16 20:12:09,361 [main] INFO Elephant-AddNewPaymentMethod_ACH - Selected ACH Account option.....
+2020-07-16 20:12:30,781 [main] INFO Elephant-AddNewPaymentMethod_ACH - ACH Account Added.....
+2020-07-16 20:12:31,969 [main] INFO Test Suite - TC004 is Passed !
+2020-07-16 20:12:31,972 [main] INFO Test Suite - TEST CASE: TC005 | Priority: 5
+2020-07-16 20:12:56,345 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Logged in successfully.
+2020-07-16 20:13:04,383 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Logged in successfully.
+2020-07-16 20:13:09,578 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Selected 'Payment Method' on Dashboard.
+2020-07-16 20:13:14,773 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Selected Credit Card option.....
+2020-07-16 20:13:53,703 [main] INFO Elephant-AddNewPaymentMethod_CreditCard - Credit Card Added.....
+2020-07-16 20:13:54,866 [main] INFO Test Suite - TC005 is Passed !
+2020-07-16 20:13:54,869 [main] INFO Test Suite - TEST CASE: TC006 | Priority: 5
+2020-07-16 20:14:18,682 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-16 20:14:26,716 [main] INFO Elephant-AddDriver_NoVehicle - Logged in successfully.
+2020-07-16 20:15:31,562 [main] INFO Elephant-AddDriver_NoVehicle - Driver details have been submitted
+2020-07-16 20:15:37,306 [main] INFO Elephant-AddDriver_NoVehicle - Don't want to add Vehicle with this Driver
+2020-07-16 20:16:00,736 [main] INFO Elephant-AddDriver_NoVehicle - Vehicle has been assigned to the driver
+2020-07-16 20:16:12,660 [main] ERROR Elephant-AddDriver_NoVehicle - WebDriver Exception
+2020-07-16 20:16:28,012 [main] INFO Elephant-AddDriver_NoVehicle - Driver has been Added Successfully
+2020-07-16 20:16:34,529 [main] INFO Test Suite - TC006 is Passed !
+2020-07-16 20:16:34,533 [main] INFO Test Suite - TEST CASE: TC007 | Priority: 5
+2020-07-16 20:16:58,704 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-16 20:17:06,740 [main] INFO Elephant-AddDriver_WithVehicle - Logged in successfully.
+2020-07-16 20:18:11,498 [main] INFO Elephant-AddDriver_WithVehicle - Driver details have been submitted
+2020-07-16 20:19:59,097 [main] INFO Elephant-AddDriver_WithVehicle - Vehicle has been added with the driver
+2020-07-16 20:20:08,398 [main] ERROR Elephant-AddDriver_WithVehicle - WebDriver Exception
+2020-07-16 20:20:23,738 [main] INFO Elephant-AddDriver_WithVehicle - Driver has been Added Successfully
+2020-07-16 20:20:30,207 [main] INFO Test Suite - TC007 is Passed !
+2020-07-16 20:20:30,211 [main] INFO Test Suite - TEST CASE: TC008 | Priority: 5
+2020-07-16 20:20:53,896 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-16 20:21:01,919 [main] INFO Elephant-AddVehicle_WithoutVIN - Logged in successfully.
+2020-07-16 20:25:00,015 [main] ERROR Elephant-AddVehicle_WithoutVIN - WebDriver Exception
+2020-07-16 20:25:17,542 [main] INFO Elephant-AddVehicle_WithoutVIN - Driver has been Added
+2020-07-16 20:26:16,785 [main] ERROR Elephant-AddVehicle_WithoutVIN - WebDriver Exception
+2020-07-16 20:26:35,978 [main] INFO Test Suite - TC008 is Passed !
+2020-07-16 20:26:35,981 [main] INFO Test Suite - TEST CASE: TC009 | Priority: 5
+2020-07-16 20:26:59,501 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-16 20:27:07,524 [main] INFO Elephant-AddVehicle_WithVIN - Logged in successfully.
+2020-07-16 20:28:53,703 [main] ERROR Test Suite - TC009 is Failed ! 
+ EXCEPTION:  --->  java.lang.NullPointerException
+	at java.lang.String.replace(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:169)
+	at SharedTC.STC_Vehicle.whoOperatesVehiclewithVin(STC_Vehicle.java:136)
+	at testElephant.TC_Elephant.TC009(TC_Elephant.java:240)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-07-16 20:28:53,704 [main] INFO Test Suite - TEST CASE: TC010 | Priority: 5
+2020-07-16 20:29:19,175 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-16 20:29:27,207 [main] INFO Elephant-ReplaceVehicle - Logged in successfully.
+2020-07-16 20:32:01,023 [main] ERROR Elephant-ReplaceVehicle - WebDriver Exception
+2020-07-16 20:32:16,377 [main] INFO Elephant-ReplaceVehicle - Driver has been Added Successfully
+2020-07-16 20:32:22,835 [main] INFO Test Suite - TC010 is Passed !
+2020-07-16 20:32:22,837 [main] INFO Test Suite - TEST CASE: TC011 | Priority: 5
+2020-07-16 20:32:47,066 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-16 20:32:55,108 [main] INFO Elephant-RemoveVehicle - Logged in successfully.
+2020-07-16 20:33:49,571 [main] ERROR Elephant-RemoveVehicle - WebDriver Exception
+2020-07-16 20:34:01,972 [main] INFO Elephant-RemoveVehicle - Vehicle has been removed from the policy
+2020-07-16 20:34:08,506 [main] INFO Test Suite - TC011 is Passed !
+2020-07-16 20:34:08,509 [main] INFO Test Suite - TEST CASE: TC012 | Priority: 5
+2020-07-16 20:34:32,424 [main] INFO Elephant-EditHomePhoneNumber - Logged in successfully.
+2020-07-16 20:34:40,462 [main] INFO Elephant-EditHomePhoneNumber - Logged in successfully.
+2020-07-16 20:35:15,426 [main] INFO Test Suite - TC012 is Passed !
+2020-07-16 20:35:15,428 [main] INFO Test Suite - TEST CASE: TC013 | Priority: 5
+2020-07-16 20:35:39,370 [main] INFO Elephant-EditWorkPhoneNumber - Logged in successfully.
+2020-07-16 20:35:47,405 [main] INFO Elephant-EditWorkPhoneNumber - Logged in successfully.
+2020-07-16 20:36:22,412 [main] INFO Test Suite - TC013 is Passed !
+2020-07-16 20:36:22,415 [main] INFO Test Suite - TEST CASE: TC014 | Priority: 5
+2020-07-16 20:36:48,335 [main] INFO Elephant-EditCellPhoneNumber - Logged in successfully.
+2020-07-16 20:36:56,377 [main] INFO Elephant-EditCellPhoneNumber - Logged in successfully.
+2020-07-16 20:37:31,322 [main] INFO Test Suite - TC014 is Passed !
+2020-07-16 20:37:31,324 [main] INFO Test Suite - TEST CASE: TC016 | Priority: 5
+2020-07-16 20:37:54,582 [main] INFO Elephant-EditMailingAddress - Logged in successfully.
+2020-07-16 20:38:02,618 [main] INFO Elephant-EditMailingAddress - Logged in successfully.
+2020-07-16 20:39:20,444 [main] INFO Test Suite - TC016 is Passed !
+2020-07-16 20:39:20,446 [main] INFO Test Suite - TEST CASE: TC017 | Priority: 5
+2020-07-16 20:39:46,478 [main] INFO Elephant-EditGaragingAddress - Logged in successfully.
+2020-07-16 20:39:54,513 [main] INFO Elephant-EditGaragingAddress - Logged in successfully.
+2020-07-16 20:41:12,348 [main] INFO Test Suite - TC017 is Passed !
+2020-07-16 20:41:12,350 [main] INFO Test Suite - TEST CASE: TC018 | Priority: 5
+2020-07-16 20:41:43,987 [main] INFO Elephant-VerifyClaims - Logged in successfully.
+2020-07-16 20:41:57,670 [main] INFO Elephant-VerifyClaims - Claims verified successfully.
+2020-07-16 20:41:58,952 [main] INFO Test Suite - TC018 is Passed !
+2020-07-16 20:41:58,954 [main] INFO Test Suite - TEST CASE: TC019 | Priority: 5
+2020-07-16 20:42:23,924 [main] INFO Elephant-EditVehicleCoverages - Logged in successfully.
+2020-07-16 20:42:31,954 [main] INFO Elephant-EditVehicleCoverages - Logged in successfully.
+2020-07-16 20:42:37,176 [main] INFO Elephant-EditVehicleCoverages - Maximized Vehicle View
+2020-07-16 20:42:42,480 [main] INFO Elephant-EditVehicleCoverages - Clicked Edit Vehicle.
+2020-07-16 20:43:13,529 [main] INFO Elephant-EditVehicleCoverages - Clicked Save vehicle, navigating to Quote Review Page.
+2020-07-16 20:43:22,478 [main] INFO Elephant-EditVehicleCoverages - Changing Vehicle coverages...
+2020-07-16 20:43:30,643 [main] INFO Elephant-EditVehicleCoverages - Vehicle coverages changed successfully..
+2020-07-16 20:43:31,892 [main] INFO Test Suite - TC019 is Passed !
+2020-07-16 20:43:31,894 [main] INFO Test Suite - TEST CASE: TC015 | Priority: 6
+2020-07-16 20:43:55,510 [main] INFO Elephant-EditEmail - Logged in successfully.
+2020-07-16 20:44:03,551 [main] INFO Elephant-EditEmail - Logged in successfully.
+2020-07-16 20:44:26,915 [main] INFO Test Suite - TC015 is Passed !
