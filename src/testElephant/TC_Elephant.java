@@ -52,7 +52,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -77,7 +77,7 @@ public class TC_Elephant {
 
 
     //	TC002
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -100,7 +100,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC003
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
+    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
     @Parameters("ENV")
     public void TC003(String ENV) {
 
@@ -122,7 +122,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC004
-    @Test(enabled = true, priority = 5, description = "Add new payment Method - ACH")
+    @Test(enabled = false, priority = 5, description = "Add new payment Method - ACH")
     @Parameters("ENV")
     public void TC004(String ENV) {
 
@@ -141,7 +141,7 @@ public class TC_Elephant {
 
     //---------------------------------------------------------------------------------------
 //	TC005
-    @Test(enabled = true, priority = 5, description = "Add new payment Method - Credit Card")
+    @Test(enabled = false, priority = 5, description = "Add new payment Method - Credit Card")
     @Parameters("ENV")
     public void TC005(String ENV) {
 
@@ -160,7 +160,7 @@ public class TC_Elephant {
     }//closing TC005 method
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC006
-    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
+    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
     public void TC006(String ENV) {
 
@@ -183,7 +183,7 @@ public class TC_Elephant {
 	//---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
         //TC007
-        @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
+        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
         @Parameters("ENV")
         public void TC007(String ENV) {
 
@@ -345,7 +345,7 @@ public class TC_Elephant {
 
 //	---------------------------------------------------------------------------------------
 //	TC0015
-	@Test(enabled = true, priority = 6, description = "Edit Email Address")
+	@Test(enabled = false, priority = 6, description = "Edit Email Address")
 	@Parameters("ENV")
 	public void TC015(String ENV) {
 Testing test = new Testing(ENV, brandName, "EditEmail");
@@ -362,7 +362,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	}//closing TC015 method
     //	---------------------------------------------------------------------------------------
 // TC016
-	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -371,7 +371,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test);;            
+            stc_PersonalInfo.editMailingAddress(test);            
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -381,7 +381,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	@Test(enabled = true, priority = 5, description = "Edit Garaging Address")
+	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
 	@Parameters("ENV")
 	
 	public void TC017(String ENV) {
@@ -391,7 +391,8 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);            
+            stc_PersonalInfo.editGaragingAddress(test);    
+            stc_editCoverage.updateGaragingAddCoverage(test);
             
         } catch (Throwable e) {
             throw (e);
@@ -404,7 +405,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	
 	
 	//TC018
-	@Test(enabled = true, priority = 5, description = "Verify Claims")
+	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {
@@ -413,8 +414,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.claimAccountLogin(test);
             stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);;
-                        
+            stc_Claims.verifyClaims(test);                        
             
         } catch (Throwable e) {
             throw (e);
@@ -425,7 +425,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	}//closing TC0018 method   
 	
 	//	TC019
-	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+	@Test(enabled = false, priority = 5, description = "Edit Vehicle Coverages")
 	@Parameters("ENV")
 	public void TC019(String ENV) {
 	

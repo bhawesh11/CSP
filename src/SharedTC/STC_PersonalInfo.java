@@ -12,6 +12,7 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editEmail.textbox_NewEmail, "testing@bhawesh.com");
         test.webFunctions().type(test, editEmail.textbox_CurrentPassword, "Passw0rd");
         test.webFunctions().click(test, editEmail.btn_SaveEmail);
+        test.webFunctions().staticWait(10000);
     }
     
     public void editMailingAddress(Testing test){
@@ -21,18 +22,11 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editMailing.textbox_Apt, "121 Lane");
         test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");        
         test.webFunctions().type(test, editMailing.textbox_PostalCode, "75001");
-        //test.webFunctions().dropdown(test, editMailing.dropdown__State, "VA");
         test.webFunctions().click(test,editMailing.dropdown__State);
         test.webFunctions().click(test,editMailing.stateselect,"TX");
-        test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "true");
-        test.webFunctions().click(test, editMailing.btn_VehicleAtMailAdd, "true");
-        test.webFunctions().click(test,editMailing.dropdown_YearMovedToResidence);
-        test.webFunctions().click(test,editMailing.yearselect,"2019");
-        test.webFunctions().click(test,editMailing.dropdown_MonthMovedToResidence);
-        test.webFunctions().click(test,editMailing.monthselect,"April");
-        test.webFunctions().click(test, editMailing.dropdown_ResidencyStatus);
-        test.webFunctions().click(test, editMailing.ResidencyStatusSelect,"Rent");
+        test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "false");
         test.webFunctions().click(test, editMailing.btn_ContinueMailAdd);
+        test.webFunctions().staticWait(10000);
     }
 
 
@@ -45,7 +39,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test,editGaraging.dropdown__State);
         test.webFunctions().click(test,editGaraging.stateselect,"TX");
         test.webFunctions().type(test, editGaraging.textbox_PostalCode, "75001");
-        test.webFunctions().click(test, editGaraging.btn_IsThisMailingAddress, "true");
+        test.webFunctions().click(test, editGaraging.btn_IsThisMailingAddress, "false");
         test.webFunctions().click(test, editGaraging.btn_VehicleAtGaragAdd, "true");        
         test.webFunctions().click(test,editGaraging.dropdown_YearMovedToResidence);
         test.webFunctions().click(test,editGaraging.yearselect,"2019");
@@ -54,6 +48,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.dropdown_ResidencyStatus);
         test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
+        test.webFunctions().staticWait(5000);
     }
     
     public void editHomePhoneNumber(Testing test){

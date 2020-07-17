@@ -34,6 +34,7 @@ public class TC_Apparent {
 	STC_PaymentConfirmation stc_PaymentConfirmation = new STC_PaymentConfirmation();
 	STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
 	STC_Claims stc_Claims = new STC_Claims();
+	STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
 
 	// ==============================================================================================
 	// ***_TEST_CASES_***
@@ -89,7 +90,8 @@ public class TC_Apparent {
 		try {
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test);;            
+            stc_PersonalInfo.editMailingAddress(test); 
+            test.webFunctions().staticWait(8000);
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -110,7 +112,8 @@ public class TC_Apparent {
 		try {
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);            
+            stc_PersonalInfo.editGaragingAddress(test);  
+            stc_editCoverage.updateGaragingAddCoverage(test);
             
         } catch (Throwable e) {
             throw (e);
@@ -123,7 +126,7 @@ public class TC_Apparent {
 	
 	
 	//TC005
-	@Test(enabled = true, priority = 5, description = "Verify Claims")
+	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC005(String ENV) {
@@ -132,12 +135,14 @@ public class TC_Apparent {
 		try {
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);;
-                        
-            
-        } catch (Throwable e) {
+            stc_Claims.verifyClaims(test);
+                     
+        } 
+		catch (Throwable e) 
+		{
             throw (e);
-        } finally {
+        } finally 
+		{
             test.tearDown();
         }
 		
