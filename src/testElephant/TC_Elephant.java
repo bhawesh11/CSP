@@ -405,7 +405,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	
 	
 	//TC018
-	@Test(enabled = false, priority = 5, description = "Verify Claims")
+	@Test(enabled = true, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {

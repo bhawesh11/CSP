@@ -13,6 +13,7 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editEmail.textbox_CurrentPassword, "Passw0rd");
         test.webFunctions().click(test, editEmail.btn_SaveEmail);
         test.webFunctions().staticWait(10000);
+        test.getLogger().info("emailID updated Successfully.");
     }
     
     public void editMailingAddress(Testing test){
@@ -27,6 +28,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "false");
         test.webFunctions().click(test, editMailing.btn_ContinueMailAdd);
         test.webFunctions().staticWait(10000);
+        test.getLogger().info("Mailing Address updated Successfully");
     }
 
 
@@ -49,6 +51,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
         test.webFunctions().staticWait(5000);
+        test.getLogger().info("Garaging Address updated successfully.");
     }
     
     public void editHomePhoneNumber(Testing test){

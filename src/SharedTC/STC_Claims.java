@@ -17,7 +17,8 @@ public class STC_Claims {
         String ClaimStatus = test.webFunctions().readInfo(test, claims.text_ClaimStatus);
         System.out.println(ClaimStatus);
         test.webFunctions().click(test, claims.btn_ViewClaimDetails);
-        test.getLogger().info("Claims verified successfully.");
+        test.getLogger().info("Claims verified successfully. Below are the details :");
+        test.getLogger().info(" \n " +"Claim no : "+ ClaimNo + " \n " + "LossDate : " + LossDate + " \n "+ "ClaimStatus : " + ClaimStatus);
        
     }
 

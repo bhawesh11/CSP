@@ -103,7 +103,7 @@ public class TC_Apparent {
 	
 	
 //	TC004
-	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
+	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
 	@Parameters("ENV")
 	
 	public void TC004(String ENV) {
