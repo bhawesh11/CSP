@@ -32,6 +32,9 @@ public class RemoveVehicle {
     @FindBy(how= How.ID,using="btnUpdateQuote")
     public WebElement btn_UpdateQuote;
 
+    @FindBy(how= How.ID,using= "//button//span[contains(text(),'Continue without Coverage')]")
+    public WebElement btn_ContinueWithoutCoverage;
+
     //NEXT PAGE5 : Policy Review
     @FindBy(how= How.ID,using="btnReviewCoverage")
     public WebElement btn_ReviewCoverage;

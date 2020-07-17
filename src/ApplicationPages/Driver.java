@@ -81,6 +81,9 @@ public class Driver {
     @FindBy(how= How.ID,using="btnUpdateQuote")
     public WebElement btn_UpdateQuote;
 
+    @FindBy(how= How.ID,using= "//button//span[contains(text(),'Continue without Coverage')]")
+    public WebElement btn_ContinueWithoutCoverage;
+
     //NEXT PAGE : Policy Review
 
     @FindBy(how= How.ID,using="btnReviewCoverage")

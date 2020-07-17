@@ -14,19 +14,38 @@ public class STC_RemoveVehicle {
         try { Thread.sleep(7000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,removecar.btn_VehicleDetail,test.getTestData("RemoveVehicle.VehicleName"));
         test.webFunctions().click(test,removecar.btn_Remove);
+        test.getLogger().info("Clicked on remove Vehicle button");
 
         //NEXT PAGE2 : Tag Deactivitation
         test.webFunctions().click(test,removecar.btn_DeActivatedtheTags,test.getTestData("RemoveVehicle.DetactivateTags1"),test.getTestData("RemoveVehicle.DetactivateTags2"));
         test.webFunctions().click(test,removecar.btn_Continue);
+        test.getLogger().info("Clicked on remove");
 
         //NEXT PAGE3 : Vehicle Assignment
-        try { Thread.sleep(4000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test,removecar.btn_Continue);
-
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+        try {
+            if(removecar.btn_Continue.isDisplayed()== true) {
+                test.webFunctions().click(test,removecar.btn_Continue);
+            } }
+        catch(Exception e) {
+        }
 
         //NEXT PAGE4 : Policy Coverage
         test.webFunctions().staticWait(20);
-        test.webFunctions().click(test,removecar.btn_Continue);
+
+        try {
+            if(removecar.btn_Continue.isDisplayed()== true) {
+                test.webFunctions().click(test,removecar.btn_Continue);
+            } }
+        catch(Exception e) {
+        }
+        try {
+            if(removecar.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,removecar.btn_ContinueWithoutCoverage);
+            } }
+        catch(Exception e) {
+        }
         test.webFunctions().click(test,removecar.btn_UpdateQuote);
 
         //NEXT PAGE5 : Policy Review

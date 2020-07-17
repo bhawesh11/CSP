@@ -31,6 +31,7 @@ public class STC_Vehicle {
         test.webFunctions().click(test, vehicle.dropdown_MultiselectDropdown, test.getTestData("AddVehicle.AboutVehicle.VehicleBodyType"));
         test.webFunctions().click(test, vehicle.btn_ReplacingYourVehicle, test.getTestData("AddVehicle.AboutVehicle.ReplacingYourVehicle1"), test.getTestData("AddVehicle.AboutVehicle.ReplacingYourVehicle2"));
         test.webFunctions().click(test, vehicle.btn_Next);
+        test.getLogger().info("Vehicle details has been added");
     }
     public void moreAboutVehicle(Testing test){
 
@@ -71,6 +72,7 @@ public class STC_Vehicle {
         }
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
         test.webFunctions().staticWait(80);
+        test.getLogger().info("More details about vehicle and driver has been added");
     }
 
     public void addDriverToVehicle(Testing test)
@@ -99,6 +101,7 @@ public class STC_Vehicle {
         test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AddVehicle.AddDriverToVehicle.LicenseState"));
         test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
         test.webFunctions().click(test, addingdriver.btn_Continue);
+        test.getLogger().info("Driver has been added with vehicle");
     }
 
     public void addDriverToVehicleNo(Testing test)
@@ -109,6 +112,8 @@ public class STC_Vehicle {
         test.webFunctions().click(test,vehicle.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.ReplaceVehicle.AddDriverNo"));
         test.webFunctions().click(test,vehicle.btn_Continue);
     }
+
+    // It will pass only if there is one driver and one vehicle already in the policy
     public void whoOperatesVehicle(Testing test) {
         test.setPage(Driver.class);
         Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
@@ -122,6 +127,7 @@ public class STC_Vehicle {
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
+        test.getLogger().info("Vehicle has been assigned to the driver");
     }
 
     // It will pass only if there is one driver and one vehicle already in the policy
@@ -145,6 +151,7 @@ public class STC_Vehicle {
             if(addingdriver.btn_Continue.isDisplayed()==true){
                 test.webFunctions().click(test, addingdriver.btn_Continue);
                 test.webFunctions().click(test, addingdriver.btn_Continue);
+                test.getLogger().info("Vehicle has been assigned to the driver");
             }
         }catch(Exception e) {
         }
@@ -193,6 +200,7 @@ public class STC_Vehicle {
         test.webFunctions().click(test, vehicle.btn_ContinuetoQuote);
         test.webFunctions().click(test,vehicle.btn_LikeToAddNewDriver,test.getTestData("AddVehicle.ReplaceVehicle.AddDriverNo"));
         test.webFunctions().click(test,vehicle.btn_Continue);
+        test.getLogger().info("Vehicle has been added with VIN");
     }
 
 
@@ -261,6 +269,7 @@ public class STC_Vehicle {
         test.webFunctions().click(test, vehicle.btn_KeepSameCoverage,test.getTestData("AddVehicle.ReplaceVehicle.KeepCoverage1"),test.getTestData("AddVehicle.ReplaceVehicle.KeepCoverage2"));
         test.webFunctions().click(test, vehicle.btn_DeActivatedtheTags,test.getTestData("AddVehicle.ReplaceVehicle.DeactivateTags1"),test.getTestData("AddVehicle.ReplaceVehicle.DeactivateTags2"));
         test.webFunctions().click(test, vehicle.btn_Next);
+        test.getLogger().info("Replace Vehicle");
     }
 
 
@@ -286,6 +295,15 @@ public class STC_Vehicle {
         //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("AddVehicle.EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("AddVehicle.EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
+        try {
+            if(addingdriver.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,addingdriver.btn_ContinueWithoutCoverage);
+            } }
+        catch(Exception e) {
+        }
+        test.getLogger().info("Update Quote");
+
 
         //NEXT PAGE6 : Policy Review
         test.webFunctions().click(test, addingdriver.btn_ReviewCoverage);
@@ -300,7 +318,7 @@ public class STC_Vehicle {
         }
         catch(Exception e){
         }
-        test.getLogger().info("Driver has been Added");
+        test.getLogger().info("");
 
     }
     public void editVehicleCoverages (Testing test) {
@@ -344,6 +362,7 @@ public class STC_Vehicle {
 
         test.webFunctions().type(test,vehicle.textbox_VIN,test.getTestData("AddVehicle.AboutVehicle.FinalVinNo"));
         test.webFunctions().click(test,vehicle.btn_saveVIN);
+        test.getLogger().info("Recheck details for the vehicle");
         try {
             if(vehicle.btn_Continue.isDisplayed()== true)
             {
@@ -354,19 +373,21 @@ public class STC_Vehicle {
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test, vehicle.btn_Next);
         test.webFunctions().click(test, vehicle.btn_PrimarilyUseAndYear,test.getTestData("AddVehicle.AboutVehicle.Year"));
-        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
+        try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test, addingdriver.btn_Continue);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.webFunctions().click(test,addingdriver.btn_Continue);
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
+        test.getLogger().info("Update Quote");
 
         //NEXT PAGE6 : Policy Review
         test.webFunctions().click(test, addingdriver.btn_ReviewCoverage);
 
         //NEXT PAGE7 : Almost Done
         test.webFunctions().click(test, addingdriver.btn_ChangePolicy);
+        test.getLogger().info("Policy has been changed");
 
     }
 

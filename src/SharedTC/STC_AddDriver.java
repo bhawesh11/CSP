@@ -88,7 +88,7 @@ public class STC_AddDriver {
         //NEXT PAGE : Do you want to add Vehicle?- NO
 
         test.webFunctions().click(test, addingdriver.btn_AddVehicleNo);
-        test.getLogger().info("Don't want to add Vehicle with this Driver");
+        test.getLogger().info("Vehicle has not been added with this driver");
         test.webFunctions().click(test, addingdriver.btn_Continue);
     }
    
@@ -218,7 +218,22 @@ public class STC_AddDriver {
         //test.webFunctions().click(test, editcoverage.slider_BodilyInjury, test.getTestData("EditCoverage.BodilyInjury"));
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
+        try {
+            if(addingdriver.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,addingdriver.btn_ContinueWithoutCoverage);
+            } }
+        catch(Exception e) {
+        }
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
+        test.getLogger().info("Update Quote");
+        try {
+            if(addingdriver.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            {
+                test.webFunctions().click(test,addingdriver.btn_ContinueWithoutCoverage);
+            } }
+        catch(Exception e) {
+        }
 
 
         //NEXT PAGE6 : Policy Review
@@ -227,7 +242,7 @@ public class STC_AddDriver {
         //NEXT PAGE7 : Almost Done
         test.webFunctions().click(test, addingdriver.btn_ChangePolicy);
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.getLogger().info("Driver has been Added Successfully");
+        test.getLogger().info("Policy has been changes");
 
     }
 
