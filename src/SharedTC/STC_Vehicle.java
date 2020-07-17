@@ -124,33 +124,32 @@ public class STC_Vehicle {
         test.webFunctions().click(test,addingdriver.btn_Continue);
     }
 
+    // It will pass only if there is one driver and one vehicle already in the policy
     public void whoOperatesVehiclewithVin(Testing test){
         test.setPage(Driver.class);
         Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
 
         test.setPage(Vehicle.class);
         Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
-
-        try { Thread.sleep(8000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test, addingdriver.btn_VehicleOperatorNewDriver);test.webFunctions().click(test, addingdriver.btn_Continue);
-        test.webFunctions().click(test,vehicle.btn_selectdriver,test.getTestData("AddVehicle.AboutVehicle.Vehicle2"),test.getTestData("AddVehicle.AboutVehicle.DriverName"));
-        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test,addingdriver.btn_Continue);
-
+        try{
+            if(addingdriver.btn_VehicleOperatorNewDriver.isDisplayed()==true){
+                test.webFunctions().click(test,addingdriver.btn_VehicleOperatorNewDriver); }
+        }catch(Exception e) {
+        }
+        try{
+            if(addingdriver.btn_VehicleOperatorOldDriver.isDisplayed()==true){
+                test.webFunctions().click(test,addingdriver.btn_VehicleOperatorOldDriver); }
+        }catch(Exception e) {
+        }
+        try{
+            if(addingdriver.btn_Continue.isDisplayed()==true){
+                test.webFunctions().click(test, addingdriver.btn_Continue);
+                test.webFunctions().click(test, addingdriver.btn_Continue);
+            }
+        }catch(Exception e) {
+        }
     }
-    public void whoOperatesVehicleForRemoveVehicle(Testing test){
-        test.setPage(Driver.class);
-        Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
 
-        test.setPage(Vehicle.class);
-        Vehicle vehicle = (Vehicle) PageFactory.initElements(test.driver, test.getPage());
-
-        try { Thread.sleep(8000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test,vehicle.btn_selectdriver,test.getTestData("AddVehicle.ReplaceVehicle.Vehicle"),test.getTestData("AddVehicle.ReplaceVehicle.DriverName"));
-        test.webFunctions().click(test, addingdriver.btn_Continue);
-        try { Thread.sleep(5000); } catch (InterruptedException e) { e.printStackTrace(); }
-        test.webFunctions().click(test,addingdriver.btn_Continue);
-    }
     public void addVehicle_Vin(Testing test)
     {
 

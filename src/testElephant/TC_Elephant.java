@@ -52,7 +52,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -77,7 +77,7 @@ public class TC_Elephant {
 
 
     //	TC002
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -100,7 +100,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC003
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
+    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
     @Parameters("ENV")
     public void TC003(String ENV) {
 
@@ -122,7 +122,7 @@ public class TC_Elephant {
 //---------------------------------------------------------------------------------------
 
     //	TC004
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - ACH")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - ACH")
     @Parameters("ENV")
     public void TC004(String ENV) {
 
@@ -141,7 +141,7 @@ public class TC_Elephant {
 
     //---------------------------------------------------------------------------------------
 //	TC005
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - Credit Card")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - Credit Card")
     @Parameters("ENV")
     public void TC005(String ENV) {
 
@@ -158,9 +158,9 @@ public class TC_Elephant {
         }
 
     }//closing TC005 method
-
+    // Scipt will run if there is only one driver and one vehicle in the policy
     //TC006
-    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
+    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
     public void TC006(String ENV) {
 
@@ -179,17 +179,17 @@ public class TC_Elephant {
             test.tearDown();
         }
 	}//closing TC006 method6
-	
-	//---------------------------------------------------------------------------------------
 
+	//---------------------------------------------------------------------------------------
+    // Scipt will run if there is only one driver and one vehicle in the policy
         //TC007
-        @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
+        @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
         @Parameters("ENV")
         public void TC007(String ENV) {
 
             Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
-                stc_Login.login(test);
+                stc_Login.login1(test);
                 stc_DashBoard.addDriverBtn(test);
                 stc_addDriver.aboutDriverwithvehicle(test);
                 stc_addDriver.addVehicleYes(test);
@@ -202,15 +202,15 @@ public class TC_Elephant {
             }
         }//closing TC007 method
         // 	---------------------------------------------------------------------------------------
-
+        // Scipt will run if there is only one driver and one vehicle in the policy
         //TC008
-        @Test(enabled = false, priority = 5, description = "AddVehicle without VIN")
+        @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
         @Parameters("ENV")
         public void TC008(String ENV) {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
-                stc_Login.login(test);
+                stc_Login.login2(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.aboutVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
@@ -226,15 +226,15 @@ public class TC_Elephant {
             }
         }//closing TC008 method
         //	---------------------------------------------------------------------------------------
-
+        // Scipt will run if there is only one driver and one vehicle in the policy
         //TC009
-        @Test(enabled = false, priority = 5, description = "AddVehicle with VIN")
+        @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
         @Parameters("ENV")
         public void TC009(String ENV) {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
-                stc_Login.login(test);
+                stc_Login.login3(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
                 stc_vehicle.whoOperatesVehiclewithVin(test);
@@ -247,20 +247,20 @@ public class TC_Elephant {
             }
         }//closing TC009 method
         //	---------------------------------------------------------------------------------------
-
+        // Scipt will run if there is only one driver and one vehicle in the policy
         //TC010
-        @Test(enabled = false, priority = 5, description = "Replace Vehicle")
+        @Test(enabled = true, priority = 5, description = "Replace Vehicle")
         @Parameters("ENV")
         public void TC010(String ENV) {
 
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
-                stc_Login.login(test);
+                stc_Login.login4(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicleNo(test);
-                stc_vehicle.whoOperatesVehicleForRemoveVehicle(test);
+                stc_vehicle.whoOperatesVehiclewithVin(test);
                 stc_addDriver.editCoverage(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
@@ -270,15 +270,15 @@ public class TC_Elephant {
             }
         }//closing TC010 method
         //	---------------------------------------------------------------------------------------
-
+        // To remove vehicle you have to pass the exact vehicle name
         //TC011
-        @Test(enabled = false, priority = 5, description = "Remove Vehicle")
+        @Test(enabled = true, priority = 5, description = "Remove Vehicle")
         @Parameters("ENV")
         public void TC011(String ENV) {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
-                stc_Login.login(test);
+                stc_Login.login5(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
@@ -290,7 +290,7 @@ public class TC_Elephant {
         //	---------------------------------------------------------------------------------------
 
     //	TC012
-    @Test(enabled = false, priority = 5, description = "Edit Home Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
     public void TC012(String ENV) {
 
@@ -308,7 +308,7 @@ public class TC_Elephant {
     }//closing TC012 method
 
     //	TC013
-    @Test(enabled = false, priority = 5, description = "Edit Work Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
 
@@ -326,7 +326,7 @@ public class TC_Elephant {
     }//closing TC013 method
 
     //	TC014
-    @Test(enabled = false, priority = 5, description = "Edit Cell Phone Number")
+    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
     public void TC014(String ENV) {
 
@@ -342,29 +342,27 @@ public class TC_Elephant {
             test.tearDown();
         }
     }//closing TC014 method
-  
+
 //	---------------------------------------------------------------------------------------
 //	TC0015
-	@Test(enabled = false, priority = 6, description = "Edit Email Address")
+	@Test(enabled = true, priority = 6, description = "Edit Email Address")
 	@Parameters("ENV")
-	
 	public void TC015(String ENV) {
-		
-		Testing test = new Testing(ENV, brandName, "EditEmail");
+Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editEmail(test);            
+            stc_PersonalInfo.editEmail(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-		
+
 	}//closing TC015 method
     //	---------------------------------------------------------------------------------------
 // TC016
-	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -383,7 +381,7 @@ public class TC_Elephant {
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	@Test(enabled = false, priority = 5, description = "Edit Garaging Address")
+	@Test(enabled = true, priority = 5, description = "Edit Garaging Address")
 	@Parameters("ENV")
 	
 	public void TC017(String ENV) {
@@ -406,7 +404,7 @@ public class TC_Elephant {
 	
 	
 	//TC018
-	@Test(enabled = false, priority = 5, description = "Verify Claims")
+	@Test(enabled = true, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {
@@ -427,7 +425,7 @@ public class TC_Elephant {
 	}//closing TC0018 method   
 	
 	//	TC019
-	@Test(enabled = false, priority = 5, description = "Edit Vehicle Coverages")
+	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
 	@Parameters("ENV")
 	public void TC019(String ENV) {
 	
