@@ -71,7 +71,7 @@ public class Driver {
     @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[1]")
     public WebElement btn_VehicleOperatorNewDriver;
 
-    @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[1]")
+    @FindBy(how= How.XPATH,using="(//span[contains(@class,'desc')])[4]")
     public WebElement btn_VehicleOperatorOldDriver;
 
 
