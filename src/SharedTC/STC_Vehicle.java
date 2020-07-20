@@ -1,17 +1,10 @@
 package SharedTC;
 
-import ApplicationPages.BindConfirmation;
-import ApplicationPages.CoverageSelections;
-import ApplicationPages.DashBoard;
-import ApplicationPages.Driver;
-import ApplicationPages.EditVehicleCoverage;
-import ApplicationPages.QuoteReview;
-import ApplicationPages.Vehicle;
-
-import static org.testng.Assert.assertTrue;
-
+import ApplicationPages.*;
 import org.openqa.selenium.support.PageFactory;
 import resources.Testing;
+
+import static org.testng.Assert.assertTrue;
 
 public class STC_Vehicle {
 
@@ -296,9 +289,9 @@ public class STC_Vehicle {
         //test.webFunctions().click(test, editcoverage.slider_PropertyDamage,test.getTestData("AddVehicle.EditCoverage.PropertyDamage") );
         test.webFunctions().click(test, addingdriver.btn_UpdateQuote);
         try {
-            if(addingdriver.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            if(addingdriver.btn_ClickContinueWithoutCoverage.isDisplayed()== true)
             {
-                test.webFunctions().click(test,addingdriver.btn_ContinueWithoutCoverage);
+                test.webFunctions().click(test,addingdriver.btn_ClickContinueWithoutCoverage);
             } }
         catch(Exception e) {
         }
@@ -318,7 +311,7 @@ public class STC_Vehicle {
         }
         catch(Exception e){
         }
-        test.getLogger().info("");
+        test.getLogger().info("Policy has been changed");
 
     }
     public void editVehicleCoverages (Testing test) {

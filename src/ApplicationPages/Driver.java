@@ -1,6 +1,5 @@
 package ApplicationPages;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -82,7 +81,7 @@ public class Driver {
     public WebElement btn_UpdateQuote;
 
     @FindBy(how= How.ID,using= "//button//span[contains(text(),'Continue without Coverage')]")
-    public WebElement btn_ContinueWithoutCoverage;
+    public WebElement btn_ClickContinueWithoutCoverage;
 
     //NEXT PAGE : Policy Review
 

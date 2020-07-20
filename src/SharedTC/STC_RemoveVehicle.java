@@ -1,6 +1,5 @@
 package SharedTC;
 
-import ApplicationPages.Driver;
 import ApplicationPages.RemoveVehicle;
 import org.openqa.selenium.support.PageFactory;
 import resources.Testing;
@@ -40,9 +39,9 @@ public class STC_RemoveVehicle {
         catch(Exception e) {
         }
         try {
-            if(removecar.btn_ContinueWithoutCoverage.isDisplayed()== true)
+            if(removecar.btn_ClickContinueWithoutCoverage.isDisplayed()== true)
             {
-                test.webFunctions().click(test,removecar.btn_ContinueWithoutCoverage);
+                test.webFunctions().click(test,removecar.btn_ClickContinueWithoutCoverage);
             } }
         catch(Exception e) {
         }
