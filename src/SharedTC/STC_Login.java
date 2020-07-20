@@ -154,7 +154,6 @@ public class STC_Login {
 			 STC_Register stc_Register = new STC_Register();
 			 stc_Register.register(test);
 		}
-    }  
-    
+    }      
     
 }

@@ -20,7 +20,7 @@ public class STC_PersonalInfo {
         test.setPage(PersonalInfo.class);
         PersonalInfo editMailing = (PersonalInfo) PageFactory.initElements(test.driver, test.getPage());        
         test.webFunctions().click(test, editMailing.btn_MailingAddress);
-        test.webFunctions().type(test, editMailing.textbox_Apt, "121 Lane");
+        test.webFunctions().type(test, editMailing.textbox_Apt, "120 Lane");
         test.webFunctions().type(test, editMailing.textbox_City, "Faridabad");        
         test.webFunctions().type(test, editMailing.textbox_PostalCode, "75001");
         test.webFunctions().click(test,editMailing.dropdown__State);
@@ -50,7 +50,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.dropdown_ResidencyStatus);
         test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
-        test.webFunctions().staticWait(5000);
+        test.webFunctions().staticWait(7000);
         test.getLogger().info("Garaging Address updated successfully");
     }
     

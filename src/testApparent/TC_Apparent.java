@@ -46,6 +46,7 @@ public class TC_Apparent {
 
 		Testing test = new Testing(ENV, brandName, "Pay$10");
 		try {
+			test.getLogger().info("Apparent_Testcase001_Pay$10");
 			stc_Login.login(test);
 			stc_DashBoard.clickOneTimePayment(test);
 			stc_MakePayment.pay10FromSavedCard(test);
@@ -59,35 +60,42 @@ public class TC_Apparent {
 	}// closing TC501 methodS
 
 	// ---------------------------------------------------------------------------------------
-//	TC002
-	@Test(enabled = false, priority = 5, description = "Edit Email Address")
+	
+	//TC002
+	@Test(enabled = true, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC002(String ENV) {
 		
-		Testing test = new Testing(ENV, brandName, "EditEmail");
+		Testing test = new Testing(ENV, brandName, "VerifyClaims");
 		try {
+			test.getLogger().info("Apparent_Testcase002_VerifyClaims");
             stc_Login.login_Apparent(test);
-            stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editEmail(test);            
-        } catch (Throwable e) {
+            stc_DashBoard.clickClaims(test);
+            stc_Claims.verifyClaims(test);
+                     
+        } 
+		catch (Throwable e) 
+		{
             throw (e);
-        } finally {
+        } finally 
+		{
             test.tearDown();
         }
 		
-	}//closing TC002 method
+	}//closing TC002 method  
     //	---------------------------------------------------------------------------------------
 	
 	
 //	TC003
-	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC003(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditMailingAddress");
 		try {
+			test.getLogger().info("Apparent_Testcase003_EditmailingAddress");
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editMailingAddress(test); 
@@ -103,13 +111,14 @@ public class TC_Apparent {
 	
 	
 //	TC004
-	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
+	@Test(enabled = true, priority = 5, description = "EditGaragingAddress")
 	@Parameters("ENV")
 	
 	public void TC004(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
 		try {
+			test.getLogger().info("Apparent_Testcase004_EditGaragingAddress");
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editGaragingAddress(test);  
@@ -124,28 +133,24 @@ public class TC_Apparent {
 	}//closing TC004 method
     //	---------------------------------------------------------------------------------------
 	
-	
-	//TC005
-	@Test(enabled = false, priority = 5, description = "Verify Claims")
+ 
+//	TC005
+	@Test(enabled = true, priority = 5, description = "Edit Email Address")
 	@Parameters("ENV")
 	
 	public void TC005(String ENV) {
 		
-		Testing test = new Testing(ENV, brandName, "VerifyClaims");
+		Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
+			test.getLogger().info("Apparent_Testcase005_EditEmail");
             stc_Login.login_Apparent(test);
-            stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);
-                     
-        } 
-		catch (Throwable e) 
-		{
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonalInfo.editEmail(test);            
+        } catch (Throwable e) {
             throw (e);
-        } finally 
-		{
+        } finally {
             test.tearDown();
         }
 		
-	}//closing TC005 method   
-    
+	}//closing TC005 method
 }
