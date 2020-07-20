@@ -19,6 +19,8 @@ public class STC_Login {
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.getLogger().info("Logged in successfully.");
+        test.getLogger().info("Login Username : Test2fD5HeKMym@elephant.com");
+        test.getLogger().info("Policy Number : 244-000-005-89");
       test.webFunctions().staticWait(10000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
