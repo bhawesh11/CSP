@@ -11,10 +11,7 @@
       <class name="testElephant.TC_Elephant">
         <methods>
           <include name="TC009" invocation-numbers="0"/>
-          <include name="TC011" invocation-numbers="0"/>
           <include name="openBrowser"/>
-          <include name="TC010" invocation-numbers="0"/>
-          <include name="TC008" invocation-numbers="0"/>
         </methods>
       </class> <!-- testElephant.TC_Elephant -->
     </classes>

@@ -10,14 +10,7 @@
     <parameter name="ENV" value="QA6"/>
     <classes>
       <class name="testElephant.TC_Elephant">
-      <methods>
-        <include name="TC006" />
-        <include name="TC007" />
-        <include name="TC008" />
-        <include name="TC009" />
-        <include name="TC010" />
-        <include name="TC011" />
-        </methods>
+      
         </class>
     </classes>
   </test> <!-- Test -->
