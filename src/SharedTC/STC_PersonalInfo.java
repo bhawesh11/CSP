@@ -51,7 +51,7 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
         test.webFunctions().staticWait(5000);
-        test.getLogger().info("Garaging Address updated successfully.");
+        test.getLogger().info("Garaging Address updated successfully");
     }
     
     public void editHomePhoneNumber(Testing test){

@@ -147,7 +147,7 @@ public class STC_Login {
         test.webFunctions().type(test, login.textBox_Email, "TestzIQPywHsva@apparentinsurance.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
-      test.webFunctions().staticWait(8000);
+      test.webFunctions().staticWait(7000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
 		else {

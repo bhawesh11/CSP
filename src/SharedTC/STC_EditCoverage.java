@@ -205,6 +205,7 @@ import resources.Testing;
                 test.setPage(CoverageSelections.class);
                 CoverageSelections selectcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage());
                 test.webFunctions().click(test,selectcoverage.btn_ChangePolicy);
+                
             }
 
         }

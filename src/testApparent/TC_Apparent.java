@@ -146,6 +146,6 @@ public class TC_Apparent {
             test.tearDown();
         }
 		
-	}//closing TC0005 method   
+	}//closing TC005 method   
     
 }

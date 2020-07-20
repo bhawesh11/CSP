@@ -19,7 +19,6 @@ public class STC_Claims {
         test.webFunctions().click(test, claims.btn_ViewClaimDetails);
         test.getLogger().info("Claims verified successfully. Below are the details :");
         test.getLogger().info(" \n " +"Claim no : "+ ClaimNo + " \n " + "LossDate : " + LossDate + " \n "+ "ClaimStatus : " + ClaimStatus);
-       
-    }
+           }
 
 }
