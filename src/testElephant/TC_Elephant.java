@@ -158,7 +158,7 @@ public class TC_Elephant {
         }
 
     }//closing TC005 method
-    // Scipt will run if there is only one driver and one vehicle in the policy
+    // Script will run if there is only one driver and one vehicle in the policy
     //TC006
     @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
