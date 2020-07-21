@@ -371,7 +371,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test);;            
+            stc_PersonalInfo.editMailingAddress(test);            
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -391,7 +391,8 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);            
+            stc_PersonalInfo.editGaragingAddress(test);    
+            stc_editCoverage.updateGaragingAddCoverage(test);
             
         } catch (Throwable e) {
             throw (e);
@@ -413,8 +414,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.claimAccountLogin(test);
             stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);;
-                        
+            stc_Claims.verifyClaims(test);                        
             
         } catch (Throwable e) {
             throw (e);
