@@ -13,7 +13,8 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editEmail.textbox_CurrentPassword, "Passw0rd");
         test.webFunctions().click(test, editEmail.btn_SaveEmail);
         test.webFunctions().staticWait(10000);
-        test.getLogger().info("emailID updated Successfully.");
+        test.getLogger().info("Clicked on 'Save Email' button to update email");
+
     }
     
     public void editMailingAddress(Testing test){
@@ -27,8 +28,9 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test,editMailing.stateselect,"TX");
         test.webFunctions().click(test, editMailing.btn_ParkVehicleAtAddress, "false");
         test.webFunctions().click(test, editMailing.btn_ContinueMailAdd);
-        test.webFunctions().staticWait(10000);
-        test.getLogger().info("Mailing Address updated Successfully");
+        test.webFunctions().staticWait(10000);  
+        test.getLogger().info("Clicked on 'Continue' button after entering Mailing Address");
+
     }
 
 
@@ -51,7 +53,8 @@ public class STC_PersonalInfo {
         test.webFunctions().click(test, editGaraging.ResidencyStatusSelect,"Rent");
         test.webFunctions().click(test, editGaraging.btn_ContinueGaragAddress);
         test.webFunctions().staticWait(7000);
-        test.getLogger().info("Garaging Address updated successfully");
+        test.getLogger().info("Clicked on 'Continue' button after entering Garaging Address");
+
     }
     
     public void editHomePhoneNumber(Testing test){
@@ -61,6 +64,7 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editHomePhone.textbox_NewHomePhone, test.getTestData("Personal.HomePhone"));
         test.webFunctions().click(test, editHomePhone.btn_SaveHomePhone);
         test.webFunctions().staticWait(15000);
+        test.getLogger().info("Clicked on 'Save' button to Save Home Phone Number");
     }
     
     public void editWorkPhoneNumber(Testing test){
@@ -70,6 +74,8 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editWorkPhone.textbox_NewWorkPhone, test.getTestData("Personal.WorkPhone"));
         test.webFunctions().click(test, editWorkPhone.btn_SaveWorkPhone);
         test.webFunctions().staticWait(15000);
+        test.getLogger().info("Clicked on 'Save' button to Save Work Phone Number");
+
     }
     
     public void editCellPhoneNumber(Testing test){
@@ -79,6 +85,8 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, editCellPhone.textbox_NewCellPhone, test.getTestData("Personal.CellPhone"));
         test.webFunctions().click(test, editCellPhone.btn_SaveCellPhone);
         test.webFunctions().staticWait(15000);
+        test.getLogger().info("Clicked on 'Save' button to Save Cell Phone Number");
+
     }
     
     public void textMessageAlert(Testing test){
@@ -89,7 +97,7 @@ public class STC_PersonalInfo {
         test.webFunctions().type(test, textMessageAlert.textbox_TextAlertsMobileNumber, "8101458545");
         test.webFunctions().dropdown(test, textMessageAlert.dropdown_Carrrier, "Nextel");
         test.webFunctions().click(test, textMessageAlert.btn_SaveTextAlerts);
-       
+        test.getLogger().info("Clicked on 'Save' button to Save Text Alerts");       
     }
 }
 
