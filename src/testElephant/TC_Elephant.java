@@ -158,7 +158,7 @@ public class TC_Elephant {
         }
 
     }//closing TC005 method
-    // Scipt will run if there is only one driver and one vehicle in the policy
+    // Script will run if there is only one driver and one vehicle in the policy
     //TC006
     @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
@@ -189,7 +189,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
-                stc_Login.login1(test);
+                stc_Login.login(test);
                 stc_DashBoard.addDriverBtn(test);
                 stc_addDriver.aboutDriverwithvehicle(test);
                 stc_addDriver.addVehicleYes(test);
@@ -255,7 +255,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
-                stc_Login.login4(test);
+                stc_Login.login3(test);
                 stc_DashBoard.addReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
@@ -270,7 +270,7 @@ public class TC_Elephant {
             }
         }//closing TC010 method
         //	---------------------------------------------------------------------------------------
-        // To remove vehicle you have to pass the exact vehicle name
+        // To remove vehicle you have to pass the exact vehicle name and
         //TC011
         @Test(enabled = true, priority = 5, description = "Remove Vehicle")
         @Parameters("ENV")
@@ -278,7 +278,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
-                stc_Login.login5(test);
+                stc_Login.login3(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
