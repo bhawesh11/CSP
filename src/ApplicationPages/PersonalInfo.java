@@ -77,7 +77,7 @@ public class PersonalInfo {
 	@FindBy(xpath="//*[@name='garagingForm']//button")
 	public WebElement btn_GaragingAddress;
 	
-	public String btn_IsThisMailingAddress = "//input[@id='garagingIsBoth-true']/../label";
+	public String btn_IsThisMailingAddress = "//input[@id='garagingIsBoth-{0}']/../label";
 		
 	public String btn_VehicleAtGaragAdd = "//input[@id='garagingIsGaragedLocation-{0}']/../label";
 		

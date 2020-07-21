@@ -146,7 +146,9 @@ import resources.Testing;
                 test.webFunctions().click(test, selectcoverage.btn_UpdateQuote);
                 test.getLogger().info("Clicked on 'Update Quote' button to navigate to next page");
             }
+
           }
+
 
 
 

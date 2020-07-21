@@ -52,6 +52,7 @@ public class STC_Login {
 
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
+
         test.webFunctions().type(test, login.textBox_Email, "ohhyes@vvv.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
@@ -68,12 +69,14 @@ public class STC_Login {
     public void claimAccountLogin(Testing test){
         test.setPage(Login.class);
         Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
-        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
-        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
         test.webFunctions().type(test, login.textBox_Email, "test.auto@elephant.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.webFunctions().staticWait(8000);
+
+        test.webFunctions().click(test, login.btn_SignIn);
+      test.webFunctions().staticWait(8000);
+
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
 		else {
@@ -81,4 +84,21 @@ public class STC_Login {
 			 stc_Register.register(test);
 		}
     }
+    
+    
+    public void login_Apparent(Testing test){
+        test.setPage(Login.class);
+        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().type(test, login.textBox_Email, "TestzIQPywHsva@apparentinsurance.com");
+        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
+        test.webFunctions().click(test, login.btn_SignIn);
+      test.webFunctions().staticWait(7000);
+		if (test.driver.getTitle().equals("Policy"))
+			test.getLogger().info("Logged in successfully.");
+		else {
+			 STC_Register stc_Register = new STC_Register();
+			 stc_Register.register(test);
+		}
+    }      
+    
 }
