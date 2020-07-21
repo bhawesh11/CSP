@@ -167,7 +167,7 @@ public class TC_Elephant {
         Testing test = new Testing(ENV, brandName, "AddDriver_NoVehicle");
         try {
             stc_Login.login(test);
-            stc_DashBoard.addDriverBtn(test);
+            stc_DashBoard.clickAddDriver(test);
             stc_addDriver.aboutDriver(test);
             stc_addDriver.addVehicleNo(test);
             stc_addDriver.whoOperatesVehicle(test);
@@ -190,7 +190,7 @@ public class TC_Elephant {
             Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
                 stc_Login.login(test);
-                stc_DashBoard.addDriverBtn(test);
+                stc_DashBoard.clickAddDriver(test);
                 stc_addDriver.aboutDriverwithvehicle(test);
                 stc_addDriver.addVehicleYes(test);
                 stc_addDriver.editCoverage(test);
@@ -211,7 +211,7 @@ public class TC_Elephant {
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
                 stc_Login.login2(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.aboutVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicle(test);
@@ -235,7 +235,7 @@ public class TC_Elephant {
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
                 stc_Login.login3(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
                 stc_vehicle.whoOperatesVehiclewithVin(test);
                 stc_addDriver.editCoverage(test);
@@ -256,7 +256,7 @@ public class TC_Elephant {
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
                 stc_Login.login3(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicleNo(test);
