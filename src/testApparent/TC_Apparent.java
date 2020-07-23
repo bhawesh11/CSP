@@ -152,8 +152,7 @@ public class TC_Apparent {
 		
 		Testing test = new Testing(ENV, brandName, "VerifyClaims");
 		try {
-			test.getLogger().info("Apparent_Testcase018_VerifyClaims");
-            stc_Login.login_Apparent(test);
+			stc_Login.login_Apparent(test);
             stc_DashBoard.clickClaims(test);
             stc_Claims.verifyClaims(test);
                      
@@ -178,8 +177,7 @@ public class TC_Apparent {
 		
 		Testing test = new Testing(ENV, brandName, "EditMailingAddress");
 		try {
-			test.getLogger().info("Apparent_Testcase016_EditmailingAddress");
-            stc_Login.login_Apparent(test);
+			stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editMailingAddress(test); 
             test.webFunctions().staticWait(8000);
@@ -201,8 +199,7 @@ public class TC_Apparent {
 		
 		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
 		try {
-			test.getLogger().info("Apparent_Testcase017_EditGaragingAddress");
-            stc_Login.login_Apparent(test);
+			stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editGaragingAddress(test);  
             stc_editCoverage.updateGaragingAddCoverage(test);
@@ -225,8 +222,7 @@ public class TC_Apparent {
 		
 		Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
-			test.getLogger().info("Apparent_Testcase015_EditEmail");
-            stc_Login.login_Apparent(test);
+			stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editEmail(test);            
         } catch (Throwable e) {
