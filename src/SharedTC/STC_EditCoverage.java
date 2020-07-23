@@ -146,6 +146,14 @@ import resources.Testing;
                 test.webFunctions().click(test, selectcoverage.btn_UpdateQuote);
                 test.getLogger().info("Clicked on 'Update Quote' button to navigate to next page");
             }
+            
+            public void updateGaragingAddCoverage(Testing test)
+            { 
+            test.setPage(CoverageSelections.class); 
+            CoverageSelections selectcoverage = (CoverageSelections) PageFactory.initElements(test.driver, test.getPage()); 
+            test.webFunctions().click(test,selectcoverage.btn_ChangePolicy); 
+            test.getLogger().info("Continue Button clicked successfully without making anychange on coverages. ");
+            }
 
           }
 
