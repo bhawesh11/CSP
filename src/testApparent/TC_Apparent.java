@@ -35,6 +35,7 @@ public class TC_Apparent {
 	STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
 	STC_Claims stc_Claims = new STC_Claims();
 	STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
+	STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
 
 	// ==============================================================================================
 	// ***_TEST_CASES_***
@@ -46,7 +47,7 @@ public class TC_Apparent {
 
         Testing test = new Testing(ENV, brandName, "OneTimePayment_ExistingCreditCard");
         try {
-            stc_Login.login(test);
+            stc_Login.login_Apparent(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.pay10FromSavedCard(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -69,7 +70,7 @@ public class TC_Apparent {
         Testing test = new Testing(ENV, brandName, "OneTimePayment_NewCreditCard");
         try {
 
-            stc_Login.login(test);
+        	stc_Login.login_Apparent(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.payFromNewCard(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -91,7 +92,7 @@ public class TC_Apparent {
 
         Testing test = new Testing(ENV, brandName, "OneTimePayment_NewACH");
         try {
-            stc_Login.login(test);
+        	stc_Login.login_Apparent(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.pay10FromNewBankAccount(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -113,7 +114,7 @@ public class TC_Apparent {
 
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_ACH");
         try {
-            stc_Login.login(test);
+        	stc_Login.login_Apparent(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddAchAccount(test);
         } catch (Throwable e) {
@@ -133,7 +134,7 @@ public class TC_Apparent {
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_CreditCard");
         try {
 
-            stc_Login.login(test);
+        	stc_Login.login_Apparent(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddCreditCard(test);
         } catch (Throwable e) {
@@ -145,7 +146,7 @@ public class TC_Apparent {
     }//closing TC005 method
 	
 	//TC018
-	@Test(enabled = true, priority = 5, description = "Verify Claims")
+	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
 	public void TC018(String ENV) {
@@ -170,7 +171,7 @@ public class TC_Apparent {
 	
 	
 //	TC016
-	@Test(enabled = true, priority = 5, description = "Edit Mailing Address")
+	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -192,7 +193,7 @@ public class TC_Apparent {
 	
 	
 //	TC017
-	@Test(enabled = true, priority = 5, description = "EditGaragingAddress")
+	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
 	@Parameters("ENV")
 	
 	public void TC017(String ENV) {
@@ -215,7 +216,7 @@ public class TC_Apparent {
 	
  
 //	TC015
-	@Test(enabled = true, priority = 5, description = "Edit Email Address")
+	@Test(enabled = false, priority = 5, description = "Edit Email Address")
 	@Parameters("ENV")
 	
 	public void TC015(String ENV) {
