@@ -145,6 +145,7 @@ public class TC_Apparent {
 
     }//closing TC005 method
 	
+
 	//TC018
 	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
@@ -170,8 +171,9 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
 	
 	
+
 //	TC016
-	@Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+  @Test(enabled = false, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
@@ -191,7 +193,7 @@ public class TC_Apparent {
 	}//closing TC016 method
     //	---------------------------------------------------------------------------------------
 	
-	
+
 //	TC017
 	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
 	@Parameters("ENV")
@@ -215,6 +217,7 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
 	
  
+
 //	TC015
 	@Test(enabled = false, priority = 5, description = "Edit Email Address")
 	@Parameters("ENV")
@@ -231,6 +234,68 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-		
 	}//closing TC015 method
+
+	
+//	---------------------------------------------------------------------------------------
+	
+	 //	TC012
+    @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
+    @Parameters("ENV")
+    public void TC012(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);
+            stc_PersonalInfo.editHomePhoneNumber(test);
+
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC012 method
+//	---------------------------------------------------------------------------------------
+    
+    
+    //	TC013
+    @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
+    @Parameters("ENV")
+    public void TC013(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonalInfo.editWorkPhoneNumber(test);
+
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC013 method
+    //	---------------------------------------------------------------------------------------
+
+    
+    //	TC014
+    @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+    @Parameters("ENV")
+    public void TC014(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickPersonalInfo(test);;
+            stc_PersonalInfo.editCellPhoneNumber(test);
+
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC014 method
+     //	---------------------------------------------------------------------------------------
+
 }
