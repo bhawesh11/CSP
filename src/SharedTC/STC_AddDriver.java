@@ -182,13 +182,6 @@ public class STC_AddDriver {
         }
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.getLogger().info("Update Quote");
-        try {
-            if(addingdriver.btn_ClickContinueWithoutCoverage.isDisplayed()== true)
-            {
-                test.webFunctions().click(test,addingdriver.btn_ClickContinueWithoutCoverage);
-            } }
-        catch(Exception e) {
-        }
 
 
         //NEXT PAGE6 : Policy Review
@@ -203,5 +196,5 @@ public class STC_AddDriver {
     }
 
 
-    }
+}
 

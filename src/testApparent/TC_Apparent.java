@@ -22,20 +22,22 @@ public class TC_Apparent {
 	public void openBrowser() throws IOException {
 		PropertyConfigurator.configure("log4j.properties");
 	}
-
-	// ==============================================================================================
-
-	// Creating Objects :
+	//	==============================================================================================
+//										***_TEST_CASES_***
+// Creating Objects :
 	STC_Login stc_Login = new STC_Login();
 	STC_Register stc_Register = new STC_Register();
 	STC_DashBoard stc_DashBoard = new STC_DashBoard();
 	STC_MakePayment stc_MakePayment = new STC_MakePayment();
 	STC_ReviewPayment stc_ReviewPayment = new STC_ReviewPayment();
 	STC_PaymentConfirmation stc_PaymentConfirmation = new STC_PaymentConfirmation();
-	STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
-	STC_Claims stc_Claims = new STC_Claims();
+	STC_AddDriver stc_addDriver =  new STC_AddDriver();
 	STC_EditCoverage stc_editCoverage= new STC_EditCoverage();
+	STC_Vehicle stc_vehicle= new STC_Vehicle();
+	STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
+	STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
 	STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
+	STC_Claims stc_Claims = new STC_Claims();
 
 	// ==============================================================================================
 	// ***_TEST_CASES_***
@@ -144,9 +146,140 @@ public class TC_Apparent {
         }
 
     }//closing TC005 method
-	
+    //	---------------------------------------------------------------------------------------
 
-	//TC018
+    // Script will run if there is only one driver and one vehicle in the policy
+    //TC006
+    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
+    @Parameters("ENV")
+    public void TC006(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "AddDriver_NoVehicle");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickAddDriver(test);
+            stc_addDriver.aboutDriver(test);
+            stc_addDriver.addVehicleNo(test);
+            stc_addDriver.whoOperatesVehicle(test);
+            stc_addDriver.editCoverage(test);
+            stc_DashBoard.backToDashboard(test);
+        }catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC006 method6
+
+    //---------------------------------------------------------------------------------------
+    // Scipt will run if there is only one driver and one vehicle in the policy
+    //TC007
+    @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
+    @Parameters("ENV")
+    public void TC007(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickAddDriver(test);
+            stc_addDriver.aboutDriverwithvehicle(test);
+            stc_addDriver.addVehicleYes(test);
+            stc_addDriver.editCoverage(test);
+            stc_DashBoard.backToDashboard(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC007 method
+    // 	---------------------------------------------------------------------------------------
+    // Scipt will run if there is only one driver and one vehicle in the policy
+    //TC008
+    @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
+    @Parameters("ENV")
+    public void TC008(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickAddReplaceVehicle(test);
+            stc_vehicle.aboutVehicle(test);
+            stc_vehicle.moreAboutVehicle(test);
+            stc_vehicle.addDriverToVehicle(test);
+            stc_vehicle.whoOperatesVehicle(test);
+            stc_vehicle.editCoverage(test);
+            stc_vehicle.VinforVehicle(test);
+            stc_DashBoard.backToDashboard(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC008 method
+    //	---------------------------------------------------------------------------------------
+    // Scipt will run if there is only one driver and one vehicle in the policy
+    //TC009
+    @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
+    @Parameters("ENV")
+    public void TC009(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
+        try {
+            stc_Login.login3(test);
+            stc_DashBoard.clickAddReplaceVehicle(test);
+            stc_vehicle.addVehicle_Vin(test);
+            stc_vehicle.whoOperatesVehiclewithVin(test);
+            stc_addDriver.editCoverage(test);
+            stc_DashBoard.backToDashboard(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC009 method
+    //	---------------------------------------------------------------------------------------
+    // Scipt will run if there is only one driver and one vehicle in the policy
+    //TC010
+    @Test(enabled = true, priority = 5, description = "Replace Vehicle")
+    @Parameters("ENV")
+    public void TC010(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
+        try {
+            stc_Login.login3(test);
+            stc_DashBoard.clickAddReplaceVehicle(test);
+            stc_vehicle.replaceVehicle(test);
+            stc_vehicle.moreAboutVehicle(test);
+            stc_vehicle.addDriverToVehicleNo(test);
+            stc_vehicle.whoOperatesVehiclewithVin(test);
+            stc_addDriver.editCoverage(test);
+            stc_DashBoard.backToDashboard(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC010 method
+    //	---------------------------------------------------------------------------------------
+    // To remove vehicle you have to pass the exact vehicle name and
+    //TC011
+    @Test(enabled = true, priority = 5, description = "Remove Vehicle")
+    @Parameters("ENV")
+    public void TC011(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "RemoveVehicle");
+        try{
+            stc_Login.login3(test);
+            stc_removeVehicle.removevehicle(test);
+            stc_DashBoard.backToDashboard(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+    }//closing TC011 method
+    //	---------------------------------------------------------------------------------------
+
+    //TC018
 	@Test(enabled = false, priority = 5, description = "Verify Claims")
 	@Parameters("ENV")
 	
@@ -154,26 +287,24 @@ public class TC_Apparent {
 		
 		Testing test = new Testing(ENV, brandName, "VerifyClaims");
 		try {
-			stc_Login.login_Apparent(test);
-            stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);
-                     
-        } 
-		catch (Throwable e) 
-		{
-            throw (e);
-        } finally 
-		{
-            test.tearDown();
-        }
-		
-	}//closing TC018 method  
-    //	---------------------------------------------------------------------------------------
-	
-	
+			stc_Login.login(test);
+			stc_DashBoard.clickAddDriver(test);
+			stc_addDriver.aboutDriver(test);
+			stc_addDriver.addVehicleNo(test);
+			stc_addDriver.whoOperatesVehicle(test);
+			stc_addDriver.editCoverage(test);
+			stc_DashBoard.backToDashboard(test);
+		}catch (Throwable e) {
+			throw (e);
+		} finally {
+			test.tearDown();
+		}
+	}//closing TC006 method6
 
-//	TC016
-  @Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+	//---------------------------------------------------------------------------------------
+	// Scipt will run if there is only one driver and one vehicle in the policy
+	//TC007
+	@Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
 	@Parameters("ENV")
 	
 	public void TC016(String ENV) {
