@@ -15,11 +15,11 @@ public class STC_Login {
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
 
-        test.webFunctions().type(test, login.textBox_Email, "Test2fD5HeKMym@elephant.com");
+        test.webFunctions().type(test, login.textBox_Email, "TestQrdnxbeVGH@apparentinsurance.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
-        test.getLogger().info("Login Username : Test2fD5HeKMym@elephant.com");
-        test.getLogger().info("Policy Number : 244-000-005-89");
+        test.getLogger().info("Login Username : TestQrdnxbeVGH@apparentinsurance.com");
+        test.getLogger().info("Policy Number : 244-000-003-73");
       test.webFunctions().staticWait(10000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
@@ -92,6 +92,8 @@ public class STC_Login {
         test.webFunctions().type(test, login.textBox_Email, "TestzIQPywHsva@apparentinsurance.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Login Username : TestzIQPywHsva@apparentinsurance.com");
+        test.getLogger().info("Policy Number : 244-000-010-00");
       test.webFunctions().staticWait(7000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");

@@ -3,14 +3,13 @@
 <suite name="Suite">
 
 	<listeners>
- 		<listener class-name="testNGListners.ITestAnnotation"></listener>
- 		<listener class-name="testNGListners.ITestTransform"></listener>
+ 		<listener class-name="testNGListners.ITestAnnotation"></listener> 	
 	</listeners>
 	
   <test name="testApparent">
       <parameter name="ENV" value="QA6"/>
     <classes>
-      <class name="testApparent.TC"/>
+      <class name="testApparent.TC_Apparent"/>
     </classes>
   </test> <!-- Test -->
 
