@@ -49,7 +49,7 @@ public class STC_AddDriver {
         test.setPage(Driver.class);
         Driver addingdriver = (Driver) PageFactory.initElements(test.driver, test.getPage());
 
-        //NEXT PAGE : Tell us about the driver
+        //NEXT PAGE : Tell us more about the driver
 
         test.webFunctions().type(test, addingdriver.textbox_FirstName, test.getTestData("AnotherNames.FirstName"));
         test.webFunctions().type(test, addingdriver.textbox_LastName, test.getTestData("AnotherNames.LastName"));
@@ -182,13 +182,6 @@ public class STC_AddDriver {
         }
         try { Thread.sleep(3000); } catch (InterruptedException e) { e.printStackTrace(); }
         test.getLogger().info("Update Quote");
-        try {
-            if(addingdriver.btn_ClickContinueWithoutCoverage.isDisplayed()== true)
-            {
-                test.webFunctions().click(test,addingdriver.btn_ClickContinueWithoutCoverage);
-            } }
-        catch(Exception e) {
-        }
 
 
         //NEXT PAGE6 : Policy Review
