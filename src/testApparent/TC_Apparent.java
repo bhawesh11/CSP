@@ -44,7 +44,7 @@ public class TC_Apparent {
     // ***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -66,7 +66,7 @@ public class TC_Apparent {
 //	==============================================================================================
 
     //	TC002
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+    @Test(enabled =true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -89,7 +89,7 @@ public class TC_Apparent {
 //---------------------------------------------------------------------------------------
 
     //	TC003
-    @Test(enabled = false, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
+    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New ACH/Bank Account")
     @Parameters("ENV")
     public void TC003(String ENV) {
 
@@ -111,7 +111,7 @@ public class TC_Apparent {
 //---------------------------------------------------------------------------------------
 
     //	TC004
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - ACH")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - ACH")
     @Parameters("ENV")
     public void TC004(String ENV) {
 
@@ -130,7 +130,7 @@ public class TC_Apparent {
 
     //---------------------------------------------------------------------------------------
 //	TC005
-    @Test(enabled = false, priority = 5, description = "Add new payment Method - Credit Card")
+    @Test(enabled = true, priority = 5, description = "Add new payment Method - Credit Card")
     @Parameters("ENV")
     public void TC005(String ENV) {
 
@@ -218,7 +218,7 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC009
-    @Test(enabled = false, priority = 5, description = "AddVehicle with VIN")
+    @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
     @Parameters("ENV")
     public void TC009(String ENV) {
 
@@ -239,7 +239,7 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC010
-    @Test(enabled = false, priority = 5, description = "Replace Vehicle")
+    @Test(enabled = true, priority = 5, description = "Replace Vehicle")
     @Parameters("ENV")
     public void TC010(String ENV) {
 
@@ -262,7 +262,7 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
     // To remove vehicle you have to pass the exact vehicle name
     //TC011
-    @Test(enabled = false, priority = 5, description = "Remove Vehicle")
+    @Test(enabled = true, priority = 5, description = "Remove Vehicle")
     @Parameters("ENV")
     public void TC011(String ENV) {
 
@@ -279,11 +279,10 @@ public class TC_Apparent {
     }//closing TC011 method
     //	---------------------------------------------------------------------------------------
 
-    //TC018
+    //TC012
     @Test(enabled = true, priority = 5, description = "Verify Claims")
     @Parameters("ENV")
-
-    public void TC018(String ENV) {
+    public void TC012(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "VerifyClaims");
         try {
@@ -300,16 +299,16 @@ public class TC_Apparent {
             test.tearDown();
         }
 
-    }//closing TC018 method
+    }//closing TC012 method
     //	---------------------------------------------------------------------------------------
 
 
 
-    //	TC016
+    //	TC013
     @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
     @Parameters("ENV")
 
-    public void TC016(String ENV) {
+    public void TC013(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditMailingAddress");
         try {
@@ -323,15 +322,15 @@ public class TC_Apparent {
             test.tearDown();
         }
 
-    }//closing TC016 method
+    }//closing TC013 method
     //	---------------------------------------------------------------------------------------
 
 
-    //	TC017
+    //	TC014
     @Test(enabled = true, priority = 5, description = "EditGaragingAddress")
     @Parameters("ENV")
 
-    public void TC017(String ENV) {
+    public void TC014(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
         try {
@@ -346,7 +345,7 @@ public class TC_Apparent {
             test.tearDown();
         }
 
-    }//closing TC017 method
+    }//closing TC014 method
     //	---------------------------------------------------------------------------------------
 
 
@@ -370,10 +369,10 @@ public class TC_Apparent {
     }//closing TC015 method
 //	---------------------------------------------------------------------------------------	
     
-//	TC012
+//	TC016
     @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
     @Parameters("ENV")
-    public void TC012(String ENV) {
+    public void TC016(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
         try {
@@ -386,14 +385,14 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-    }//closing TC012 method
+    }//closing TC016 method
 //	---------------------------------------------------------------------------------------
 
 
-    //	TC013
+    //	TC017
     @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
-    public void TC013(String ENV) {
+    public void TC017(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
         try {
@@ -406,14 +405,14 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-    }//closing TC013 method
+    }//closing TC017 method
     //	---------------------------------------------------------------------------------------
 
 
-    //	TC014
+    //	TC018
     @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
     @Parameters("ENV")
-    public void TC014(String ENV) {
+    public void TC018(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
         try {
@@ -426,14 +425,14 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-    }//closing TC014 method
+    }//closing TC018 method
     //	---------------------------------------------------------------------------------------
 
-//	TC015
-	@Test(enabled = false, priority = 5, description = "Edit Email Address")
+//	TC019
+	@Test(enabled = true, priority = 5, description = "Edit Email Address")
 	@Parameters("ENV")
 	
-	public void TC015(String ENV) {
+	public void TC019(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
@@ -445,17 +444,17 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-	}//closing TC015 method
+	}//closing TC019 method
 
 	
 //	---------------------------------------------------------------------------------------	
 	
 
-//	TC016
-  @Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+//	TC0020
+  @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
 	@Parameters("ENV")
 	
-	public void TC016(String ENV) {
+	public void TC020(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditMailingAddress");
 		try {
@@ -469,15 +468,15 @@ public class TC_Apparent {
             test.tearDown();
         }
 		
-	}//closing TC016 method
+	}//closing TC020 method
 //	---------------------------------------------------------------------------------------
 	
 
-//	TC017
-	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
+//	TC021
+	@Test(enabled = true, priority = 5, description = "EditGaragingAddress")
 	@Parameters("ENV")
 	
-	public void TC017(String ENV) {
+	public void TC021(String ENV) {
 		
 		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
 		try {
@@ -492,14 +491,14 @@ public class TC_Apparent {
             test.tearDown();
         }
 		
-	}//closing TC017 method
+	}//closing TC021 method
 //	---------------------------------------------------------------------------------------
 	
-	//TC018
-		@Test(enabled = false, priority = 5, description = "Verify Claims")
+	//TC022
+		@Test(enabled = true, priority = 5, description = "Verify Claims")
 		@Parameters("ENV")
 		
-		public void TC018(String ENV) {
+		public void TC022(String ENV) {
 			
 			Testing test = new Testing(ENV, brandName, "VerifyClaims");
 			try {
@@ -516,6 +515,6 @@ public class TC_Apparent {
 	            test.tearDown();
 	        }
 			
-		}//closing TC018 method  
+		}//closing TC022 method
 //	---------------------------------------------------------------------------------------
 }
