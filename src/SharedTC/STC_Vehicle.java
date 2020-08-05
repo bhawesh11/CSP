@@ -92,7 +92,11 @@ public class STC_Vehicle {
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AddVehicle.AddDriverToVehicle.LicenseNumber"));
         test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
         test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AddVehicle.AddDriverToVehicle.LicenseState"));
-        test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
+        try{
+            if(addingdriver.btn_CurentlyStudentNo.isDisplayed()==true){
+                test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, addingdriver.btn_Continue);
         test.getLogger().info("Driver has been added with vehicle");
     }
