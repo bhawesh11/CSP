@@ -44,13 +44,13 @@ public class TC_Apparent {
     // ***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "OneTimePayment_ExistingCreditCard");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.pay10FromSavedCard(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -73,7 +73,7 @@ public class TC_Apparent {
         Testing test = new Testing(ENV, brandName, "OneTimePayment_NewCreditCard");
         try {
 
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.payFromNewCard(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -95,7 +95,7 @@ public class TC_Apparent {
 
         Testing test = new Testing(ENV, brandName, "OneTimePayment_NewACH");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickOneTimePayment(test);
             stc_MakePayment.pay10FromNewBankAccount(test);
             stc_ReviewPayment.reviewPayment(test);
@@ -117,7 +117,7 @@ public class TC_Apparent {
 
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_ACH");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddAchAccount(test);
         } catch (Throwable e) {
@@ -137,7 +137,7 @@ public class TC_Apparent {
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_CreditCard");
         try {
 
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddCreditCard(test);
         } catch (Throwable e) {
@@ -150,7 +150,7 @@ public class TC_Apparent {
 
     // Script will run if there is only one driver and one vehicle in the policy
     //TC006
-    @Test(enabled = false, priority = 5, description = "Add Driver without vehicle")
+    @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
     public void TC006(String ENV) {
 
@@ -173,7 +173,7 @@ public class TC_Apparent {
     //---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC007
-    @Test(enabled = false, priority = 5, description = "Add Driver with New Vehicle")
+    @Test(enabled = true, priority = 5, description = "Add Driver with New Vehicle")
     @Parameters("ENV")
     public void TC007(String ENV) {
 
@@ -194,7 +194,7 @@ public class TC_Apparent {
     // 	---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC008
-    @Test(enabled = false, priority = 5, description = "AddVehicle without VIN")
+    @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
     @Parameters("ENV")
     public void TC008(String ENV) {
 
@@ -218,13 +218,13 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC009
-    @Test(enabled = true, priority = 5, description = "AddVehicle with VIN")
+    @Test(enabled = false, priority = 5, description = "AddVehicle with VIN")
     @Parameters("ENV")
     public void TC009(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
         try {
-            stc_Login.login3(test);
+            stc_Login.login2(test);
             stc_DashBoard.clickAddReplaceVehicle(test);
             stc_vehicle.addVehicle_Vin(test);
             stc_vehicle.whoOperatesVehiclewithVin(test);
@@ -239,13 +239,13 @@ public class TC_Apparent {
     //	---------------------------------------------------------------------------------------
     // Scipt will run if there is only one driver and one vehicle in the policy
     //TC010
-    @Test(enabled = true, priority = 5, description = "Replace Vehicle")
+    @Test(enabled = false, priority = 5, description = "Replace Vehicle")
     @Parameters("ENV")
     public void TC010(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
         try {
-            stc_Login.login3(test);
+            stc_Login.login2(test);
             stc_DashBoard.clickAddReplaceVehicle(test);
             stc_vehicle.replaceVehicle(test);
             stc_vehicle.moreAboutVehicle(test);
@@ -260,15 +260,15 @@ public class TC_Apparent {
         }
     }//closing TC010 method
     //	---------------------------------------------------------------------------------------
-    // To remove vehicle you have to pass the exact vehicle name and
+    // To remove vehicle you have to pass the exact vehicle name
     //TC011
-    @Test(enabled = true, priority = 5, description = "Remove Vehicle")
+    @Test(enabled = false, priority = 5, description = "Remove Vehicle")
     @Parameters("ENV")
     public void TC011(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "RemoveVehicle");
         try{
-            stc_Login.login3(test);
+            stc_Login.login2(test);
             stc_removeVehicle.removevehicle(test);
             stc_DashBoard.backToDashboard(test);
         } catch (Throwable e) {
@@ -279,18 +279,15 @@ public class TC_Apparent {
     }//closing TC011 method
     //	---------------------------------------------------------------------------------------
 
-
-
-
     //TC018
-    @Test(enabled = false, priority = 5, description = "Verify Claims")
+    @Test(enabled = true, priority = 5, description = "Verify Claims")
     @Parameters("ENV")
 
     public void TC018(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "VerifyClaims");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickClaims(test);
             stc_Claims.verifyClaims(test);
 
@@ -309,14 +306,14 @@ public class TC_Apparent {
 
 
     //	TC016
-    @Test(enabled = false, priority = 5, description = "Edit Mailing Address")
+    @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
     @Parameters("ENV")
 
     public void TC016(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditMailingAddress");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editMailingAddress(test);
             test.webFunctions().staticWait(8000);
@@ -331,7 +328,7 @@ public class TC_Apparent {
 
 
     //	TC017
-    @Test(enabled = false, priority = 5, description = "EditGaragingAddress")
+    @Test(enabled = true, priority = 5, description = "EditGaragingAddress")
     @Parameters("ENV")
 
     public void TC017(String ENV) {
@@ -355,14 +352,14 @@ public class TC_Apparent {
 
 
     //	TC015
-    @Test(enabled = false, priority = 5, description = "Edit Email Address")
+    @Test(enabled = true, priority = 5, description = "Edit Email Address")
     @Parameters("ENV")
 
     public void TC015(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditEmail");
         try {
-            stc_Login.login_Apparent(test);
+            stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
             stc_PersonalInfo.editEmail(test);
         } catch (Throwable e) {

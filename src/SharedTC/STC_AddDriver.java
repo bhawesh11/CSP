@@ -38,7 +38,11 @@ public class STC_AddDriver {
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AboutDriver.LicenseNumber"));
         test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
         test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AboutDriver.LicenseState"));
-        test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
+        try{
+            if(addingdriver.btn_CurentlyStudentNo.isDisplayed()==true){
+                test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, addingdriver.btn_Continue);
         test.getLogger().info("Driver details have been submitted");
 
@@ -74,7 +78,11 @@ public class STC_AddDriver {
         test.webFunctions().type(test, addingdriver.textbox_DriverLicenseNumber, test.getTestData("AnotherNames.LicenseNo"));
         test.webFunctions().click(test,addingdriver.dropdown_DriverLicenseState);
         test.webFunctions().click(test, addingdriver.dropdown_SelectState, test.getTestData("AboutDriver.LicenseState"));
-        test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo);
+        try{
+            if(addingdriver.btn_CurentlyStudentNo.isDisplayed()==true){
+                test.webFunctions().click(test, addingdriver.btn_CurentlyStudentNo); }
+        }catch(Exception e) {
+        }
         test.webFunctions().click(test, addingdriver.btn_Continue);
         test.getLogger().info("Driver details have been submitted");
     }

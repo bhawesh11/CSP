@@ -33,7 +33,7 @@ public class STC_MakePayment {
         test.webFunctions().click(test, makePayment.dropdown_NewCC_ExpirationYear);
         
         test.webFunctions().click(test, makePayment.select_NewCC_ExpirationYear,test.getTestData("CardDetails.ExpiryYear"));
-        test.webFunctions().click(test, makePayment.btn_NewCC_SaveCard_Yes);
+        test.webFunctions().click(test, makePayment.btn_NewCC_SaveCard_No);
         test.webFunctions().type(test, makePayment.textbox_NewCC_Nickname,test.getTestData("CardDetails.Nickname"));
         test.webFunctions().click(test, makePayment.checkbox_NewCC_MakeDefault);   
         test.getLogger().info("Made Payment instrument as default .");
@@ -54,7 +54,7 @@ public class STC_MakePayment {
         test.webFunctions().type(test, makePayment.textBox_NewACH_RoutingNumber,test.getTestData("ACHDetails.RoutingNumber"));
         test.webFunctions().type(test, makePayment.textBox_NewACH_AccountNumber,test.getTestData("ACHDetails.AccountNumber"));
         
-        test.webFunctions().click(test, makePayment.btn_NewACH_SaveAccount_Yes);
+        test.webFunctions().click(test, makePayment.btn_NewACH_SaveAccount_No);
         test.webFunctions().type(test, makePayment.textbox_NewACH_Nickname,test.getTestData("ACHDetails.Nickname"));
         test.webFunctions().click(test, makePayment.checkbox_NewACH_MakeDefault);   
         test.getLogger().info("Made Payment instrument as default .");
