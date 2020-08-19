@@ -147,7 +147,6 @@ public class TC_Elephant {
 
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_CreditCard");
         try {
-
             stc_Login.login(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddCreditCard(test);
@@ -234,7 +233,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
-                stc_Login.login3(test);
+                stc_Login.login2(test);
                 stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
                 stc_vehicle.whoOperatesVehiclewithVin(test);
@@ -255,7 +254,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
-                stc_Login.login3(test);
+                stc_Login.login2(test);
                 stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
@@ -278,7 +277,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
-                stc_Login.login3(test);
+                stc_Login.login2(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
