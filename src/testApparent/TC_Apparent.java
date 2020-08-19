@@ -191,8 +191,10 @@ public class TC_Apparent {
             test.tearDown();
         }
     }//closing TC007 method
+    
     // 	---------------------------------------------------------------------------------------
-    // Scipt will run if there is only one driver and one vehicle in the policy
+    
+    // Script will run if there is only one driver and one vehicle in the policy
     //TC008
     @Test(enabled = true, priority = 5, description = "AddVehicle without VIN")
     @Parameters("ENV")
@@ -215,8 +217,10 @@ public class TC_Apparent {
             test.tearDown();
         }
     }//closing TC008 method
+    
     //	---------------------------------------------------------------------------------------
-    // Scipt will run if there is only one driver and one vehicle in the policy
+    
+    // Script will run if there is only one driver and one vehicle in the policy
     //TC009
     @Test(enabled = false, priority = 5, description = "AddVehicle with VIN")
     @Parameters("ENV")
@@ -279,96 +283,7 @@ public class TC_Apparent {
     }//closing TC011 method
     //	---------------------------------------------------------------------------------------
 
-    //TC018
-    @Test(enabled = true, priority = 5, description = "Verify Claims")
-    @Parameters("ENV")
-
-    public void TC018(String ENV) {
-
-        Testing test = new Testing(ENV, brandName, "VerifyClaims");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);
-
-        }
-        catch (Throwable e)
-        {
-            throw (e);
-        } finally
-        {
-            test.tearDown();
-        }
-
-    }//closing TC018 method
-    //	---------------------------------------------------------------------------------------
-
-
-
-    //	TC016
-    @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
-    @Parameters("ENV")
-
-    public void TC016(String ENV) {
-
-        Testing test = new Testing(ENV, brandName, "EditMailingAddress");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test);
-            test.webFunctions().staticWait(8000);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-
-    }//closing TC016 method
-    //	---------------------------------------------------------------------------------------
-
-
-    //	TC017
-    @Test(enabled = true, priority = 5, description = "EditGaragingAddress")
-    @Parameters("ENV")
-
-    public void TC017(String ENV) {
-
-        Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
-        try {
-            stc_Login.login_Apparent(test);
-            stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);
-            stc_editCoverage.updateGaragingAddCoverage(test);
-
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-
-    }//closing TC017 method
-    //	---------------------------------------------------------------------------------------
-
-
-
-    //	TC015
-    @Test(enabled = true, priority = 5, description = "Edit Email Address")
-    @Parameters("ENV")
-
-    public void TC015(String ENV) {
-
-        Testing test = new Testing(ENV, brandName, "EditEmail");
-        try {
-            stc_Login.login(test);
-            stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editEmail(test);
-        } catch (Throwable e) {
-            throw (e);
-        } finally {
-            test.tearDown();
-        }
-    }//closing TC015 method
-//	---------------------------------------------------------------------------------------	
+   
     
 //	TC012
     @Test(enabled = true, priority = 5, description = "Edit Home Phone Number")
@@ -407,8 +322,8 @@ public class TC_Apparent {
             test.tearDown();
         }
     }//closing TC013 method
-    //	---------------------------------------------------------------------------------------
-
+    
+//---------------------------------------------------------------------------------------
 
     //	TC014
     @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
@@ -427,95 +342,95 @@ public class TC_Apparent {
             test.tearDown();
         }
     }//closing TC014 method
-    //	---------------------------------------------------------------------------------------
+    
+ //---------------------------------------------------------------------------------------
 
-//	TC015
-	@Test(enabled = false, priority = 5, description = "Edit Email Address")
-	@Parameters("ENV")
-	
-	public void TC015(String ENV) {
-		
-		Testing test = new Testing(ENV, brandName, "EditEmail");
-		try {
-			stc_Login.login_Apparent(test);
+    //	TC015
+    @Test(enabled = true, priority = 5, description = "Edit Email Address")
+    @Parameters("ENV")
+
+    public void TC015(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "EditEmail");
+        try {
+            stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editEmail(test);            
+            stc_PersonalInfo.editEmail(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-	}//closing TC015 method
+    }//closing TC015 method
+    
+//	---------------------------------------------------------------------------------------
+    
+    //	TC016
+    @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
+    @Parameters("ENV")
 
-	
-//	---------------------------------------------------------------------------------------	
-	
+    public void TC016(String ENV) {
 
-//	TC016
-  @Test(enabled = false, priority = 5, description = "Edit Mailing Address")
-	@Parameters("ENV")
-	
-	public void TC016(String ENV) {
-		
-		Testing test = new Testing(ENV, brandName, "EditMailingAddress");
-		try {
-			stc_Login.login_Apparent(test);
+        Testing test = new Testing(ENV, brandName, "EditMailingAddress");
+        try {
+            stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test); 
+            stc_PersonalInfo.editMailingAddress(test);
             test.webFunctions().staticWait(8000);
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-		
-	}//closing TC016 method
-//	---------------------------------------------------------------------------------------
-	
 
-//	TC017
-	@Test(enabled = false, priority = 5, description = "EditGaragingAddress")
-	@Parameters("ENV")
-	
-	public void TC017(String ENV) {
-		
-		Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
-		try {
-			stc_Login.login_Apparent(test);
+    }//closing TC016 method
+//	---------------------------------------------------------------------------------------
+
+    //	TC017
+    @Test(enabled = true, priority = 5, description = "EditGaragingAddress")
+    @Parameters("ENV")
+
+    public void TC017(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
+        try {
+            stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);  
+            stc_PersonalInfo.editGaragingAddress(test);
             stc_editCoverage.updateGaragingAddCoverage(test);
-            
+
         } catch (Throwable e) {
             throw (e);
         } finally {
             test.tearDown();
         }
-		
-	}//closing TC017 method
-//	---------------------------------------------------------------------------------------
-	
-	//TC018
-		@Test(enabled = false, priority = 5, description = "Verify Claims")
-		@Parameters("ENV")
-		
-		public void TC018(String ENV) {
-			
-			Testing test = new Testing(ENV, brandName, "VerifyClaims");
-			try {
-				stc_Login.login_Apparent(test);
-	            stc_DashBoard.clickClaims(test);
-	            stc_Claims.verifyClaims(test);
-	                     
-	        } 
-			catch (Throwable e) 
-			{
-	            throw (e);
-	        } finally 
-			{
-	            test.tearDown();
-	        }
-			
-		}//closing TC018 method  
-//	---------------------------------------------------------------------------------------
+
+    }//closing TC017 method
+//	---------------------------------------------------------------------------------------	
+    
+    //TC018
+    @Test(enabled = true, priority = 5, description = "Verify Claims")
+    @Parameters("ENV")
+
+    public void TC018(String ENV) {
+
+        Testing test = new Testing(ENV, brandName, "VerifyClaims");
+        try {
+            stc_Login.login(test);
+            stc_DashBoard.clickClaims(test);
+            stc_Claims.verifyClaims(test);
+
+        }
+        catch (Throwable e)
+        {
+            throw (e);
+        } finally
+        {
+            test.tearDown();
+        }
+
+    }//closing TC018 method
+    
+    
+//	---------------------------------------------------------------------------------------	
 }
