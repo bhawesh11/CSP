@@ -7,8 +7,8 @@ public class Chatbox {
 	
 	public String frameid_Chatbox = "designstudio-iframe";
 		
-	 @FindBy(id="designstudio-iframe")
-        public WebElement frameid_Chatbox1;
+	 //@FindBy(id="designstudio-iframe")
+      //  public WebElement frameid_Chatbox;
 
 	 @FindBy(id="email")
 	    public WebElement text_EmailChatbox;
