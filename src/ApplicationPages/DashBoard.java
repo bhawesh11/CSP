@@ -65,10 +65,15 @@ public String maximizeVehicleDetail = "//*[contains(@id,'{0}')]";//{0}->2012-AUD
 	@FindBy(xpath="//span[text()='Get ID Card']")
 	public WebElement btn_IDCardForVehicle;
 
-
-
     @FindBy(xpath="(//button[contains(@class,'close-button')])[2]")
     public WebElement btn_BackToDashboard;
+    
+    @FindBy(id="btnChat")
+    public WebElement btn_Chat;
+    
+    @FindBy(id="btnLogout")
+    public WebElement btn_Logout;
+    
 
 
 }

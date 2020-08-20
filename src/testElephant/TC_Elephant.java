@@ -44,6 +44,7 @@ public class TC_Elephant {
     STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
     STC_Claims stc_Claims = new STC_Claims();
+    STC_Chatbox stc_chatbox = new STC_Chatbox();
 
 
     //	==============================================================================================
@@ -52,7 +53,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -431,7 +432,8 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
 		try {
             stc_Login.login(test);
-            stc_Vehicle.editVehicleCoverages(test);
+            stc_DashBoard.clickDocuments(test);
+            stc_DashBoard.clickLogout(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -440,8 +442,41 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		
 	}//closing TC019 method
     
+//	TC020
+	@Test(enabled = true, priority = 5, description = "Logout")
+	@Parameters("ENV")
+	public void TC020(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "logout");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickDocuments(test);
+            stc_DashBoard.clickLogout(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC020 method
     
-    
+//	TC021
+	@Test(enabled = true, priority = 5, description = "Verify Chatbox")
+	@Parameters("ENV")
+	public void TC021(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "Verify Chatbox");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickChat(test);
+            stc_chatbox.CheckChatbox(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC021 method
 }
 
 

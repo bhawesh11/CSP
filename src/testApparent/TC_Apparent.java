@@ -39,6 +39,7 @@ public class TC_Apparent {
     STC_Vehicle stc_vehicle = new STC_Vehicle();
     STC_AddDriver stc_addDriver = new STC_AddDriver();
     STC_RemoveVehicle stc_removeVehicle = new STC_RemoveVehicle();
+    STC_Chatbox stc_chatbox = new STC_Chatbox();
 
     // ==============================================================================================
     // ***_TEST_CASES_***
@@ -430,6 +431,42 @@ public class TC_Apparent {
         }
 
     }//closing TC018 method
+    
+//	TC019
+	@Test(enabled = true, priority = 5, description = "Logout")
+	@Parameters("ENV")
+	public void TC019(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "logout");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickDocuments(test);
+            stc_DashBoard.clickLogout(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC019 method
+    
+//	TC020
+	@Test(enabled = true, priority = 5, description = "Verify Chatbox")
+	@Parameters("ENV")
+	public void TC020(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "Verify Chatbox");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickChat(test);
+            stc_chatbox.CheckChatbox(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC020 method
     
     
 //	---------------------------------------------------------------------------------------	

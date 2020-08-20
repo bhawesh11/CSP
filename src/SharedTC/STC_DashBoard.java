@@ -129,6 +129,20 @@ public class STC_DashBoard {
         test.webFunctions().click(test, dashBoard.btn_IDCardForVehicle);
         test.getLogger().info("Clicked on 'Get Id Cards' button in expanded vehicle details on dashboard");
       }
+    
+    public void clickChat(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_Chat);
+        test.getLogger().info("Clicked on 'Chat' button to open chatbox");
+      } 
+    
+    public void clickLogout(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_Logout);
+        test.getLogger().info("Clicked on 'logout' button to logout from Customer portal");
+      } 
 
       public void backToDashboard(Testing test){
         test.setPage(DashBoard.class);
