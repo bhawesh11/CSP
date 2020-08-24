@@ -439,7 +439,19 @@ public class WebFunctions {
 	}
 	//	======================================================================
 
-
+    public void switchFrame(Testing test, String element) {
+    	    test.driver.switchTo().frame(element);
+    		
+    }
+    
+    public boolean isElementPresent(Testing test,WebElement element) {
+    	       return element.isDisplayed(); 
+    		
+    }
+	
+    
+	
+	
 	public String clickScreenshot(Testing test)
 	{
 		WebDriverWait wait = new WebDriverWait(test.driver, 40);
