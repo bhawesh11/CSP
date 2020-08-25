@@ -18,8 +18,8 @@ public class STC_Login {
         test.webFunctions().type(test, login.textBox_Email, "lastdryrun@vvv.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
-        test.getLogger().info("Login Username : TestQrdnxbeVGH@apparentinsurance.com");
-        test.getLogger().info("Policy Number : 244-000-003-73");
+        test.getLogger().info("Login Username : lastdryrun@vvv.com");
+        test.getLogger().info("Policy Number : 244-000-015-41");
       test.webFunctions().staticWait(10000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
@@ -83,6 +83,12 @@ public class STC_Login {
 			 STC_Register stc_Register = new STC_Register();
 			 stc_Register.register(test);
 		}
-    }      
+    } 
+    
+    public void clickSetupAccount(Testing test) {
+    	test.setPage(Login.class);
+    	Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+    	test.webFunctions().click(test, login.link_SetupOnlineAccount);
+    }
     
 }

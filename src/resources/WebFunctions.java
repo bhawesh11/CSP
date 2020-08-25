@@ -15,6 +15,9 @@ import org.testng.Assert;
 
 import java.io.IOException;
 import java.util.Date;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
@@ -448,8 +451,27 @@ public class WebFunctions {
     	       return element.isDisplayed(); 
     		
     }
-	
     
+    public String getTitle(Testing test) {
+    	return test.driver.getTitle();
+    }
+	
+    public void switchWindow(Testing test) {
+    	
+    	String parent=test.driver.getWindowHandle();
+    	Set <String> handles = test.driver.getWindowHandles();
+    	Iterator <String> i =handles.iterator();
+    	    	
+    	while(i.hasNext()) {
+    		String childwindow = i.next();
+            if(!childwindow.equalsIgnoreCase(parent)){
+               test.driver.switchTo().window(childwindow);
+               
+            }    	
+    		
+    	}
+    
+    }
 	
 	
 	public String clickScreenshot(Testing test)
