@@ -41,9 +41,10 @@ public class TC_Elephant {
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
     STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
-    STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
     STC_Claims stc_Claims = new STC_Claims();
+    STC_Chatbox stc_chatbox = new STC_Chatbox();
+    STC_Register stc_register = new STC_Register();
 
 
     //	==============================================================================================
@@ -52,7 +53,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -147,7 +148,6 @@ public class TC_Elephant {
 
         Testing test = new Testing(ENV, brandName, "AddNewPaymentMethod_CreditCard");
         try {
-
             stc_Login.login(test);
             stc_DashBoard.clickNewPaymentMethod(test);
             stc_newpaymentmethod.AddCreditCard(test);
@@ -158,7 +158,7 @@ public class TC_Elephant {
         }
 
     }//closing TC005 method
-    // Scipt will run if there is only one driver and one vehicle in the policy
+    // Script will run if there is only one driver and one vehicle in the policy
     //TC006
     @Test(enabled = true, priority = 5, description = "Add Driver without vehicle")
     @Parameters("ENV")
@@ -167,7 +167,7 @@ public class TC_Elephant {
         Testing test = new Testing(ENV, brandName, "AddDriver_NoVehicle");
         try {
             stc_Login.login(test);
-            stc_DashBoard.addDriverBtn(test);
+            stc_DashBoard.clickAddDriver(test);
             stc_addDriver.aboutDriver(test);
             stc_addDriver.addVehicleNo(test);
             stc_addDriver.whoOperatesVehicle(test);
@@ -189,8 +189,8 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddDriver_WithVehicle");
             try {
-                stc_Login.login1(test);
-                stc_DashBoard.addDriverBtn(test);
+                stc_Login.login(test);
+                stc_DashBoard.clickAddDriver(test);
                 stc_addDriver.aboutDriverwithvehicle(test);
                 stc_addDriver.addVehicleYes(test);
                 stc_addDriver.editCoverage(test);
@@ -211,7 +211,7 @@ public class TC_Elephant {
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
                 stc_Login.login2(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.aboutVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicle(test);
@@ -234,8 +234,8 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithVIN");
             try {
-                stc_Login.login3(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_Login.login2(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.addVehicle_Vin(test);
                 stc_vehicle.whoOperatesVehiclewithVin(test);
                 stc_addDriver.editCoverage(test);
@@ -255,8 +255,8 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "ReplaceVehicle");
             try {
-                stc_Login.login4(test);
-                stc_DashBoard.addReplaceVehicle(test);
+                stc_Login.login2(test);
+                stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.replaceVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
                 stc_vehicle.addDriverToVehicleNo(test);
@@ -270,7 +270,7 @@ public class TC_Elephant {
             }
         }//closing TC010 method
         //	---------------------------------------------------------------------------------------
-        // To remove vehicle you have to pass the exact vehicle name
+        // To remove vehicle you have to pass the exact vehicle name and
         //TC011
         @Test(enabled = true, priority = 5, description = "Remove Vehicle")
         @Parameters("ENV")
@@ -278,7 +278,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "RemoveVehicle");
             try{
-                stc_Login.login5(test);
+                stc_Login.login2(test);
                 stc_removeVehicle.removevehicle(test);
                 stc_DashBoard.backToDashboard(test);
             } catch (Throwable e) {
@@ -371,7 +371,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editMailingAddress(test);;            
+            stc_PersonalInfo.editMailingAddress(test);            
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -391,7 +391,8 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 
             stc_Login.login(test);
             stc_DashBoard.clickPersonalInfo(test);
-            stc_PersonalInfo.editGaragingAddress(test);            
+            stc_PersonalInfo.editGaragingAddress(test);    
+            stc_editCoverage.updateGaragingAddCoverage(test);
             
         } catch (Throwable e) {
             throw (e);
@@ -413,8 +414,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		try {
             stc_Login.claimAccountLogin(test);
             stc_DashBoard.clickClaims(test);
-            stc_Claims.verifyClaims(test);;
-                        
+            stc_Claims.verifyClaims(test);                        
             
         } catch (Throwable e) {
             throw (e);
@@ -432,7 +432,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
 		try {
             stc_Login.login(test);
-            stc_Vehicle.editVehicleCoverages(test);
+            stc_vehicle.editVehicleCoverages(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -441,8 +441,79 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		
 	}//closing TC019 method
     
+//	TC020
+	@Test(enabled = true, priority = 5, description = "Logout")
+	@Parameters("ENV")
+	public void TC020(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "Logout");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickDocuments(test);
+            stc_DashBoard.clickLogout(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC020 method
     
-    
+//	TC021
+	@Test(enabled = true, priority = 5, description = "Verify Chatbox")
+	@Parameters("ENV")
+	public void TC021(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "VerifyChatbox");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickChat(test);
+            stc_chatbox.CheckChatbox(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC021 method
+	
+//	TC022
+	@Test(enabled = true, priority = 5, description = "Verify Dashboard Buttons")
+	@Parameters("ENV")
+	public void TC022(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "DashboardButtons");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickGetIDCards(test);
+            stc_DashBoard.clickManagePayments(test);
+            stc_DashBoard.clickFileClaim(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC022 method
+	
+//	TC023
+	@Test(enabled = false, priority = 5, description = "Verify Signup")
+	@Parameters("ENV")
+	public void TC023(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "VerifySignup");
+		try {
+            stc_Login.clickSetupAccount(test);
+            stc_register.register(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC023 method
+	
+//------------------------------------------------------------------------------------------------------	
 }
 
 
