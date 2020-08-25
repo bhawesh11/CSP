@@ -41,10 +41,10 @@ public class TC_Elephant {
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
     STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
-    STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
     STC_Claims stc_Claims = new STC_Claims();
     STC_Chatbox stc_chatbox = new STC_Chatbox();
+    STC_Register stc_register = new STC_Register();
 
 
     //	==============================================================================================
@@ -432,8 +432,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
 		try {
             stc_Login.login(test);
-            stc_DashBoard.clickDocuments(test);
-            stc_DashBoard.clickLogout(test);
+            stc_vehicle.editVehicleCoverages(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -447,7 +446,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	@Parameters("ENV")
 	public void TC020(String ENV) {
 	
-		Testing test = new Testing(ENV, brandName, "logout");
+		Testing test = new Testing(ENV, brandName, "Logout");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickDocuments(test);
@@ -465,7 +464,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	@Parameters("ENV")
 	public void TC021(String ENV) {
 	
-		Testing test = new Testing(ENV, brandName, "Verify Chatbox");
+		Testing test = new Testing(ENV, brandName, "VerifyChatbox");
 		try {
             stc_Login.login(test);
             stc_DashBoard.clickChat(test);
@@ -477,6 +476,44 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
         }
 		
 	}//closing TC021 method
+	
+//	TC022
+	@Test(enabled = true, priority = 5, description = "Verify Dashboard Buttons")
+	@Parameters("ENV")
+	public void TC022(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "DashboardButtons");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickGetIDCards(test);
+            stc_DashBoard.clickManagePayments(test);
+            stc_DashBoard.clickFileClaim(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC022 method
+	
+//	TC023
+	@Test(enabled = false, priority = 5, description = "Verify Signup")
+	@Parameters("ENV")
+	public void TC023(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "VerifySignup");
+		try {
+            stc_Login.clickSetupAccount(test);
+            stc_register.register(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC023 method
+	
+//------------------------------------------------------------------------------------------------------	
 }
 
 
