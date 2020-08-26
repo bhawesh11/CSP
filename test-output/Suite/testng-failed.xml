@@ -5,15 +5,36 @@
   <listeners>
     <listener class-name="testNGListners.ITestAnnotation"/>
   </listeners>
-  <test name="testElephant(failed)">
+  <test name="test(failed)">
     <parameter name="ENV" value="QA6"/>
     <classes>
+      <class name="testApparent.TC_Apparent">
+        <methods>
+          <include name="TC007" invocation-numbers="0"/>
+          <include name="TC018" invocation-numbers="0"/>
+          <include name="TC004" invocation-numbers="0"/>
+          <include name="openBrowser"/>
+          <include name="TC006" invocation-numbers="0"/>
+          <include name="TC017" invocation-numbers="0"/>
+          <include name="TC005" invocation-numbers="0"/>
+          <include name="TC016" invocation-numbers="0"/>
+          <include name="TC008" invocation-numbers="0"/>
+          <include name="TC019" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testApparent.TC_Apparent -->
       <class name="testElephant.TC_Elephant">
         <methods>
-          <include name="TC009" invocation-numbers="0"/>
+          <include name="TC007" invocation-numbers="0"/>
+          <include name="TC018" invocation-numbers="0"/>
+          <include name="TC023" invocation-numbers="0"/>
           <include name="openBrowser"/>
+          <include name="TC016" invocation-numbers="0"/>
+          <include name="TC008" invocation-numbers="0"/>
+          <include name="TC019" invocation-numbers="0"/>
+          <include name="TC006" invocation-numbers="0"/>
+          <include name="TC017" invocation-numbers="0"/>
         </methods>
       </class> <!-- testElephant.TC_Elephant -->
     </classes>
-  </test> <!-- testElephant(failed) -->
+  </test> <!-- test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

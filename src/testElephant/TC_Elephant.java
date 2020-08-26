@@ -53,7 +53,7 @@ public class TC_Elephant {
 //										***_TEST_CASES_***
 
     //	TC001
-    @Test(enabled = false, priority = 5, description = "$10 Payment - Saved Card")
+    @Test(enabled = true, priority = 5, description = "$10 Payment - Saved Card")
     @Parameters("ENV")
     public void TC001(String ENV) {
 
@@ -210,7 +210,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
-                stc_Login.login2(test);
+                stc_Login.login(test);
                 stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.aboutVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
@@ -497,7 +497,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 	}//closing TC022 method
 	
 //	TC023
-	@Test(enabled = false, priority = 5, description = "Verify Signup")
+	@Test(enabled = true, priority = 5, description = "Verify Signup")
 	@Parameters("ENV")
 	public void TC023(String ENV) {
 	
