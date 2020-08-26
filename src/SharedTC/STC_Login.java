@@ -15,11 +15,11 @@ public class STC_Login {
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
 
-        test.webFunctions().type(test, login.textBox_Email, "Test2fD5HeKMym@elephant.com");
+        test.webFunctions().type(test, login.textBox_Email, "lastdryrun@vvv.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
-        test.getLogger().info("Login Username : Test2fD5HeKMym@elephant.com");
-        test.getLogger().info("Policy Number : 244-000-005-89");
+        test.getLogger().info("Login Username : lastdryrun@vvv.com");
+        test.getLogger().info("Policy Number : 244-000-015-41");
       test.webFunctions().staticWait(10000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
@@ -34,7 +34,7 @@ public class STC_Login {
 
         //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
         //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
-        test.webFunctions().type(test, login.textBox_Email, "yes1@vvv.com");
+        test.webFunctions().type(test, login.textBox_Email, "lastdryrun1@vvv.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.getLogger().info("Logged in successfully.");
@@ -46,30 +46,12 @@ public class STC_Login {
             stc_Register.register(test);
         }
     }
-    public void login3(Testing test){
-        test.setPage(Login.class);
-        Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
 
-        //test.webFunctions().type(test, login.textBox_Email,test.getOutput("Email"));
-        //test.webFunctions().type(test, login.textBox_Password,test.getOutput("Password"));
-
-        test.webFunctions().type(test, login.textBox_Email, "ohhyes@vvv.com");
-        test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
-        test.webFunctions().click(test, login.btn_SignIn);
-        test.getLogger().info("Logged in successfully.");
-        test.webFunctions().staticWait(10000);
-        if (test.driver.getTitle().equals("Policy"))
-            test.getLogger().info("Logged in successfully.");
-        else {
-            STC_Register stc_Register = new STC_Register();
-            stc_Register.register(test);
-        }
-    }
 
     public void claimAccountLogin(Testing test){
         test.setPage(Login.class);
         Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().type(test, login.textBox_Email, "test.auto@elephant.com");
+        test.webFunctions().type(test, login.textBox_Email, "login  .com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
         test.webFunctions().staticWait(8000);
@@ -89,9 +71,11 @@ public class STC_Login {
     public void login_Apparent(Testing test){
         test.setPage(Login.class);
         Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().type(test, login.textBox_Email, "TestzIQPywHsva@apparentinsurance.com");
+        test.webFunctions().type(test, login.textBox_Email, "loginap@elle.com");
         test.webFunctions().type(test, login.textBox_Password, "Passw0rd");
         test.webFunctions().click(test, login.btn_SignIn);
+        test.getLogger().info("Login Username : TestzIQPywHsva@apparentinsurance.com");
+        test.getLogger().info("Policy Number : 244-000-010-00");
       test.webFunctions().staticWait(7000);
 		if (test.driver.getTitle().equals("Policy"))
 			test.getLogger().info("Logged in successfully.");
@@ -99,6 +83,12 @@ public class STC_Login {
 			 STC_Register stc_Register = new STC_Register();
 			 stc_Register.register(test);
 		}
-    }      
+    } 
+    
+    public void clickSetupAccount(Testing test) {
+    	test.setPage(Login.class);
+    	Login login = (Login) PageFactory.initElements(test.driver, test.getPage());
+    	test.webFunctions().click(test, login.link_SetupOnlineAccount);
+    }
     
 }
