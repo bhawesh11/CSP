@@ -9816,3 +9816,1829 @@ Session ID: 86b9534208711d53788c3b3eb77805fc
 2020-07-16 20:43:55,510 - Elephant-EditEmail -INFO - Logged in successfully.
 2020-07-16 20:44:03,551 - Elephant-EditEmail -INFO - Logged in successfully.
 2020-07-16 20:44:26,915 - Test Suite -INFO - TC015 is Passed !
+2020-08-24 13:50:57,516 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 13:51:25,009 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 13:51:25,009 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 13:51:35,043 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 13:51:40,188 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 13:51:40,193 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 13:51:40,210 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 13:51:45,436 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 13:51:45,451 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 13:51:45,467 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 13:51:46,709 - Test Suite -INFO - TC022 is Passed !
+2020-08-24 13:57:45,619 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 13:58:11,507 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 13:58:11,507 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 13:58:21,543 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 13:58:26,735 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 13:58:26,750 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 13:58:26,764 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 13:58:31,975 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 13:58:31,989 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 13:58:32,006 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 13:58:37,195 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 13:58:38,419 - Test Suite -INFO - TC022 is Passed !
+2020-08-24 14:00:30,579 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:00:58,956 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:00:58,957 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:01:09,002 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:01:14,139 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:01:14,152 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:01:14,165 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:01:19,380 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:01:19,395 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:01:19,408 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:01:24,566 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:01:24,579 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:01:25,808 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:40)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:07:26,694 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:07:52,215 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:07:52,215 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:08:02,247 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:08:07,417 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:08:07,430 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:08:07,448 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:08:12,680 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:08:12,695 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:08:12,710 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:08:17,934 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:08:17,964 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:08:19,207 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:40)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:10:24,709 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:10:50,302 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:10:50,302 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:11:00,332 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:11:05,457 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:11:05,473 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:11:05,491 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:11:10,748 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:11:10,764 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:11:10,780 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:11:15,965 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:11:16,052 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:11:17,284 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:44)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:12:12,372 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:12:37,664 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:12:37,665 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:12:47,694 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:12:52,841 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:12:52,865 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:12:52,880 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:12:58,097 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:12:58,113 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:12:58,128 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:13:03,306 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:13:03,435 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:13:04,674 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:44)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:27:30,943 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:28:01,269 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:28:01,269 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:28:11,311 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:28:16,462 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:28:16,475 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:28:16,494 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:28:21,759 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:28:21,776 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:28:21,791 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:28:26,976 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:28:27,023 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:28:28,299 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:42)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:30:24,092 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:30:49,011 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:30:49,011 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:30:59,043 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:31:04,213 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:31:04,228 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:31:04,243 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:31:09,458 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:31:09,483 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:31:09,495 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:31:14,667 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:31:14,713 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : Policy
+2020-08-24 14:31:15,972 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [Policy] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:42)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:37:24,234 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:37:55,574 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:37:55,574 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:38:05,604 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:38:10,750 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:38:10,765 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:38:10,786 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:38:16,004 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:38:16,019 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:38:16,034 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:38:21,240 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:38:23,357 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : File a Claim
+2020-08-24 14:38:24,653 - Test Suite -ERROR - TC022 is Failed ! 
+ EXCEPTION:  --->  java.lang.AssertionError: expected [File a Claim] but found [File A Claim]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at SharedTC.STC_DashBoard.clickFileClaim(STC_DashBoard.java:42)
+	at testElephant.TC_Elephant.TC022(TC_Elephant.java:491)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-24 14:46:42,169 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:47:07,209 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:47:07,209 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:47:17,242 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:47:22,390 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:47:22,406 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:47:22,424 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:47:27,710 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:47:27,726 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:47:27,739 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:47:32,904 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:47:35,014 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : File a Claim
+2020-08-24 14:47:35,029 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:47:36,313 - Test Suite -INFO - TC022 is Passed !
+2020-08-24 14:52:49,324 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 14:53:16,136 - Elephant-DashBoardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 14:53:16,137 - Elephant-DashBoardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 14:53:26,171 - Elephant-DashBoardButtons -INFO - Logged in successfully.
+2020-08-24 14:53:31,378 - Elephant-DashBoardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 14:53:31,390 - Elephant-DashBoardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 14:53:31,409 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:53:36,625 - Elephant-DashBoardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 14:53:36,639 - Elephant-DashBoardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 14:53:36,655 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:53:41,885 - Elephant-DashBoardButtons -INFO - Clicked on 'File A Claim' button on dashboard
+2020-08-24 14:53:44,005 - Elephant-DashBoardButtons -INFO - Expected Title : File A Claim    ----   Actual Title : File a Claim
+2020-08-24 14:53:44,020 - Elephant-DashBoardButtons -INFO - Assertion Passed
+2020-08-24 14:53:45,260 - Test Suite -INFO - TC022 is Passed !
+2020-08-24 19:11:34,987 - Test Suite -INFO - TEST CASE: TC023 | Priority: 5
+2020-08-24 19:12:38,029 - Elephant-VerifySignup -INFO - Account is activated on Portal.
+2020-08-24 19:12:39,217 - Test Suite -INFO - TC023 is Passed !
+2020-08-24 23:16:11,309 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-24 23:16:43,729 - Elephant-DashboardButtons -INFO - Login Username : lastdryrun@vvv.com
+2020-08-24 23:16:43,729 - Elephant-DashboardButtons -INFO - Policy Number : 244-000-015-41
+2020-08-24 23:16:53,756 - Elephant-DashboardButtons -INFO - Logged in successfully.
+2020-08-24 23:16:58,920 - Elephant-DashboardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-24 23:16:58,935 - Elephant-DashboardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-24 23:16:58,953 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-24 23:17:04,202 - Elephant-DashboardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-24 23:17:04,210 - Elephant-DashboardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-24 23:17:04,226 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-24 23:17:09,470 - Elephant-DashboardButtons -INFO - Clicked on 'File a Claim' button on dashboard
+2020-08-24 23:17:11,612 - Elephant-DashboardButtons -INFO - Expected Title : File a Claim    ----   Actual Title : File a Claim
+2020-08-24 23:17:11,632 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-24 23:17:12,948 - Test Suite -INFO - TC022 is Passed !
+2020-08-26 21:13:02,271 - Test Suite -INFO - TEST CASE: TC001 | Priority: 5
+2020-08-26 21:13:35,188 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Login Username : testup@apparent.com
+2020-08-26 21:13:35,188 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Policy Number : 244-000-017-01
+2020-08-26 21:13:42,211 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Logged in successfully.
+2020-08-26 21:13:47,407 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:14:00,927 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked Saved Payment Instrument to initiate Payment
+2020-08-26 21:14:06,144 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 21:14:11,368 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Attempted Payment.
+2020-08-26 21:14:21,622 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Payment Successful.
+2020-08-26 21:14:22,941 - Test Suite -INFO - TC001 is Passed !
+2020-08-26 21:14:22,943 - Test Suite -INFO - TEST CASE: TC002 | Priority: 5
+2020-08-26 21:14:45,514 - Apparent-OneTimePayment_NewCreditCard -INFO - Login Username : testup@apparent.com
+2020-08-26 21:14:45,514 - Apparent-OneTimePayment_NewCreditCard -INFO - Policy Number : 244-000-017-01
+2020-08-26 21:14:52,557 - Apparent-OneTimePayment_NewCreditCard -INFO - Logged in successfully.
+2020-08-26 21:14:57,708 - Apparent-OneTimePayment_NewCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:15:11,286 - Apparent-OneTimePayment_NewCreditCard -INFO - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-08-26 21:16:27,074 - Apparent-OneTimePayment_NewCreditCard -ERROR - NoSuchElement Exception
+2020-08-26 21:17:10,600 - Apparent-OneTimePayment_NewCreditCard -ERROR - NoSuchElement Exception
+2020-08-26 21:17:53,888 - Apparent-OneTimePayment_NewCreditCard -ERROR - NoSuchElement Exception
+2020-08-26 21:18:38,299 - Test Suite -ERROR - TC002 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtCardNickName"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:53651}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir4388_1379679542}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9e9d1804f12b18b419cec437d52661ce
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_MakePayment.payFromNewCard(STC_MakePayment.java:37)
+	at testApparent.TC_Apparent.TC002(TC_Apparent.java:80)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 21:18:38,301 - Test Suite -INFO - TEST CASE: TC003 | Priority: 5
+2020-08-26 21:19:02,067 - Apparent-OneTimePayment_NewACH -INFO - Login Username : testup@apparent.com
+2020-08-26 21:19:02,068 - Apparent-OneTimePayment_NewACH -INFO - Policy Number : 244-000-017-01
+2020-08-26 21:19:09,100 - Apparent-OneTimePayment_NewACH -INFO - Logged in successfully.
+2020-08-26 21:19:14,298 - Apparent-OneTimePayment_NewACH -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:19:27,777 - Apparent-OneTimePayment_NewACH -INFO - Clicked New BANK ACCOUNT Payment Instrument to initiate Payment
+2020-08-26 21:21:09,039 - Test Suite -INFO - TEST CASE: TC001 | Priority: 5
+2020-08-26 21:21:36,584 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Login Username : testup@vvv.com
+2020-08-26 21:21:36,584 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:21:46,629 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Logged in successfully.
+2020-08-26 21:21:51,846 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:22:05,446 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked Saved Payment Instrument to initiate Payment
+2020-08-26 21:22:10,609 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 21:22:15,746 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Attempted Payment.
+2020-08-26 21:22:25,936 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Payment Successful.
+2020-08-26 21:22:27,161 - Test Suite -INFO - TC001 is Passed !
+2020-08-26 21:22:27,165 - Test Suite -INFO - TEST CASE: TC002 | Priority: 5
+2020-08-26 21:22:52,194 - Elephant-OneTimePayment_NewCreditCard -INFO - Login Username : testup@vvv.com
+2020-08-26 21:22:52,194 - Elephant-OneTimePayment_NewCreditCard -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:23:02,227 - Elephant-OneTimePayment_NewCreditCard -INFO - Logged in successfully.
+2020-08-26 21:23:07,388 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:23:21,026 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-08-26 21:24:05,241 - Elephant-OneTimePayment_NewCreditCard -INFO - Made Payment instrument as default .
+2020-08-26 21:24:10,405 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 21:24:50,680 - Elephant-OneTimePayment_NewCreditCard -ERROR - NoSuchElement Exception
+2020-08-26 21:27:46,572 - Test Suite -INFO - TEST CASE: TC001 | Priority: 5
+2020-08-26 21:28:21,869 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Login Username : testup@vvv.com
+2020-08-26 21:28:21,870 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:28:31,913 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Logged in successfully.
+2020-08-26 21:28:42,068 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:29:05,595 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked Saved Payment Instrument to initiate Payment
+2020-08-26 21:29:15,762 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 21:29:25,906 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Attempted Payment.
+2020-08-26 21:29:41,116 - Elephant-OneTimePayment_ExistingCreditCard -INFO - Payment Successful.
+2020-08-26 21:29:42,323 - Test Suite -INFO - TC001 is Passed !
+2020-08-26 21:29:42,325 - Test Suite -INFO - TEST CASE: TC002 | Priority: 5
+2020-08-26 21:30:05,513 - Elephant-OneTimePayment_NewCreditCard -INFO - Login Username : testup@vvv.com
+2020-08-26 21:30:05,513 - Elephant-OneTimePayment_NewCreditCard -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:30:15,546 - Elephant-OneTimePayment_NewCreditCard -INFO - Logged in successfully.
+2020-08-26 21:30:20,769 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:30:34,379 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-08-26 21:30:55,628 - Elephant-OneTimePayment_NewCreditCard -ERROR - WebDriver Exception
+2020-08-26 21:31:21,499 - Elephant-OneTimePayment_NewCreditCard -INFO - Made Payment instrument as default .
+2020-08-26 21:31:26,643 - Elephant-OneTimePayment_NewCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 21:31:32,887 - Elephant-OneTimePayment_NewCreditCard -INFO - Attempted Payment.
+2020-08-26 21:31:43,076 - Elephant-OneTimePayment_NewCreditCard -INFO - Payment Successful.
+2020-08-26 21:31:44,410 - Test Suite -INFO - TC002 is Passed !
+2020-08-26 21:31:44,411 - Test Suite -INFO - TEST CASE: TC003 | Priority: 5
+2020-08-26 21:32:10,056 - Elephant-OneTimePayment_NewACH -INFO - Login Username : testup@vvv.com
+2020-08-26 21:32:10,056 - Elephant-OneTimePayment_NewACH -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:32:20,081 - Elephant-OneTimePayment_NewACH -INFO - Logged in successfully.
+2020-08-26 21:32:25,244 - Elephant-OneTimePayment_NewACH -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 21:32:38,844 - Elephant-OneTimePayment_NewACH -INFO - Clicked New BANK ACCOUNT Payment Instrument to initiate Payment
+2020-08-26 21:33:10,696 - Elephant-OneTimePayment_NewACH -INFO - Made Payment instrument as default .
+2020-08-26 21:33:15,822 - Elephant-OneTimePayment_NewACH -INFO - Clicked to Review Payment.
+2020-08-26 21:33:20,973 - Elephant-OneTimePayment_NewACH -INFO - Attempted Payment.
+2020-08-26 21:33:31,148 - Elephant-OneTimePayment_NewACH -INFO - Payment Successful.
+2020-08-26 21:33:32,456 - Test Suite -INFO - TC003 is Passed !
+2020-08-26 21:33:32,457 - Test Suite -INFO - TEST CASE: TC004 | Priority: 5
+2020-08-26 21:33:56,523 - Elephant-AddNewPaymentMethod_ACH -INFO - Login Username : testup@vvv.com
+2020-08-26 21:33:56,523 - Elephant-AddNewPaymentMethod_ACH -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:34:06,548 - Elephant-AddNewPaymentMethod_ACH -INFO - Logged in successfully.
+2020-08-26 21:34:11,703 - Elephant-AddNewPaymentMethod_ACH -INFO - Clicked on 'Payment Method' button on Dashboard.
+2020-08-26 21:34:16,921 - Elephant-AddNewPaymentMethod_ACH -INFO - Selected ACH Account option.....
+2020-08-26 21:34:38,538 - Elephant-AddNewPaymentMethod_ACH -INFO - ACH Account Added.....
+2020-08-26 21:34:39,771 - Test Suite -INFO - TC004 is Passed !
+2020-08-26 21:34:39,773 - Test Suite -INFO - TEST CASE: TC005 | Priority: 5
+2020-08-26 21:35:04,467 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Login Username : testup@vvv.com
+2020-08-26 21:35:04,468 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:35:14,506 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Logged in successfully.
+2020-08-26 21:35:19,692 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Clicked on 'Payment Method' button on Dashboard.
+2020-08-26 21:35:24,887 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Selected Credit Card option.....
+2020-08-26 21:36:03,802 - Elephant-AddNewPaymentMethod_CreditCard -INFO - Credit Card Added.....
+2020-08-26 21:36:05,068 - Test Suite -INFO - TC005 is Passed !
+2020-08-26 21:36:05,070 - Test Suite -INFO - TEST CASE: TC006 | Priority: 5
+2020-08-26 21:36:33,241 - Elephant-AddDriver_NoVehicle -INFO - Login Username : testup@vvv.com
+2020-08-26 21:36:33,242 - Elephant-AddDriver_NoVehicle -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:36:43,281 - Elephant-AddDriver_NoVehicle -INFO - Logged in successfully.
+2020-08-26 21:36:48,465 - Elephant-AddDriver_NoVehicle -INFO - Clicked on 'Add Drivers' button on dashboard
+2020-08-26 21:37:28,677 - Elephant-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 21:37:31,834 - Elephant-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 21:37:34,993 - Elephant-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 21:37:39,451 - Test Suite -ERROR - TC006 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-4 ng-star-inserted">...</mat-label> is not clickable at point (348, 357). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-4">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:55920}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir31748_454812953}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ad1260ad03be1877ff002abbc9de67b5
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_AddDriver.aboutDriver(STC_AddDriver.java:39)
+	at testElephant.TC_Elephant.TC006(TC_Elephant.java:171)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 21:37:39,452 - Test Suite -INFO - TEST CASE: TC007 | Priority: 5
+2020-08-26 21:38:03,989 - Elephant-AddDriver_WithVehicle -INFO - Login Username : testup@vvv.com
+2020-08-26 21:38:03,990 - Elephant-AddDriver_WithVehicle -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:38:14,024 - Elephant-AddDriver_WithVehicle -INFO - Logged in successfully.
+2020-08-26 21:38:19,167 - Elephant-AddDriver_WithVehicle -INFO - Clicked on 'Add Drivers' button on dashboard
+2020-08-26 21:38:59,329 - Elephant-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 21:39:02,471 - Elephant-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 21:39:05,644 - Elephant-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 21:39:10,050 - Test Suite -ERROR - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-4 ng-star-inserted">...</mat-label> is not clickable at point (348, 357). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-4">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.08 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56136}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir23208_1513226757}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 0995850e14688334055a5ccbc4045c77
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_AddDriver.aboutDriverwithvehicle(STC_AddDriver.java:79)
+	at testElephant.TC_Elephant.TC007(TC_Elephant.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 21:39:10,052 - Test Suite -INFO - TEST CASE: TC008 | Priority: 5
+2020-08-26 21:39:34,666 - Elephant-AddVehicle_WithoutVIN -INFO - Login Username : testup@vvv.com
+2020-08-26 21:39:34,667 - Elephant-AddVehicle_WithoutVIN -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:39:44,696 - Elephant-AddVehicle_WithoutVIN -INFO - Logged in successfully.
+2020-08-26 21:39:49,867 - Elephant-AddVehicle_WithoutVIN -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 21:40:41,588 - Elephant-AddVehicle_WithoutVIN -INFO - Vehicle details has been added
+2020-08-26 21:41:43,595 - Elephant-AddVehicle_WithoutVIN -INFO - More details about vehicle and driver has been added
+2020-08-26 21:42:49,339 - Elephant-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 21:42:52,502 - Elephant-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 21:42:55,678 - Elephant-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 21:43:00,047 - Test Suite -ERROR - TC008 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-21 ng-star-inserted">...</mat-label> is not clickable at point (348, 357). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-21">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.08 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:56345}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir19300_132405441}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: db5f2c54551860e08031dd9c7a555a3b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_Vehicle.addDriverToVehicle(STC_Vehicle.java:93)
+	at testElephant.TC_Elephant.TC008(TC_Elephant.java:217)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 21:43:00,048 - Test Suite -INFO - TEST CASE: TC009 | Priority: 5
+2020-08-26 21:43:18,251 - Elephant-AddVehicle_WithVIN -INFO - Login Username : regression@vvv.com
+2020-08-26 21:43:18,251 - Elephant-AddVehicle_WithVIN -INFO - Policy Number : 244-000-017-03
+2020-08-26 21:43:23,382 - Elephant-AddVehicle_WithVIN -INFO - Logged in successfully.
+2020-08-26 21:43:33,421 - Elephant-AddVehicle_WithVIN -INFO - Logged in successfully.
+2020-08-26 21:43:38,600 - Elephant-AddVehicle_WithVIN -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 21:45:04,524 - Elephant-AddVehicle_WithVIN -INFO - Vehicle has been added with VIN
+2020-08-26 21:45:14,806 - Elephant-AddVehicle_WithVIN -INFO - Update Quote
+2020-08-26 21:45:18,134 - Elephant-AddVehicle_WithVIN -ERROR - WebDriver Exception
+2020-08-26 21:45:33,618 - Elephant-AddVehicle_WithVIN -INFO - Policy has been changed
+2020-08-26 21:45:38,912 - Elephant-AddVehicle_WithVIN -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 21:45:40,162 - Test Suite -INFO - TC009 is Passed !
+2020-08-26 21:45:40,164 - Test Suite -INFO - TEST CASE: TC010 | Priority: 5
+2020-08-26 21:45:59,706 - Elephant-ReplaceVehicle -INFO - Login Username : regression@vvv.com
+2020-08-26 21:45:59,706 - Elephant-ReplaceVehicle -INFO - Policy Number : 244-000-017-03
+2020-08-26 21:46:05,037 - Elephant-ReplaceVehicle -INFO - Logged in successfully.
+2020-08-26 21:46:15,078 - Elephant-ReplaceVehicle -INFO - Logged in successfully.
+2020-08-26 21:46:20,243 - Elephant-ReplaceVehicle -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 21:46:49,596 - Elephant-ReplaceVehicle -INFO - Replace Vehicle
+2020-08-26 21:47:51,616 - Elephant-ReplaceVehicle -INFO - More details about vehicle and driver has been added
+2020-08-26 21:48:22,116 - Elephant-ReplaceVehicle -INFO - Update Quote
+2020-08-26 21:48:25,940 - Elephant-ReplaceVehicle -ERROR - WebDriver Exception
+2020-08-26 21:48:41,336 - Elephant-ReplaceVehicle -INFO - Policy has been changed
+2020-08-26 21:48:46,566 - Elephant-ReplaceVehicle -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 21:48:47,884 - Test Suite -INFO - TC010 is Passed !
+2020-08-26 21:48:47,886 - Test Suite -INFO - TEST CASE: TC011 | Priority: 5
+2020-08-26 21:49:07,348 - Elephant-RemoveVehicle -INFO - Login Username : regression@vvv.com
+2020-08-26 21:49:07,348 - Elephant-RemoveVehicle -INFO - Policy Number : 244-000-017-03
+2020-08-26 21:49:16,098 - Elephant-RemoveVehicle -INFO - Logged in successfully.
+2020-08-26 21:49:26,143 - Elephant-RemoveVehicle -INFO - Logged in successfully.
+2020-08-26 21:49:43,504 - Elephant-RemoveVehicle -INFO - Clicked on remove Vehicle button
+2020-08-26 21:49:53,765 - Elephant-RemoveVehicle -INFO - Clicked on remove
+2020-08-26 21:50:05,359 - Elephant-RemoveVehicle -ERROR - WebDriver Exception
+2020-08-26 21:50:17,707 - Elephant-RemoveVehicle -INFO - Vehicle has been removed from the policy
+2020-08-26 21:50:22,921 - Elephant-RemoveVehicle -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 21:50:24,211 - Test Suite -INFO - TC011 is Passed !
+2020-08-26 21:50:24,213 - Test Suite -INFO - TEST CASE: TC012 | Priority: 5
+2020-08-26 21:50:56,415 - Elephant-EditHomePhoneNumber -INFO - Login Username : testup@vvv.com
+2020-08-26 21:50:56,415 - Elephant-EditHomePhoneNumber -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:51:06,449 - Elephant-EditHomePhoneNumber -INFO - Logged in successfully.
+2020-08-26 21:51:11,587 - Elephant-EditHomePhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 21:51:40,279 - Elephant-EditHomePhoneNumber -INFO - Clicked on 'Save' button to Save Home Phone Number
+2020-08-26 21:51:41,494 - Test Suite -INFO - TC012 is Passed !
+2020-08-26 21:51:41,496 - Test Suite -INFO - TEST CASE: TC013 | Priority: 5
+2020-08-26 21:52:07,805 - Elephant-EditWorkPhoneNumber -INFO - Login Username : testup@vvv.com
+2020-08-26 21:52:07,806 - Elephant-EditWorkPhoneNumber -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:52:17,839 - Elephant-EditWorkPhoneNumber -INFO - Logged in successfully.
+2020-08-26 21:52:23,001 - Elephant-EditWorkPhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 21:52:51,720 - Elephant-EditWorkPhoneNumber -INFO - Clicked on 'Save' button to Save Work Phone Number
+2020-08-26 21:52:52,964 - Test Suite -INFO - TC013 is Passed !
+2020-08-26 21:52:52,967 - Test Suite -INFO - TEST CASE: TC014 | Priority: 5
+2020-08-26 21:53:16,626 - Elephant-EditCellPhoneNumber -INFO - Login Username : testup@vvv.com
+2020-08-26 21:53:16,626 - Elephant-EditCellPhoneNumber -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:53:26,656 - Elephant-EditCellPhoneNumber -INFO - Logged in successfully.
+2020-08-26 21:53:31,842 - Elephant-EditCellPhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 21:54:00,434 - Elephant-EditCellPhoneNumber -INFO - Clicked on 'Save' button to Save Cell Phone Number
+2020-08-26 21:54:01,659 - Test Suite -INFO - TC014 is Passed !
+2020-08-26 21:54:01,660 - Test Suite -INFO - TEST CASE: TC016 | Priority: 5
+2020-08-26 21:54:25,886 - Elephant-EditMailingAddress -INFO - Login Username : testup@vvv.com
+2020-08-26 21:54:25,886 - Elephant-EditMailingAddress -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:54:35,918 - Elephant-EditMailingAddress -INFO - Logged in successfully.
+2020-08-26 21:54:41,108 - Elephant-EditMailingAddress -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 21:55:26,556 - Elephant-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 21:56:09,816 - Elephant-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 21:56:53,060 - Elephant-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 21:57:37,549 - Test Suite -ERROR - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtApt"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58333}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir33896_234657131}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 2bdc47057f337f29a26ce2d89e095e4a
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_PersonalInfo.editMailingAddress(STC_PersonalInfo.java:24)
+	at testElephant.TC_Elephant.TC016(TC_Elephant.java:374)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 21:57:37,549 - Test Suite -INFO - TEST CASE: TC017 | Priority: 5
+2020-08-26 21:58:01,176 - Elephant-EditGaragingAddress -INFO - Login Username : testup@vvv.com
+2020-08-26 21:58:01,178 - Elephant-EditGaragingAddress -INFO - Policy Number : 244-000-016-98
+2020-08-26 21:58:11,214 - Elephant-EditGaragingAddress -INFO - Logged in successfully.
+2020-08-26 21:58:16,364 - Elephant-EditGaragingAddress -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 21:59:01,595 - Elephant-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 21:59:44,926 - Elephant-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:00:28,190 - Elephant-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:01:12,788 - Test Suite -ERROR - TC017 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtApt"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:58721}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir35800_1453887971}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 7446597ca5395d4483499dd92909aa90
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_PersonalInfo.editGaragingAddress(STC_PersonalInfo.java:41)
+	at testElephant.TC_Elephant.TC017(TC_Elephant.java:394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:01:12,791 - Test Suite -INFO - TEST CASE: TC018 | Priority: 5
+2020-08-26 22:01:32,973 - Elephant-VerifyClaims -INFO - Login Username : regression@vvv.com
+2020-08-26 22:01:32,974 - Elephant-VerifyClaims -INFO - Policy Number : 244-000-017-03
+2020-08-26 22:02:26,350 - Elephant-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:03:09,604 - Elephant-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:03:52,912 - Elephant-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:04:37,385 - Test Suite -ERROR - TC018 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Sign in']/.."}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59149}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir16036_997350419}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9cf2756a65f5d1e0c5711aeb53d70296
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.toString(ExpectedConditions.java:218)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.click(WebFunctions.java:115)
+	at SharedTC.STC_Login.claimAccountLogin(STC_Login.java:63)
+	at testElephant.TC_Elephant.TC018(TC_Elephant.java:415)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:04:37,386 - Test Suite -INFO - TEST CASE: TC019 | Priority: 5
+2020-08-26 22:05:17,088 - Elephant-EditVehicleCoverages -INFO - Login Username : testup@vvv.com
+2020-08-26 22:05:17,088 - Elephant-EditVehicleCoverages -INFO - Policy Number : 244-000-016-98
+2020-08-26 22:05:27,122 - Elephant-EditVehicleCoverages -INFO - Logged in successfully.
+2020-08-26 22:06:08,522 - Test Suite -ERROR - TC019 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of element located by By.xpath: //*[contains(@id,'2011-CHEVROLET-CRUZELS')]
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at resources.WebFunctions.click(WebFunctions.java:158)
+	at SharedTC.STC_Vehicle.editVehicleCoverages(STC_Vehicle.java:324)
+	at testElephant.TC_Elephant.TC019(TC_Elephant.java:435)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@id,'2011-CHEVROLET-CRUZELS')]"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 45 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:59553}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir35540_1080926996}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: ff126ee47981fd0385b6248c93a95c26
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+
+2020-08-26 22:06:08,531 - Test Suite -INFO - TEST CASE: TC020 | Priority: 5
+2020-08-26 22:06:39,743 - Elephant-Logout -INFO - Login Username : testup@vvv.com
+2020-08-26 22:06:39,743 - Elephant-Logout -INFO - Policy Number : 244-000-016-98
+2020-08-26 22:06:49,772 - Elephant-Logout -INFO - Logged in successfully.
+2020-08-26 22:06:54,904 - Elephant-Logout -INFO - Clicked on 'Documents' button on dashboard
+2020-08-26 22:07:00,943 - Elephant-Logout -INFO - Clicked on 'logout' button to logout from Customer portal
+2020-08-26 22:07:02,145 - Test Suite -INFO - TC020 is Passed !
+2020-08-26 22:07:02,146 - Test Suite -INFO - TEST CASE: TC021 | Priority: 5
+2020-08-26 22:07:31,274 - Elephant-VerifyChatbox -INFO - Login Username : testup@vvv.com
+2020-08-26 22:07:31,274 - Elephant-VerifyChatbox -INFO - Policy Number : 244-000-016-98
+2020-08-26 22:07:41,307 - Elephant-VerifyChatbox -INFO - Logged in successfully.
+2020-08-26 22:07:46,450 - Elephant-VerifyChatbox -INFO - Clicked on 'Chat' button to open chatbox
+2020-08-26 22:07:46,523 - Elephant-VerifyChatbox -INFO - Chatbox is visible
+2020-08-26 22:07:47,762 - Test Suite -INFO - TC021 is Passed !
+2020-08-26 22:07:47,763 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-26 22:08:12,148 - Elephant-DashboardButtons -INFO - Login Username : testup@vvv.com
+2020-08-26 22:08:12,149 - Elephant-DashboardButtons -INFO - Policy Number : 244-000-016-98
+2020-08-26 22:08:22,186 - Elephant-DashboardButtons -INFO - Logged in successfully.
+2020-08-26 22:08:27,330 - Elephant-DashboardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-26 22:08:27,337 - Elephant-DashboardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-26 22:08:27,353 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:08:32,556 - Elephant-DashboardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-26 22:08:32,572 - Elephant-DashboardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-26 22:08:32,585 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:08:37,762 - Elephant-DashboardButtons -INFO - Clicked on 'File a Claim' button on dashboard
+2020-08-26 22:08:39,861 - Elephant-DashboardButtons -INFO - Expected Title : File a Claim    ----   Actual Title : File a Claim
+2020-08-26 22:08:39,869 - Elephant-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:08:41,115 - Test Suite -INFO - TC022 is Passed !
+2020-08-26 22:08:41,117 - Test Suite -INFO - TEST CASE: TC023 | Priority: 5
+2020-08-26 22:09:04,796 - Elephant-VerifySignup -INFO - Policy Number : 247-000-000-98
+2020-08-26 22:09:08,014 - Elephant-VerifySignup -INFO - Last Name : Gupta
+2020-08-26 22:09:11,262 - Elephant-VerifySignup -INFO - DOB : 01/01/2000
+2020-08-26 22:09:14,471 - Elephant-VerifySignup -INFO - Zip Code : 20130
+2020-08-26 22:10:03,474 - Elephant-VerifySignup -ERROR - NoSuchElement Exception
+2020-08-26 22:10:46,616 - Elephant-VerifySignup -ERROR - NoSuchElement Exception
+2020-08-26 22:11:29,776 - Elephant-VerifySignup -ERROR - NoSuchElement Exception
+2020-08-26 22:12:14,561 - Test Suite -ERROR - TC023 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtConfirmPassword"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:60270}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir35988_1725513698}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3b136fe86ca2518af38c25aa0171ea0c
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_Register.register(STC_Register.java:31)
+	at testElephant.TC_Elephant.TC023(TC_Elephant.java:507)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:12:14,562 - Test Suite -INFO - TEST CASE: TC015 | Priority: 6
+2020-08-26 22:12:40,786 - Elephant-EditEmail -INFO - Login Username : testup@vvv.com
+2020-08-26 22:12:40,786 - Elephant-EditEmail -INFO - Policy Number : 244-000-016-98
+2020-08-26 22:12:50,830 - Elephant-EditEmail -INFO - Logged in successfully.
+2020-08-26 22:12:55,999 - Elephant-EditEmail -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:13:22,904 - Elephant-EditEmail -INFO - Clicked on 'Save Email' button to update email
+2020-08-26 22:13:24,152 - Test Suite -INFO - TC015 is Passed !
+2020-08-26 22:13:24,157 - Test Suite -INFO - TEST CASE: TC001 | Priority: 5
+2020-08-26 22:13:47,492 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Login Username : testup@apparent.com
+2020-08-26 22:13:47,492 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:13:54,528 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Logged in successfully.
+2020-08-26 22:13:59,686 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 22:14:13,222 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked Saved Payment Instrument to initiate Payment
+2020-08-26 22:14:18,413 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 22:14:23,569 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Attempted Payment.
+2020-08-26 22:14:33,750 - Apparent-OneTimePayment_ExistingCreditCard -INFO - Payment Successful.
+2020-08-26 22:14:34,969 - Test Suite -INFO - TC001 is Passed !
+2020-08-26 22:14:34,971 - Test Suite -INFO - TEST CASE: TC002 | Priority: 5
+2020-08-26 22:14:59,364 - Apparent-OneTimePayment_NewCreditCard -INFO - Login Username : testup@apparent.com
+2020-08-26 22:14:59,365 - Apparent-OneTimePayment_NewCreditCard -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:15:06,406 - Apparent-OneTimePayment_NewCreditCard -INFO - Logged in successfully.
+2020-08-26 22:15:11,583 - Apparent-OneTimePayment_NewCreditCard -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 22:15:25,092 - Apparent-OneTimePayment_NewCreditCard -INFO - Clicked New Credit Card Payment Instrument to initiate Payment
+2020-08-26 22:16:09,136 - Apparent-OneTimePayment_NewCreditCard -INFO - Made Payment instrument as default .
+2020-08-26 22:16:14,293 - Apparent-OneTimePayment_NewCreditCard -INFO - Clicked to Review Payment.
+2020-08-26 22:16:19,442 - Apparent-OneTimePayment_NewCreditCard -INFO - Attempted Payment.
+2020-08-26 22:16:29,624 - Apparent-OneTimePayment_NewCreditCard -INFO - Payment Successful.
+2020-08-26 22:16:35,150 - Test Suite -INFO - TC002 is Passed !
+2020-08-26 22:16:35,152 - Test Suite -INFO - TEST CASE: TC003 | Priority: 5
+2020-08-26 22:17:02,585 - Apparent-OneTimePayment_NewACH -INFO - Login Username : testup@apparent.com
+2020-08-26 22:17:02,585 - Apparent-OneTimePayment_NewACH -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:17:09,612 - Apparent-OneTimePayment_NewACH -INFO - Logged in successfully.
+2020-08-26 22:17:14,778 - Apparent-OneTimePayment_NewACH -INFO - Clicked on 'One-Time Payment' button on dashboard
+2020-08-26 22:17:28,354 - Apparent-OneTimePayment_NewACH -INFO - Clicked New BANK ACCOUNT Payment Instrument to initiate Payment
+2020-08-26 22:18:00,167 - Apparent-OneTimePayment_NewACH -INFO - Made Payment instrument as default .
+2020-08-26 22:18:05,355 - Apparent-OneTimePayment_NewACH -INFO - Clicked to Review Payment.
+2020-08-26 22:18:10,474 - Apparent-OneTimePayment_NewACH -INFO - Attempted Payment.
+2020-08-26 22:18:20,653 - Apparent-OneTimePayment_NewACH -INFO - Payment Successful.
+2020-08-26 22:18:21,859 - Test Suite -INFO - TC003 is Passed !
+2020-08-26 22:18:21,861 - Test Suite -INFO - TEST CASE: TC004 | Priority: 5
+2020-08-26 22:18:45,698 - Apparent-AddNewPaymentMethod_ACH -INFO - Login Username : testup@apparent.com
+2020-08-26 22:18:45,698 - Apparent-AddNewPaymentMethod_ACH -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:18:52,736 - Apparent-AddNewPaymentMethod_ACH -INFO - Logged in successfully.
+2020-08-26 22:18:57,915 - Apparent-AddNewPaymentMethod_ACH -INFO - Clicked on 'Payment Method' button on Dashboard.
+2020-08-26 22:19:03,112 - Apparent-AddNewPaymentMethod_ACH -INFO - Selected ACH Account option.....
+2020-08-26 22:19:43,321 - Apparent-AddNewPaymentMethod_ACH -ERROR - NoSuchElement Exception
+2020-08-26 22:20:26,469 - Apparent-AddNewPaymentMethod_ACH -ERROR - NoSuchElement Exception
+2020-08-26 22:21:09,672 - Apparent-AddNewPaymentMethod_ACH -ERROR - NoSuchElement Exception
+2020-08-26 22:21:54,066 - Test Suite -ERROR - TC004 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtBankFirstName"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:61660}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir31856_907653478}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 549fe3aa41a98247c9159d0fb5df7a95
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_NewPaymentMethod.AddAchAccount(STC_NewPaymentMethod.java:17)
+	at testApparent.TC_Apparent.TC004(TC_Apparent.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:21:54,067 - Test Suite -INFO - TEST CASE: TC005 | Priority: 5
+2020-08-26 22:22:25,926 - Apparent-AddNewPaymentMethod_CreditCard -INFO - Login Username : testup@apparent.com
+2020-08-26 22:22:25,927 - Apparent-AddNewPaymentMethod_CreditCard -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:23:13,368 - Apparent-AddNewPaymentMethod_CreditCard -ERROR - NoSuchElement Exception
+2020-08-26 22:23:56,438 - Apparent-AddNewPaymentMethod_CreditCard -ERROR - NoSuchElement Exception
+2020-08-26 22:24:39,510 - Apparent-AddNewPaymentMethod_CreditCard -ERROR - NoSuchElement Exception
+2020-08-26 22:25:23,831 - Test Suite -ERROR - TC005 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtPolicy"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62021}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir20664_1675884132}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: e8f2d75683d907aaa32b43fa4f475ed7
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_Register.register(STC_Register.java:21)
+	at SharedTC.STC_Login.login_Apparent(STC_Login.java:88)
+	at testApparent.TC_Apparent.TC005(TC_Apparent.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:25:23,833 - Test Suite -INFO - TEST CASE: TC006 | Priority: 5
+2020-08-26 22:25:45,632 - Apparent-AddDriver_NoVehicle -INFO - Login Username : testup@apparent.com
+2020-08-26 22:25:45,632 - Apparent-AddDriver_NoVehicle -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:25:52,840 - Apparent-AddDriver_NoVehicle -INFO - Logged in successfully.
+2020-08-26 22:25:58,253 - Apparent-AddDriver_NoVehicle -INFO - Clicked on 'Add Drivers' button on dashboard
+2020-08-26 22:26:38,443 - Apparent-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 22:26:41,606 - Apparent-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 22:26:44,776 - Apparent-AddDriver_NoVehicle -ERROR - WebDriver Exception
+2020-08-26 22:26:49,236 - Test Suite -ERROR - TC006 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-4 ng-star-inserted">...</mat-label> is not clickable at point (345, 361). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-4">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.11 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62441}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir15408_138146841}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3c2c81c0c3c9058bf0fb3499bbfc10f1
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_AddDriver.aboutDriver(STC_AddDriver.java:39)
+	at testApparent.TC_Apparent.TC006(TC_Apparent.java:163)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:26:49,237 - Test Suite -INFO - TEST CASE: TC007 | Priority: 5
+2020-08-26 22:27:12,166 - Apparent-AddDriver_WithVehicle -INFO - Login Username : testup@apparent.com
+2020-08-26 22:27:12,166 - Apparent-AddDriver_WithVehicle -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:27:19,208 - Apparent-AddDriver_WithVehicle -INFO - Logged in successfully.
+2020-08-26 22:27:24,394 - Apparent-AddDriver_WithVehicle -INFO - Clicked on 'Add Drivers' button on dashboard
+2020-08-26 22:28:04,475 - Apparent-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 22:28:07,592 - Apparent-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 22:28:10,762 - Apparent-AddDriver_WithVehicle -ERROR - WebDriver Exception
+2020-08-26 22:28:15,086 - Test Suite -ERROR - TC007 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-4 ng-star-inserted">...</mat-label> is not clickable at point (345, 361). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-4">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.04 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62658}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir32672_1142719701}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 71cafb59e4efcb4c1fdb4dc5ae8ad4ff
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_AddDriver.aboutDriverwithvehicle(STC_AddDriver.java:79)
+	at testApparent.TC_Apparent.TC007(TC_Apparent.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:28:15,087 - Test Suite -INFO - TEST CASE: TC008 | Priority: 5
+2020-08-26 22:28:36,360 - Apparent-AddVehicle_WithoutVIN -INFO - Login Username : testup@apparent.com
+2020-08-26 22:28:36,360 - Apparent-AddVehicle_WithoutVIN -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:28:43,391 - Apparent-AddVehicle_WithoutVIN -INFO - Logged in successfully.
+2020-08-26 22:28:48,573 - Apparent-AddVehicle_WithoutVIN -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 22:29:40,141 - Apparent-AddVehicle_WithoutVIN -INFO - Vehicle details has been added
+2020-08-26 22:30:42,256 - Apparent-AddVehicle_WithoutVIN -INFO - More details about vehicle and driver has been added
+2020-08-26 22:31:47,899 - Apparent-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 22:31:51,081 - Apparent-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 22:31:54,272 - Apparent-AddVehicle_WithoutVIN -ERROR - WebDriver Exception
+2020-08-26 22:31:58,673 - Test Suite -ERROR - TC008 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.WebDriverException: element click intercepted: Element <mat-label id="lbl-driverLicenseState" class="ng-tns-c77-21 ng-star-inserted">...</mat-label> is not clickable at point (345, 360). Other element would receive the click: <div class="mat-form-field-infix ng-tns-c77-21">...</div>
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.09 seconds
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:62866}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir34652_1016201296}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3a3cbd3067be762e8c392a15e05ab171
+	at sun.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at sun.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:41)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at resources.WebFunctions.click(WebFunctions.java:116)
+	at SharedTC.STC_Vehicle.addDriverToVehicle(STC_Vehicle.java:93)
+	at testApparent.TC_Apparent.TC008(TC_Apparent.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:31:58,674 - Test Suite -INFO - TEST CASE: TC009 | Priority: 5
+2020-08-26 22:32:14,332 - Apparent-AddVehicle_WithVIN -INFO - Login Username : david@apparent.com
+2020-08-26 22:32:14,333 - Apparent-AddVehicle_WithVIN -INFO - Policy Number : 244-000-017-04
+2020-08-26 22:32:19,458 - Apparent-AddVehicle_WithVIN -INFO - Logged in successfully.
+2020-08-26 22:32:29,500 - Apparent-AddVehicle_WithVIN -INFO - Logged in successfully.
+2020-08-26 22:32:34,687 - Apparent-AddVehicle_WithVIN -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 22:34:00,733 - Apparent-AddVehicle_WithVIN -INFO - Vehicle has been added with VIN
+2020-08-26 22:34:11,017 - Apparent-AddVehicle_WithVIN -INFO - Update Quote
+2020-08-26 22:34:14,650 - Apparent-AddVehicle_WithVIN -ERROR - WebDriver Exception
+2020-08-26 22:34:30,072 - Apparent-AddVehicle_WithVIN -INFO - Policy has been changed
+2020-08-26 22:34:35,339 - Apparent-AddVehicle_WithVIN -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 22:34:36,612 - Test Suite -INFO - TC009 is Passed !
+2020-08-26 22:34:36,614 - Test Suite -INFO - TEST CASE: TC010 | Priority: 5
+2020-08-26 22:34:52,703 - Apparent-ReplaceVehicle -INFO - Login Username : david@apparent.com
+2020-08-26 22:34:52,703 - Apparent-ReplaceVehicle -INFO - Policy Number : 244-000-017-04
+2020-08-26 22:34:57,888 - Apparent-ReplaceVehicle -INFO - Logged in successfully.
+2020-08-26 22:35:07,919 - Apparent-ReplaceVehicle -INFO - Logged in successfully.
+2020-08-26 22:35:13,069 - Apparent-ReplaceVehicle -INFO - Clicked on 'Add/Replace Vehicle' button on dashboard
+2020-08-26 22:35:42,414 - Apparent-ReplaceVehicle -INFO - Replace Vehicle
+2020-08-26 22:36:44,443 - Apparent-ReplaceVehicle -INFO - More details about vehicle and driver has been added
+2020-08-26 22:37:15,002 - Apparent-ReplaceVehicle -INFO - Update Quote
+2020-08-26 22:37:16,156 - Apparent-ReplaceVehicle -ERROR - WebDriver Exception
+2020-08-26 22:37:31,565 - Apparent-ReplaceVehicle -INFO - Policy has been changed
+2020-08-26 22:37:36,804 - Apparent-ReplaceVehicle -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 22:37:38,108 - Test Suite -INFO - TC010 is Passed !
+2020-08-26 22:37:38,109 - Test Suite -INFO - TEST CASE: TC011 | Priority: 5
+2020-08-26 22:37:57,795 - Apparent-RemoveVehicle -INFO - Login Username : david@apparent.com
+2020-08-26 22:37:57,795 - Apparent-RemoveVehicle -INFO - Policy Number : 244-000-017-04
+2020-08-26 22:38:04,229 - Apparent-RemoveVehicle -INFO - Logged in successfully.
+2020-08-26 22:38:14,264 - Apparent-RemoveVehicle -INFO - Logged in successfully.
+2020-08-26 22:38:31,596 - Apparent-RemoveVehicle -INFO - Clicked on remove Vehicle button
+2020-08-26 22:38:41,889 - Apparent-RemoveVehicle -INFO - Clicked on remove
+2020-08-26 22:38:54,042 - Apparent-RemoveVehicle -ERROR - WebDriver Exception
+2020-08-26 22:39:06,388 - Apparent-RemoveVehicle -INFO - Vehicle has been removed from the policy
+2020-08-26 22:39:11,636 - Apparent-RemoveVehicle -INFO - Clicked on 'Close(X)' to return back to dashboard
+2020-08-26 22:39:12,892 - Test Suite -INFO - TC011 is Passed !
+2020-08-26 22:39:12,894 - Test Suite -INFO - TEST CASE: TC012 | Priority: 5
+2020-08-26 22:39:35,438 - Apparent-EditHomePhoneNumber -INFO - Login Username : testup@apparent.com
+2020-08-26 22:39:35,438 - Apparent-EditHomePhoneNumber -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:39:42,482 - Apparent-EditHomePhoneNumber -INFO - Logged in successfully.
+2020-08-26 22:39:47,646 - Apparent-EditHomePhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:40:16,257 - Apparent-EditHomePhoneNumber -INFO - Clicked on 'Save' button to Save Home Phone Number
+2020-08-26 22:40:17,468 - Test Suite -INFO - TC012 is Passed !
+2020-08-26 22:40:17,470 - Test Suite -INFO - TEST CASE: TC013 | Priority: 5
+2020-08-26 22:40:39,350 - Apparent-EditWorkPhoneNumber -INFO - Login Username : testup@apparent.com
+2020-08-26 22:40:39,350 - Apparent-EditWorkPhoneNumber -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:40:46,391 - Apparent-EditWorkPhoneNumber -INFO - Logged in successfully.
+2020-08-26 22:40:51,601 - Apparent-EditWorkPhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:41:20,212 - Apparent-EditWorkPhoneNumber -INFO - Clicked on 'Save' button to Save Work Phone Number
+2020-08-26 22:41:21,457 - Test Suite -INFO - TC013 is Passed !
+2020-08-26 22:41:21,458 - Test Suite -INFO - TEST CASE: TC014 | Priority: 5
+2020-08-26 22:41:43,074 - Apparent-EditCellPhoneNumber -INFO - Login Username : testup@apparent.com
+2020-08-26 22:41:43,074 - Apparent-EditCellPhoneNumber -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:41:50,105 - Apparent-EditCellPhoneNumber -INFO - Logged in successfully.
+2020-08-26 22:41:55,249 - Apparent-EditCellPhoneNumber -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:42:23,846 - Apparent-EditCellPhoneNumber -INFO - Clicked on 'Save' button to Save Cell Phone Number
+2020-08-26 22:42:25,094 - Test Suite -INFO - TC014 is Passed !
+2020-08-26 22:42:25,095 - Test Suite -INFO - TEST CASE: TC015 | Priority: 5
+2020-08-26 22:42:48,991 - Apparent-EditEmail -INFO - Login Username : testup@apparent.com
+2020-08-26 22:42:48,991 - Apparent-EditEmail -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:42:56,024 - Apparent-EditEmail -INFO - Logged in successfully.
+2020-08-26 22:43:01,223 - Apparent-EditEmail -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:43:28,152 - Apparent-EditEmail -INFO - Clicked on 'Save Email' button to update email
+2020-08-26 22:43:29,387 - Test Suite -INFO - TC015 is Passed !
+2020-08-26 22:43:29,388 - Test Suite -INFO - TEST CASE: TC016 | Priority: 5
+2020-08-26 22:43:51,469 - Apparent-EditMailingAddress -INFO - Login Username : testup@apparent.com
+2020-08-26 22:43:51,469 - Apparent-EditMailingAddress -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:43:58,503 - Apparent-EditMailingAddress -INFO - Logged in successfully.
+2020-08-26 22:44:03,632 - Apparent-EditMailingAddress -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:44:48,947 - Apparent-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:45:32,020 - Apparent-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:46:15,172 - Apparent-EditMailingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:46:59,654 - Test Suite -ERROR - TC016 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtApt"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 32 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:64953}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir6216_1663999160}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 50d41b8fd928625047680432401453b4
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_PersonalInfo.editMailingAddress(STC_PersonalInfo.java:24)
+	at testApparent.TC_Apparent.TC016(TC_Apparent.java:380)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:46:59,654 - Test Suite -INFO - TEST CASE: TC017 | Priority: 5
+2020-08-26 22:47:23,559 - Apparent-EditGaragingAddress -INFO - Login Username : testup@apparent.com
+2020-08-26 22:47:23,560 - Apparent-EditGaragingAddress -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:47:30,591 - Apparent-EditGaragingAddress -INFO - Logged in successfully.
+2020-08-26 22:47:35,728 - Apparent-EditGaragingAddress -INFO - Clicked on 'Personal Info' button on dashboard
+2020-08-26 22:48:21,123 - Apparent-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:49:04,692 - Apparent-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:49:47,816 - Apparent-EditGaragingAddress -ERROR - NoSuchElement Exception
+2020-08-26 22:50:36,165 - Test Suite -ERROR - TC017 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtApt"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 30 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:65382}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir28584_1472158485}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 3feb2a526075492f2a7650718950a17b
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_PersonalInfo.editGaragingAddress(STC_PersonalInfo.java:41)
+	at testApparent.TC_Apparent.TC017(TC_Apparent.java:401)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:50:36,166 - Test Suite -INFO - TEST CASE: TC018 | Priority: 5
+2020-08-26 22:50:59,130 - Apparent-VerifyClaims -INFO - Login Username : testup@apparent.com
+2020-08-26 22:50:59,130 - Apparent-VerifyClaims -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:51:46,470 - Apparent-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:52:29,748 - Apparent-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:53:12,980 - Apparent-VerifyClaims -ERROR - NoSuchElement Exception
+2020-08-26 22:53:57,347 - Test Suite -ERROR - TC018 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"id","selector":"txtPolicy"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49512}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir31488_388159695}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: bb5a5018ee1ee3d4fa8e3c35b0d74953
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:348)
+	at org.openqa.selenium.By$ById.findElement(By.java:220)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:59)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:34)
+	at com.sun.proxy.$Proxy8.toString(Unknown Source)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuilder.append(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions$18.toString(ExpectedConditions.java:577)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:224)
+	at resources.WebFunctions.type(WebFunctions.java:39)
+	at SharedTC.STC_Register.register(STC_Register.java:21)
+	at SharedTC.STC_Login.login_Apparent(STC_Login.java:88)
+	at testApparent.TC_Apparent.TC018(TC_Apparent.java:421)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+2020-08-26 22:53:57,347 - Test Suite -INFO - TEST CASE: TC019 | Priority: 5
+2020-08-26 22:54:21,168 - Apparent-EditVehicleCoverages -INFO - Login Username : testup@apparent.com
+2020-08-26 22:54:21,168 - Apparent-EditVehicleCoverages -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:54:28,206 - Apparent-EditVehicleCoverages -INFO - Logged in successfully.
+2020-08-26 22:55:09,565 - Test Suite -ERROR - TC019 is Failed ! 
+ EXCEPTION:  --->  org.openqa.selenium.TimeoutException: Timed out after 40 seconds waiting for visibility of element located by By.xpath: //*[contains(@id,'2011-CHEVROLET-CRUZELS')]
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:259)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at resources.WebFunctions.click(WebFunctions.java:158)
+	at SharedTC.STC_Vehicle.editVehicleCoverages(STC_Vehicle.java:324)
+	at testApparent.TC_Apparent.TC019(TC_Apparent.java:444)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(@id,'2011-CHEVROLET-CRUZELS')]"}
+  (Session info: chrome=84.0.4147.135)
+  (Driver info: chromedriver=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}),platform=Windows NT 10.0.19041 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.38.0', revision: 'bd32d4e', time: '2013-12-05 16:16:40'
+System info: host: 'YogeshTayal', ip: '10.140.10.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:49925}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}), userDataDir=C:\Users\YOGESH~1.TAY\AppData\Local\Temp\scoped_dir19664_1353797005}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=84.0.4147.135, browserConnectionEnabled=false, proxy={}, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4b4094aa54693a6e58d083629466d09c
+	at sun.reflect.GeneratedConstructorAccessor19.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:193)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:554)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:307)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:299)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+	at org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 27 more
+
+2020-08-26 22:55:09,568 - Test Suite -INFO - TEST CASE: TC020 | Priority: 5
+2020-08-26 22:55:30,257 - Apparent-Logout -INFO - Login Username : testup@apparent.com
+2020-08-26 22:55:30,257 - Apparent-Logout -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:55:37,283 - Apparent-Logout -INFO - Logged in successfully.
+2020-08-26 22:55:42,415 - Apparent-Logout -INFO - Clicked on 'Documents' button on dashboard
+2020-08-26 22:55:48,721 - Apparent-Logout -INFO - Clicked on 'logout' button to logout from Customer portal
+2020-08-26 22:55:49,996 - Test Suite -INFO - TC020 is Passed !
+2020-08-26 22:55:49,998 - Test Suite -INFO - TEST CASE: TC021 | Priority: 5
+2020-08-26 22:56:19,365 - Apparent-VerifyChatbox -INFO - Login Username : testup@apparent.com
+2020-08-26 22:56:19,365 - Apparent-VerifyChatbox -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:56:26,389 - Apparent-VerifyChatbox -INFO - Logged in successfully.
+2020-08-26 22:56:31,518 - Apparent-VerifyChatbox -INFO - Clicked on 'Chat' button to open chatbox
+2020-08-26 22:56:31,570 - Apparent-VerifyChatbox -INFO - Chatbox is visible
+2020-08-26 22:56:32,839 - Test Suite -INFO - TC021 is Passed !
+2020-08-26 22:56:32,840 - Test Suite -INFO - TEST CASE: TC022 | Priority: 5
+2020-08-26 22:56:53,533 - Apparent-DashboardButtons -INFO - Login Username : testup@apparent.com
+2020-08-26 22:56:53,533 - Apparent-DashboardButtons -INFO - Policy Number : 244-000-017-01
+2020-08-26 22:57:00,577 - Apparent-DashboardButtons -INFO - Logged in successfully.
+2020-08-26 22:57:05,751 - Apparent-DashboardButtons -INFO - Clicked on 'Get Id Cards' button on dashboard
+2020-08-26 22:57:05,773 - Apparent-DashboardButtons -INFO - Expected Title : Documents    ----   Actual Title : Documents
+2020-08-26 22:57:05,787 - Apparent-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:57:11,000 - Apparent-DashboardButtons -INFO - Clicked on 'Manage Payment' button on dashboard
+2020-08-26 22:57:11,013 - Apparent-DashboardButtons -INFO - Expected Title : Policy    ----   Actual Title : Policy
+2020-08-26 22:57:11,029 - Apparent-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:57:16,272 - Apparent-DashboardButtons -INFO - Clicked on 'File a Claim' button on dashboard
+2020-08-26 22:57:18,389 - Apparent-DashboardButtons -INFO - Expected Title : File a Claim    ----   Actual Title : File a Claim
+2020-08-26 22:57:18,400 - Apparent-DashboardButtons -INFO - Assertion Passed
+2020-08-26 22:57:19,661 - Test Suite -INFO - TC022 is Passed !
+2020-08-26 22:57:19,662 - Test Suite -INFO - TEST CASE: TC023 | Priority: 5
+2020-08-26 22:57:38,143 - Apparent-VerifySignup -INFO - Policy Number : 244-000-000-18
+2020-08-26 22:57:41,415 - Apparent-VerifySignup -INFO - Last Name : TestOYetdMKiDR
+2020-08-26 22:57:44,652 - Apparent-VerifySignup -INFO - DOB : 01/01/1980
+2020-08-26 22:57:47,902 - Apparent-VerifySignup -INFO - Zip Code : 75034
+2020-08-26 22:58:14,667 - Apparent-VerifySignup -INFO - Account is activated on Portal.
+2020-08-26 22:58:15,891 - Test Suite -INFO - TC023 is Passed !

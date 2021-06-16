@@ -1,7 +1,11 @@
 package SharedTC;
 
 import ApplicationPages.DashBoard;
+
+
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 import resources.Testing;
 
 public class STC_DashBoard {
@@ -11,20 +15,32 @@ public class STC_DashBoard {
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, dashBoard.btn_GetIdCards);
         test.getLogger().info("Clicked on 'Get Id Cards' button on dashboard");
+       
+        test.getLogger().info("Expected Title : Documents    ----   Actual Title : "+ test.webFunctions().getTitle(test));
+        Assert.assertEquals(test.webFunctions().getTitle(test),"Documents");
+        test.getLogger().info("Assertion Passed");
      }
 	
 	public void clickManagePayments(Testing test){
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
-        test.webFunctions().click(test, dashBoard.btn_MaanagePayment);
+        test.webFunctions().click(test, dashBoard.btn_ManagePayment);
         test.getLogger().info("Clicked on 'Manage Payment' button on dashboard");
+        
+        test.getLogger().info("Expected Title : Policy    ----   Actual Title : "+ test.webFunctions().getTitle(test));
+        Assert.assertEquals(test.webFunctions().getTitle(test),"Policy");
+        test.getLogger().info("Assertion Passed");
      }
 	
 	public void clickFileClaim(Testing test){
         test.setPage(DashBoard.class);
         DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
         test.webFunctions().click(test, dashBoard.btn_FileACliam);
-        test.getLogger().info("Clicked on 'File A Claim' button on dashboard");
+        test.getLogger().info("Clicked on 'File a Claim' button on dashboard");
+        test.webFunctions().switchWindow(test);
+        test.getLogger().info("Expected Title : File a Claim    ----   Actual Title : "+ test.webFunctions().getTitle(test));
+        Assert.assertEquals(test.webFunctions().getTitle(test),"File a Claim");
+        test.getLogger().info("Assertion Passed");
 
      }
 	
@@ -129,6 +145,20 @@ public class STC_DashBoard {
         test.webFunctions().click(test, dashBoard.btn_IDCardForVehicle);
         test.getLogger().info("Clicked on 'Get Id Cards' button in expanded vehicle details on dashboard");
       }
+    
+    public void clickChat(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_Chat);
+        test.getLogger().info("Clicked on 'Chat' button to open chatbox");
+      } 
+    
+    public void clickLogout(Testing test){
+        test.setPage(DashBoard.class);
+        DashBoard dashBoard = (DashBoard) PageFactory.initElements(test.driver, test.getPage());
+        test.webFunctions().click(test, dashBoard.btn_Logout);
+        test.getLogger().info("Clicked on 'logout' button to logout from Customer portal");
+      } 
 
       public void backToDashboard(Testing test){
         test.setPage(DashBoard.class);

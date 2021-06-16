@@ -41,9 +41,10 @@ public class TC_Elephant {
     STC_Vehicle stc_vehicle= new STC_Vehicle();
     STC_RemoveVehicle stc_removeVehicle=new STC_RemoveVehicle();
     STC_PersonalInfo stc_PersonalInfo = new STC_PersonalInfo();
-    STC_Vehicle stc_Vehicle = new STC_Vehicle();
     STC_NewPaymentMethod stc_newpaymentmethod = new STC_NewPaymentMethod();
     STC_Claims stc_Claims = new STC_Claims();
+    STC_Chatbox stc_chatbox = new STC_Chatbox();
+    STC_Register stc_register = new STC_Register();
 
 
     //	==============================================================================================
@@ -209,7 +210,7 @@ public class TC_Elephant {
 
             Testing test = new Testing(ENV, brandName, "AddVehicle_WithoutVIN");
             try {
-                stc_Login.login2(test);
+                stc_Login.login(test);
                 stc_DashBoard.clickAddReplaceVehicle(test);
                 stc_vehicle.aboutVehicle(test);
                 stc_vehicle.moreAboutVehicle(test);
@@ -432,7 +433,7 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
 		try {
             stc_Login.login(test);
-            stc_Vehicle.editVehicleCoverages(test);
+            stc_vehicle.editVehicleCoverages(test);
         } catch (Throwable e) {
             throw (e);
         } finally {
@@ -441,8 +442,79 @@ Testing test = new Testing(ENV, brandName, "EditEmail");
 		
 	}//closing TC019 method
     
+//	TC020
+	@Test(enabled = true, priority = 5, description = "Logout")
+	@Parameters("ENV")
+	public void TC020(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "Logout");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickDocuments(test);
+            stc_DashBoard.clickLogout(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC020 method
     
-    
+//	TC021
+	@Test(enabled = true, priority = 5, description = "Verify Chatbox")
+	@Parameters("ENV")
+	public void TC021(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "VerifyChatbox");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickChat(test);
+            stc_chatbox.CheckChatbox(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC021 method
+	
+//	TC022
+	@Test(enabled = true, priority = 5, description = "Verify Dashboard Buttons")
+	@Parameters("ENV")
+	public void TC022(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "DashboardButtons");
+		try {
+            stc_Login.login(test);
+            stc_DashBoard.clickGetIDCards(test);
+            stc_DashBoard.clickManagePayments(test);
+            stc_DashBoard.clickFileClaim(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC022 method
+	
+//	TC023
+	@Test(enabled = true, priority = 5, description = "Verify Signup")
+	@Parameters("ENV")
+	public void TC023(String ENV) {
+	
+		Testing test = new Testing(ENV, brandName, "VerifySignup");
+		try {
+            stc_Login.clickSetupAccount(test);
+            stc_register.register(test);
+        } catch (Throwable e) {
+            throw (e);
+        } finally {
+            test.tearDown();
+        }
+		
+	}//closing TC023 method
+	
+//------------------------------------------------------------------------------------------------------	
 }
 
 
