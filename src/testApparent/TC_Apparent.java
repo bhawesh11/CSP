@@ -68,7 +68,8 @@ public class TC_Apparent {
 //	==============================================================================================
 
     //	TC002
-    @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+  @Test(enabled = true, priority = 5, description = "Validate OneTimePayment_New Credit Card")
+
     @Parameters("ENV")
     public void TC002(String ENV) {
 
@@ -293,6 +294,7 @@ public class TC_Apparent {
     public void TC012(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditHomePhoneNumber");
+
         try {
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);
@@ -303,6 +305,7 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
+
     }//closing TC012 method
 //	---------------------------------------------------------------------------------------
 
@@ -311,7 +314,6 @@ public class TC_Apparent {
     @Test(enabled = true, priority = 5, description = "Edit Work Phone Number")
     @Parameters("ENV")
     public void TC013(String ENV) {
-
         Testing test = new Testing(ENV, brandName, "EditWorkPhoneNumber");
         try {
             stc_Login.login_Apparent(test);
@@ -329,10 +331,12 @@ public class TC_Apparent {
 
     //	TC014
     @Test(enabled = true, priority = 5, description = "Edit Cell Phone Number")
+
     @Parameters("ENV")
     public void TC014(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditCellPhoneNumber");
+
         try {
             stc_Login.login_Apparent(test);
             stc_DashBoard.clickPersonalInfo(test);;
@@ -343,9 +347,11 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
+
     }//closing TC014 method
     
  //---------------------------------------------------------------------------------------
+
 
     //	TC015
     @Test(enabled = true, priority = 5, description = "Edit Email Address")
@@ -364,12 +370,13 @@ public class TC_Apparent {
             test.tearDown();
         }
     }//closing TC015 method
-    
+
 //	---------------------------------------------------------------------------------------
     
     //	TC016
     @Test(enabled = true, priority = 5, description = "Edit Mailing Address")
     @Parameters("ENV")
+
 
     public void TC016(String ENV) {
 
@@ -384,14 +391,13 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-
     }//closing TC016 method
 //	---------------------------------------------------------------------------------------
 
     //	TC017
+
     @Test(enabled = true, priority = 5, description = "EditGaragingAddress")
     @Parameters("ENV")
-
     public void TC017(String ENV) {
 
         Testing test = new Testing(ENV, brandName, "EditGaragingAddress");
@@ -435,10 +441,11 @@ public class TC_Apparent {
     
 //	TC019
 	@Test(enabled = true, priority = 5, description = "Edit Vehicle Coverages")
+
 	@Parameters("ENV")
 	public void TC019(String ENV) {
-	
 		Testing test = new Testing(ENV, brandName, "EditVehicleCoverages");
+
 		try {
             stc_Login.login_Apparent(test);
             stc_vehicle.editVehicleCoverages(test);
@@ -446,16 +453,17 @@ public class TC_Apparent {
             throw (e);
         } finally {
             test.tearDown();
-        }
-		
+        }	
 	}//closing TC019 method
+
 	
 	
+
 //	TC020
 	@Test(enabled = true, priority = 5, description = "Logout")
+
 	@Parameters("ENV")
 	public void TC020(String ENV) {
-	
 		Testing test = new Testing(ENV, brandName, "Logout");
 		try {
             stc_Login.login_Apparent(test);
@@ -466,6 +474,7 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
+
 		
 	}//closing TC020 method
     
@@ -484,14 +493,14 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-		
+
 	}//closing TC021 method
 	
 //	TC022
 	@Test(enabled = true, priority = 5, description = "Verify Dashboard Buttons")
+
 	@Parameters("ENV")
 	public void TC022(String ENV) {
-	
 		Testing test = new Testing(ENV, brandName, "DashboardButtons");
 		try {
             stc_Login.login_Apparent(test);
@@ -503,7 +512,6 @@ public class TC_Apparent {
         } finally {
             test.tearDown();
         }
-		
 	}//closing TC022 method
 	
 //	TC023
@@ -524,6 +532,6 @@ public class TC_Apparent {
 	}//closing TC023 method
 
     
-    
 //	---------------------------------------------------------------------------------------	
+
 }
